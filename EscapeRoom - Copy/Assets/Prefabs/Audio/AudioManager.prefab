@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1498762250162142}
+  m_IsPrefabParent: 1
+--- !u!1 &1498762250162142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4970287920356698}
+  - component: {fileID: 114144779937081514}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4970287920356698
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498762250162142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114144779937081514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498762250162142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3087daa6e067543bed7dbe40d88f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 24300002, guid: d0a347a050090f544a34ef37b4771ef5, type: 2}
+  sounds:
+  - name: DrawerOpen
+    clip: {fileID: 8300000, guid: c216c98c20907da49b406f972a688ae8, type: 3}
+    volume: 0.613
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: ButtonPress
+    clip: {fileID: 8300000, guid: e62000cf266f93943b38275da0d18137, type: 3}
+    volume: 0.602
+    volumeVariance: 0
+    pitch: 0.64
+    pitchVariance: 0.023
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: AmbientBackground
+    clip: {fileID: 8300000, guid: 02829e43de50323499acb818f28399df, type: 3}
+    volume: 0.289
+    volumeVariance: 0
+    pitch: 1.03
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 243759819551758124, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: HeadAche
+    clip: {fileID: 8300000, guid: 9f911390f8c15bd4686cc6b0590959e9, type: 3}
+    volume: 0.283
+    volumeVariance: 0
+    pitch: 1.03
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: BatteryClick
+    clip: {fileID: 8300000, guid: b1a4e54386bbad444a2529f7b916d73e, type: 3}
+    volume: 0.458
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: BreakingMug
+    clip: {fileID: 8300000, guid: ec33033a32f82994da35f2acf3e6b819, type: 3}
+    volume: 0.327
+    volumeVariance: 0
+    pitch: 1.01
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: ChangingWiring
+    clip: {fileID: 8300000, guid: 53ec0910703c5bd4b83bf04a0c242565, type: 3}
+    volume: 0.386
+    volumeVariance: 0
+    pitch: 1.01
+    pitchVariance: 0.096
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: FlashlighClick
+    clip: {fileID: 8300000, guid: a490f929dc6cfa74484077ebad68ea16, type: 3}
+    volume: 0.513
+    volumeVariance: 0
+    pitch: 1.01
+    pitchVariance: 0.12
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: DoorCreak
+    clip: {fileID: 8300000, guid: 2251bd57ae90edf4d85eb31ba5a22442, type: 3}
+    volume: 0.79
+    volumeVariance: 0
+    pitch: 1.08
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: ElectricityBox
+    clip: {fileID: 8300000, guid: d7c95be76fc66f84b8096e24bfd93052, type: 3}
+    volume: 0.235
+    volumeVariance: 0
+    pitch: 1.03
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: ItemDrop
+    clip: {fileID: 8300000, guid: 2b180ba16e89479438678c3cdda359ea, type: 3}
+    volume: 0.478
+    volumeVariance: 0
+    pitch: 1.02
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: PlacingPaper
+    clip: {fileID: 8300000, guid: ad0138c6e12bf084f90ea2101d3efed3, type: 3}
+    volume: 0.487
+    volumeVariance: 0
+    pitch: 1.07
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: SolutionSound
+    clip: {fileID: 8300000, guid: 82d7d283a2f2127418473ea31e6f75d7, type: 3}
+    volume: 0.509
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: SquishEye
+    clip: {fileID: 8300000, guid: 44c09e172f431f84dbbc86d5a9bfda5f, type: 3}
+    volume: 0.424
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: LockedDoor
+    clip: {fileID: 8300000, guid: c54cd5a9627874c46b996fe498a70df9, type: 3}
+    volume: 0.455
+    volumeVariance: 0
+    pitch: 1.04
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - name: OverHere
+    clip: {fileID: 8300000, guid: 1a4b91558b9ca1648ac79d3c5b9319aa, type: 3}
+    volume: 0.455
+    volumeVariance: 0
+    pitch: 1.04
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
