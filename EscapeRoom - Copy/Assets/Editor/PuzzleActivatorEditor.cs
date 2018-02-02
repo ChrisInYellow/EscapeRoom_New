@@ -33,5 +33,10 @@ public class PuzzleActivatorEditor : Editor {
         {
             activator.puzzle4();
         }
+
+        if (GUILayout.Button("Puzzle5"))
+        {
+            activator.puzzle5();
+        }
     }
 }

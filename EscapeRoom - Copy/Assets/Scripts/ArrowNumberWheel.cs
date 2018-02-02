@@ -22,7 +22,6 @@ public class ArrowNumberWheel : MonoBehaviour {
     {
         anim = spinner.gameObject.GetComponent<Animator>();
         solutionManager = transform.parent.parent.gameObject;
-        print(solutionManager);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +32,7 @@ public class ArrowNumberWheel : MonoBehaviour {
         
         if (currentDirection == Direction.Up)
         {
-            FindObjectOfType<AudioManager>().Play("ButtonPress");
+            //FindObjectOfType<AudioManager>().Play("ButtonPress");
 
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Numbers"))
                 anim.SetInteger("Numbers", (anim.GetInteger("Numbers")+1)%10);
@@ -61,7 +60,7 @@ public class ArrowNumberWheel : MonoBehaviour {
 
         else if(currentDirection == Direction.Down)
         {
-            FindObjectOfType<AudioManager>().Play("ButtonPress");
+            //FindObjectOfType<AudioManager>().Play("ButtonPress");
 
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Numbers"))
                 anim.SetInteger("Numbers", (anim.GetInteger("Numbers") - 1) % 10);

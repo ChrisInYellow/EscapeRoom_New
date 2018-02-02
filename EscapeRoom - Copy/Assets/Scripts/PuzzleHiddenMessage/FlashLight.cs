@@ -5,9 +5,6 @@ using UnityEngine.Events;
 
 public class FlashLight : MonoBehaviour {
 
-    [SerializeField]
-    public UnityEvent puzzleSolved = new UnityEvent();
-
     public bool isOn;
     public bool batteryIsIn;
     public GameObject spotLight;
@@ -31,6 +28,5 @@ public class FlashLight : MonoBehaviour {
     {
         batteryIsIn = true;
         Activate();
-        puzzleSolved.Invoke();
     }
 }

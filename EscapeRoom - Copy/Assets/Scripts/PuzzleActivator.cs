@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PuzzleActivator : MonoBehaviour {
 
     [SerializeField]
-    public UnityEvent[] puzzleSolved = new UnityEvent[4];
+    public UnityEvent[] puzzleSolved = new UnityEvent[5];
 
     public void puzzle1()
     {
@@ -26,6 +26,10 @@ public class PuzzleActivator : MonoBehaviour {
     public void puzzle4()
     {
         puzzleSolved[3].Invoke();
+    }
+    public void puzzle5()
+    {
+        puzzleSolved[4].Invoke();
     }
 
 }

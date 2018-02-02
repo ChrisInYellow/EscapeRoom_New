@@ -2,33 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PawnReturnToOrgin : MonoBehaviour {
+public class PawnReturnToOrgin : MonoBehaviour
+{
 
-    Quaternion originRotation;
-    Vector3 originPosition;
-    bool outside;
+    Quaternion startRotation;
+    Vector3 startPosition;
 
     //GameObject newPawn = ;
 
-	void Start () {
-        originRotation = transform.rotation;
-        originPosition = transform.position;
+    void Start()
+    {
+        startPosition = transform.position;
+        startRotation = transform.rotation;
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "pawns")
+        //Debug.Log(other.gameObject.name + " has exit zone");
+        if (other.gameObject.name == "ChessPlayArea")
         {
-            outside = true;
+            ReturnToOrigin();
         }
     }
 
     public void ReturnToOrigin()
     {
-        if (outside)
-        {
-            Instantiate(gameObject, originPosition, originRotation);
-            Transform.Destroy(gameObject);
-        }
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        transform.rotation = startRotation;
+        transform.position = startPosition;
+
+        //Instantiate(gameObject, originPosition, originRotation);
+        //Destroy(gameObject);
     }
 }

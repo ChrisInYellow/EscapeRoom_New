@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SolutionForCombinationLock : MonoBehaviour
 {
+    [SerializeField]
+    public UnityEvent[] puzzleSolved = new UnityEvent[2];
 
     public int[] password;
     private bool[] locks = new bool[4];
@@ -60,8 +63,14 @@ public class SolutionForCombinationLock : MonoBehaviour
     {
         if (locks[0] && locks[1]&& locks[2] && locks[3])
         {
-            FindObjectOfType<AudioManager>().Play("SolutionSound");
-            Debug.Log("Correct Code!");
+            Solve();
         }
+    }
+
+    public void Solve()
+    {
+        puzzleSolved[0].Invoke();
+        puzzleSolved[1].Invoke();
+        FindObjectOfType<AudioManager>().Play("SolutionSound");
     }
 }

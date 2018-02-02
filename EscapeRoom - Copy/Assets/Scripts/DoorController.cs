@@ -6,8 +6,6 @@ public class DoorController : MonoBehaviour
 {
     public Animator anim; 
     public bool unlocked;
-    public Material other_mat;
-    public GameObject secretWall;
  
     public void Unlock()
     {
@@ -19,8 +17,6 @@ public class DoorController : MonoBehaviour
     
         if (unlocked == true)
         {
-            secretWall.SetActive(false);
-            GetComponent<MeshRenderer>().material = other_mat;
             anim.SetTrigger("DoorOpens");
             FindObjectOfType<AudioManager>().Play("DoorCreak");
         }

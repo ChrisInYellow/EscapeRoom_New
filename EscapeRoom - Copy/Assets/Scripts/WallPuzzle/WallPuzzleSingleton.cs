@@ -27,7 +27,12 @@ public class WallPuzzleSingleton : MonoBehaviour
 
         if (numberOfCorrectTiles == maxNumberOfTiles)
         {
-            Debug.Log("Done!!");
+            PuzzleDone();
         }
+    }
+
+    public void PuzzleDone ()
+    {
+        Debug.Log("Done!!");
     }
 }
