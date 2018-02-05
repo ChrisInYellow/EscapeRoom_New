@@ -9,23 +9,43 @@ public class AudioManager : MonoBehaviour {
 
     public Sound[] sounds;
 
+    /// <summary>
+    /// If a audiomanager already exists in the scene, this one will be destroyed.
+    /// Instantiates all the sounds in a foreach loop.
+    /// </summary>
     void Awake() {
-        if (instance != null) {
+        if (instance != null)
+        {
             Destroy(gameObject);
         }
-        else {
+        else
+        {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
 
-        foreach (Sound s in sounds) {
-            s.source = gameObject.AddComponent<AudioSource>();
+        foreach (Sound s in sounds)
+        {
+            //If there is a target to put the sound effect on, use that target. Else use the audiomanager as target.
+            if(s.target.gameObject != null)
+            {
+                s.source = s.target.gameObject.AddComponent<AudioSource>();
+            }
+            else
+            {
+                s.source = gameObject.AddComponent<AudioSource>();
+            }
             s.source.clip = s.clip;
             s.source.loop = s.loop;
 
+            //How far the sound will reach.
+            s.source.minDistance = s.minDistance;
+            s.source.maxDistance = s.maxDistance;
+
             var newMixerGroup = s.mixerGroup;
 
-            if (newMixerGroup == null) {
+            if (newMixerGroup == null)
+            {
                 newMixerGroup = mixerGroup;
             }
 
@@ -33,19 +53,20 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    void Start() {
-        Play("The Witch");
-    }
-
+    /// <summary>
+    /// This function is called from other scripts in order to play the sound clips.
+    /// </summary>
     public void Play(string sound) {
         Sound s = Array.Find(sounds, item => item.name == sound);
-        if (s == null) {
+        if (s == null)
+        {
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
 
         s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
         s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+        s.source.spatialBlend = s.spatialBlend;
 
         s.source.Play();
     }
