@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     public string[] allScenes;
-    [Range(0, 2)]
+    [Range(0, 3)]
     public int whichSceneToLoad;
 
     public void LoadScene ()
