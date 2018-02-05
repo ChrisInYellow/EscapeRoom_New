@@ -8,7 +8,7 @@ public class ObjectRespawn : MonoBehaviour
     private Transform startPosition;
     private Vector3 storageVector;
     private GameObject self;
-    private GameObject respawner; 
+    public GameObject respawner; 
     // Use this for initialization
     void Start()
     {
@@ -16,7 +16,7 @@ public class ObjectRespawn : MonoBehaviour
         startPosition = transform;
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider respawner)
     {
         Instantiate(transform.gameObject, startPosition);
         Destroy(gameObject);
