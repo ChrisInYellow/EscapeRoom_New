@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class SolutionForCombinationLock : MonoBehaviour
 {
     [SerializeField]
-    public UnityEvent[] puzzleSolved = new UnityEvent[2];
+    public UnityEvent puzzleSolved = new UnityEvent();
 
     public int[] password;
     private bool[] locks = new bool[4];
@@ -69,8 +69,7 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     public void Solve()
     {
-        puzzleSolved[0].Invoke();
-        puzzleSolved[1].Invoke();
+        puzzleSolved.Invoke();
         FindObjectOfType<AudioManager>().Play("SolutionSound");
     }
 }
