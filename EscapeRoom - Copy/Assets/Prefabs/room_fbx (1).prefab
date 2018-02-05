@@ -36,7 +36,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4501117981921744}
-  - component: {fileID: 95731743221998766}
   m_Layer: 0
   m_Name: room_fbx (1)
   m_TagString: Untagged
@@ -575,7 +574,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1202703551884144}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6794751, y: 1.148211, z: -5.1403165}
+  m_LocalPosition: {x: -1.6794751, y: 1.148211, z: -5.140316}
   m_LocalScale: {x: 0.01, y: 0.010111111, z: 0.01}
   m_Children:
   - {fileID: 4271842447221768}
@@ -648,7 +647,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1de2ae129e1718945a868a8165224a22, type: 3}
+  - {fileID: 2100000, guid: f195f927d649bb3469e0d560eec76ea6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -852,7 +851,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100006, guid: 1de2ae129e1718945a868a8165224a22, type: 3}
+  - {fileID: 2100000, guid: 8b04d2464f05f15468d9dacd248ad0d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1260,7 +1259,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100004, guid: 1de2ae129e1718945a868a8165224a22, type: 3}
+  - {fileID: 2100000, guid: e120250bef4d05c49be3e475ab18d1d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1435,23 +1434,6 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 274c346c51cd5064990b669be5d35426, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95731743221998766
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1167060518548524}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1de2ae129e1718945a868a8165224a22, type: 3}
-  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
