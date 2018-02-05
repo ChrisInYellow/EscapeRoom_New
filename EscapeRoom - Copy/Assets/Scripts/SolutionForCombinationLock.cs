@@ -11,16 +11,6 @@ public class SolutionForCombinationLock : MonoBehaviour
     public int[] password;
     private bool[] locks = new bool[4];
 
-    private void Start()
-    {
-        FindObjectOfType<AudioManager>().Play("AmbientBackground");
-    }
-
-    private void Update()
-    {
-        Solution();
-    }
-
     public void SpinnerOne(int code)
     {
         print("Spinner 1"); 
@@ -30,6 +20,7 @@ public class SolutionForCombinationLock : MonoBehaviour
         }
         else
             locks[0] = false;
+        Solution();
     }
     public void SpinnerTwo(int code)
     {
@@ -39,6 +30,7 @@ public class SolutionForCombinationLock : MonoBehaviour
         }
         else
             locks[1] = false;
+        Solution();
     }
 
     public void SpinnerThree(int code)
@@ -49,6 +41,7 @@ public class SolutionForCombinationLock : MonoBehaviour
         }
         else
             locks[2] = false;
+        Solution();
     }
     public void SpinnerFour(int code)
     {
@@ -58,6 +51,7 @@ public class SolutionForCombinationLock : MonoBehaviour
         }
         else
             locks[3] = false;
+        Solution();
     }
     public void Solution()
     {
