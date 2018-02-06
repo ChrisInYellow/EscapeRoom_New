@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectRespawn : MonoBehaviour {
+public class ObjectRespawn : MonoBehaviour
+{
 
-    private Transform startPosition;
-    private Vector3 storageVector; 
-    private GameObject self; 
-	// Use this for initialization
-	void Start () {
+    private Vector3 startPosition;
+    private Quaternion startRotation; 
+    // Use this for initialization
+    void Start()
+    {
 
-        startPosition = transform; 
-	}
+        startPosition = transform.position;
+        startRotation = transform.rotation; 
+    }
 
     public void OnTriggerEnter(Collider other)
     {
-        Instantiate(transform.gameObject, startPosition); 
-        Destroy(gameObject); 
+        if (other.tag == "Respawner")
+        {
+            
+            GameObject newInstance = Instantiate(transform.gameObject);
+            newInstance.transform.position = startPosition;
+            newInstance.transform.rotation = startRotation; 
+            Destroy(gameObject);
+        }
 
     }
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }

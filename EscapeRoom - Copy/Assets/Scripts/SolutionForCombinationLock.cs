@@ -11,14 +11,6 @@ public class SolutionForCombinationLock : MonoBehaviour
     public int[] password;
     private bool[] locks = new bool[4];
 
-    private void Start()
-    {
-        SpinnerOne(1);
-        SpinnerTwo(1);
-        SpinnerThree(1);
-        SpinnerFour(1);
-    }
-
     public void SpinnerOne(int code)
     {
         print("Spinner 1"); 
