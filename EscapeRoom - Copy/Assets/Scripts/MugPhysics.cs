@@ -10,7 +10,7 @@ public class MugPhysics : MonoBehaviour {
     private int sloshSpeed = 60;
     private int rotateSpeed = 15;
 
-    private int difference = 25; 
+    private int difference = 30; 
 
 	
 	// Update is called once per frame
