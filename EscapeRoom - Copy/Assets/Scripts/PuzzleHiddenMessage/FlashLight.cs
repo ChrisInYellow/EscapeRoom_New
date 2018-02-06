@@ -7,6 +7,7 @@ public class FlashLight : MonoBehaviour {
 
     public bool isOn;
     public bool batteryIsIn;
+    public bool LidIsOn = true;
     public GameObject spotLight;
     public DoorController doorManager; 
 
@@ -27,6 +28,24 @@ public class FlashLight : MonoBehaviour {
     public void batteryInput()
     {
         batteryIsIn = true;
-        Activate();
+    }
+
+    public void lidOn()
+    {
+        LidIsOn = true;
+        if (batteryIsIn)
+            Activate();
+    }
+
+    public void lidOff()
+    {
+        LidIsOn = false;
+    }
+
+    public void QuickSolve()
+    {
+        LidIsOn = true;
+        batteryIsIn = true;
+        spotLight.SetActive(true);
     }
 }
