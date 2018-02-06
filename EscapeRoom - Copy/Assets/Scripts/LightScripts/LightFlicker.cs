@@ -4,39 +4,37 @@ using UnityEngine;
 
 public class LightFlicker : MonoBehaviour 
 {
-    public float timeToTurnOn = 0.1f;
+    public float timeToTurnOn = 0.05f;
+    public bool hasLightShaft = true;
     private int frames = 0;
-    Light light;
+    Light thisLight;
+    LightShafts lightShaft;
 
     public void Start()
     {
-        light = GetComponent<Light>();
+        thisLight = GetComponent<Light>();
+        lightShaft = GetComponent<LightShafts>();
+        Invoke("LightOn", 0);
     }
 
-    void Update () 
-	{
-        frames++;
-        if (frames % (Random.Range(75, 100)) == 0)
-        {
-            LightOf();
-        }
-	}
-
-    public void LightOf ()
+    public void LightOff ()
     {
-        for (int i = 0; i < 3; i++)
+        if (hasLightShaft)
         {
-            light.enabled = false;
-            //gameObject.SetActive(false);
-            StartCoroutine(LightOn());
+            lightShaft.enabled = false;
         }
+        thisLight.enabled = false;
+        Invoke("LightOn", Random.Range(0, .5f));
     }
 
-    IEnumerator LightOn ()
+    void LightOn()
     {
-        yield return new WaitForSeconds(timeToTurnOn);
-        light.enabled = true;
-        //gameObject.SetActive(true);
-        //frames = 0;
+        if (hasLightShaft)
+        {
+            lightShaft.enabled = true;
+        }
+        thisLight.enabled = true;
+        Invoke("LightOff", Random.Range(0, 1f));
     }
+    //edit in runtime/copy multiple components?
 }
