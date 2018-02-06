@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 54792000949134480}
   - component: {fileID: 65619816846466224}
   - component: {fileID: 114922404001594704}
-  - component: {fileID: 114295549284780732}
   - component: {fileID: 114082207941956568}
   m_Layer: 0
   m_Name: triangle (4)
@@ -165,7 +164,6 @@ GameObject:
   - component: {fileID: 54638010182383212}
   - component: {fileID: 65217258023420560}
   - component: {fileID: 114129007955488024}
-  - component: {fileID: 114922608881166064}
   - component: {fileID: 114711978881366220}
   m_Layer: 0
   m_Name: triangle (2)
@@ -271,7 +269,6 @@ GameObject:
   - component: {fileID: 54204910903725522}
   - component: {fileID: 65393441348206018}
   - component: {fileID: 114467487474934898}
-  - component: {fileID: 114462069975519496}
   - component: {fileID: 114089694060394548}
   m_Layer: 0
   m_Name: triangle (1)
@@ -548,7 +545,6 @@ GameObject:
   - component: {fileID: 54748079533041176}
   - component: {fileID: 65250645601987334}
   - component: {fileID: 114810679770868872}
-  - component: {fileID: 114506585743311390}
   - component: {fileID: 114354565979193034}
   m_Layer: 0
   m_Name: triangle (3)
@@ -10149,17 +10145,6 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114295549284780732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014662515531980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114354565979193034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10220,17 +10205,6 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114462069975519496
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1088373348558402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114467487474934898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10276,17 +10250,6 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114506585743311390
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169275031160490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114711978881366220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10405,14 +10368,3 @@ MonoBehaviour:
   currentDirection: 2
   spinnerNumber: 4
   spinner: {fileID: 1191783933741442}
---- !u!114 &114922608881166064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1059196867601788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
