@@ -9,51 +9,51 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1320614061576292}
+  m_RootGameObject: {fileID: 1929898814580756}
   m_IsPrefabParent: 1
---- !u!1 &1320614061576292
+--- !u!1 &1929898814580756
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4648162515314610}
-  - component: {fileID: 33436627916682346}
-  - component: {fileID: 23474829664711530}
-  - component: {fileID: 95461181984111454}
-  - component: {fileID: 54575867111278230}
-  - component: {fileID: 65149499773447156}
-  - component: {fileID: 114034893529877978}
-  - component: {fileID: 114250347667262508}
-  - component: {fileID: 114318559179688966}
-  - component: {fileID: 114393694978080572}
+  - component: {fileID: 4279322474713302}
+  - component: {fileID: 33398763966996076}
+  - component: {fileID: 23715520150665818}
+  - component: {fileID: 95742583606704408}
+  - component: {fileID: 54131143287324594}
+  - component: {fileID: 65740231938778474}
+  - component: {fileID: 114935418252293350}
+  - component: {fileID: 114269820806512978}
+  - component: {fileID: 114229224107117426}
+  - component: {fileID: 114299897528808228}
   m_Layer: 0
-  m_Name: battery
+  m_Name: battery 1
   m_TagString: Battery
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4648162515314610
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
+--- !u!4 &4279322474713302
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.35910073, y: 1.204, z: -0.2652682}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1929898814580756}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: -0.0367, y: -0.0289, z: -0.075}
+  m_LocalScale: {x: 0.6579199, y: 0.6579199, z: 0.6579199}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23474829664711530
+--- !u!23 &23715520150665818
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9f536c88f6c9ec34dbade4aa5dc49521, type: 3}
+  - {fileID: 2100000, guid: fcab4912d32c0584a870b2639813f891, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,19 +82,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33436627916682346
+--- !u!33 &33398763966996076
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
-  m_Mesh: {fileID: 4300000, guid: 9f536c88f6c9ec34dbade4aa5dc49521, type: 3}
---- !u!54 &54575867111278230
+  m_GameObject: {fileID: 1929898814580756}
+  m_Mesh: {fileID: 4300000, guid: fcab4912d32c0584a870b2639813f891, type: 3}
+--- !u!54 &54131143287324594
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -104,27 +104,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65149499773447156
+--- !u!65 &65740231938778474
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.029672215, y: 0.029835666, z: 0.06325411}
   m_Center: {x: 0, y: 0, z: 0.031627055}
---- !u!95 &95461181984111454
+--- !u!95 &95742583606704408
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9f536c88f6c9ec34dbade4aa5dc49521, type: 3}
+  m_Avatar: {fileID: 9000000, guid: fcab4912d32c0584a870b2639813f891, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -133,31 +133,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114034893529877978
+--- !u!114 &114229224107117426
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 1
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
-  destroyImmediatelyOnThrow: 0
-  breakForce: 1500
---- !u!114 &114250347667262508
+--- !u!114 &114269820806512978
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
@@ -173,7 +165,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114034893529877978}
+  grabAttachMechanicScript: {fileID: 114935418252293350}
   secondaryGrabActionScript: {fileID: 0}
   isUsable: 0
   holdButtonToUse: 1
@@ -182,23 +174,12 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114318559179688966
+--- !u!114 &114299897528808228
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114393694978080572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1320614061576292}
+  m_GameObject: {fileID: 1929898814580756}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f96f1837f21d4bf9a77ff61e7b81f20, type: 3}
@@ -247,8 +228,7 @@ MonoBehaviour:
   OnSnapToDropZone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114912726888653904, guid: 159560268f41c6040ac5dbf5dc7c8e4d,
-          type: 2}
+      - m_Target: {fileID: 0}
         m_MethodName: batteryInput
         m_Mode: 1
         m_Arguments:
@@ -259,7 +239,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114250347667262508}
+      - m_Target: {fileID: 114269820806512978}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -270,7 +250,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 65149499773447156}
+      - m_Target: {fileID: 65740231938778474}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -288,3 +268,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114935418252293350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1929898814580756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 1
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  destroyImmediatelyOnThrow: 0
+  breakForce: 1500
