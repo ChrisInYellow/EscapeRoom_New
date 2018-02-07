@@ -8,7 +8,6 @@ public class FlashLight : MonoBehaviour {
     public bool isOn;
     public bool batteryIsIn;
     public GameObject spotLight;
-    public DoorController doorManager; 
 
     public void Activate()
     {
