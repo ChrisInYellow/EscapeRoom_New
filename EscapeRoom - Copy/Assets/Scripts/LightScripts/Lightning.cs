@@ -6,31 +6,28 @@ public class Lightning : MonoBehaviour
 {
     public float lightningStartTimer = 10f;
     public float lightningDuration = 0.05f;
-    Light thisLight;
-    LightShafts lightShaft;
+
+    public GameObject lightning01;
+    public GameObject lightning02;
 
     void Start () 
 	{
-        thisLight = GetComponent<Light>();
-        lightShaft = GetComponent<LightShafts>();
-        Invoke("Startlightning", lightningStartTimer);
+        Invoke("StartLightning", lightningStartTimer);
     }
-	
-	void Update () 
-	{
-		
-	}
 
     public void StartLightning ()
     {
-        thisLight.enabled = true;
-        lightShaft.enabled = true;
+        lightning01.SetActive(true);
+        lightning02.SetActive(true);
+
         Invoke("LightningOff", lightningDuration);
     }
 
     public void LightningOff ()
     {
-        thisLight.enabled = false;
-        lightShaft.enabled = false;
+        lightning01.SetActive(false);
+        lightning02.SetActive(false);
+
+        Invoke("StartLightning", Random.Range(5, 10));
     }
 }
