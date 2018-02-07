@@ -31,7 +31,7 @@ public class ChessCorrectCombo : MonoBehaviour {
         }
     }
 
-    public void Test(GameObject place, GameObject pawn)
+    public void CorrectPlacing(GameObject place, GameObject pawn)
     {
         print("got here");
         for (int i = 0; i < cleared.Length; i++)
@@ -48,5 +48,24 @@ public class ChessCorrectCombo : MonoBehaviour {
             }
         }
             SolvedCombo();
+    }
+
+    public void InCorrectPlacing(GameObject place, GameObject pawn)
+    {
+        print("got here");
+        for (int i = 0; i < cleared.Length; i--)
+        {
+            if (correctSpaces[i] != place)
+            {
+                if (correctPawns[i] != pawn)
+                {
+                    cleared[i] = false;
+                    Debug.Log("Fel/Saknas");
+                }
+                else
+                    cleared[i] = false;
+            }
+        }
+        SolvedCombo();
     }
 }

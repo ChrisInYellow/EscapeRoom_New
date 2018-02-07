@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ChessPlace : MonoBehaviour {
 
-    public void SendInfo()
+    public void ChessCorrectPlus()
     {
-        GetComponentInParent<ChessCorrectCombo>().Test(gameObject, transform.GetChild(1).gameObject);
+        GetComponentInParent<ChessCorrectCombo>().CorrectPlacing(gameObject, transform.GetChild(1).gameObject);
     }
 
+    public void ChessCorrectMinus()
+    {
+        GetComponentInParent<ChessCorrectCombo>().InCorrectPlacing(gameObject, transform.GetChild(1).gameObject);
+    }
 }
