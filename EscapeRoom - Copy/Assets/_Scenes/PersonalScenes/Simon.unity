@@ -209,6 +209,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4644451788692178, guid: a2cc51bdeedf5d0459c18224e63f3682,
     type: 2}
   m_PrefabInternal: {fileID: 822611626}
+--- !u!1 &217902273 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1838928677618118, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
 --- !u!4 &228998224 stripped
 Transform:
   m_PrefabParentObject: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
@@ -939,6 +944,75 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &656096409 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1054273155235600, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!114 &656096410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656096409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 656096411}
+        m_MethodName: ChessCorrectPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 656096411}
+        m_MethodName: ChessCorrectMinus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &656096411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656096409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93dbd809b5ea394b81301ac58236faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &666225997
 Prefab:
   m_ObjectHideFlags: 0
@@ -1066,6 +1140,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
     type: 2}
   m_PrefabInternal: {fileID: 666225997}
+--- !u!1 &669024198 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1551824338749182, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
 --- !u!1 &690839674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1515,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918676076484466, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4454863197246670, guid: bb1fab9bb57aae14291873e402f7bcc9, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1468,9 +1562,159 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114918676076484466, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918676076484466, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918676076484466, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295542196}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.data[1]
+      value: 
+      objectReference: {fileID: 656096409}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.data[2]
+      value: 
+      objectReference: {fileID: 669024198}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 1315881802}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.data[4]
+      value: 
+      objectReference: {fileID: 217902273}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 813202449}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 813202448}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 813202447}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 813202446}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctSpaces.Array.data[5]
+      value: 
+      objectReference: {fileID: 1122336113}
+    - target: {fileID: 114728299699350464, guid: bb1fab9bb57aae14291873e402f7bcc9,
+        type: 2}
+      propertyPath: correctPawns.Array.data[5]
+      value: 
+      objectReference: {fileID: 813202445}
+    m_RemovedComponents:
+    - {fileID: 114861604234809548, guid: bb1fab9bb57aae14291873e402f7bcc9, type: 2}
+    - {fileID: 114918676076484466, guid: bb1fab9bb57aae14291873e402f7bcc9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bb1fab9bb57aae14291873e402f7bcc9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &813202445 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1056639637709570, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!1 &813202446 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1693278995244616, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!1 &813202447 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1746005715010982, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!1 &813202448 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1962452499780384, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!1 &813202449 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1398684602347142, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!1 &813202450 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1840573235599258, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+--- !u!114 &813202451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 813202450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1295542196}
+        m_MethodName: ChessCorrectPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1295542196}
+        m_MethodName: ChessCorrectMinus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &818906848
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2401,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1876069212578032, guid: 5e1a2b77c215f92438217ce5abce8ec5,
     type: 2}
   m_PrefabInternal: {fileID: 796356335}
+--- !u!1 &1122336113 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1578369989351158, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
 --- !u!4 &1132520072 stripped
 Transform:
   m_PrefabParentObject: {fileID: 408470, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -4299,6 +4548,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1295542196 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114788490774360680, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
+  m_Script: {fileID: 11500000, guid: c93dbd809b5ea394b81301ac58236faf, type: 3}
 --- !u!1 &1296301411 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1819054246544532, guid: 3fd0fc8f58ba0f041a594250c82b0e25,
@@ -4314,6 +4569,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1188469811}
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
+--- !u!1 &1315881802 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1844496958044240, guid: bb1fab9bb57aae14291873e402f7bcc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 813202444}
 --- !u!1 &1336479743
 GameObject:
   m_ObjectHideFlags: 0
