@@ -21,7 +21,6 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     public void SpinnerOne(int code)
     {
-        print("Spinner 1"); 
         if(code == password[0])
         {
             locks[0] = true;
