@@ -6,7 +6,6 @@ public class LightFlicker : MonoBehaviour
 {
     public float timeToTurnOn = 0.05f;
     public bool hasLightShaft = true;
-    private int frames = 0;
     Light thisLight;
     LightShafts lightShaft;
 
