@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: e7ec95b7769a1fe4aaeb9c60b050a2c7, type: 2}
---- !u!1 &52089867 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
 --- !u!1 &60614098
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,13 +178,8 @@ Transform:
   m_Children:
   - {fileID: 890674215}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &106807906 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
 --- !u!1 &328874840
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allScenes:
   - RoomOne
-  whichSceneToLoad: 0
+  - RoomOneHugoTest
+  whichSceneToLoad: 1
 --- !u!4 &328874842
 Transform:
   m_ObjectHideFlags: 0
@@ -475,16 +466,6 @@ MonoBehaviour:
   canClickOnHover: 0
   autoActivatingCanvas: {fileID: 0}
   collisionClick: 0
---- !u!1 &472378653 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
---- !u!1 &524188435 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
 --- !u!1001 &538475209
 Prefab:
   m_ObjectHideFlags: 0
@@ -688,7 +669,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 446646, guid: 9e047e2aefaa8dc47b373572e8c58866, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11446438, guid: 9e047e2aefaa8dc47b373572e8c58866, type: 2}
       propertyPath: NavMesh
@@ -753,7 +734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854695456
 GameObject:
@@ -920,7 +901,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4056241231329102, guid: 3dc329ea47be3764a8b6526d44297582, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114659887393843110, guid: 3dc329ea47be3764a8b6526d44297582,
         type: 2}
@@ -954,8 +935,8 @@ GameObject:
   m_Component:
   - component: {fileID: 947589950}
   - component: {fileID: 947589949}
-  - component: {fileID: 947589951}
   - component: {fileID: 947589952}
+  - component: {fileID: 947589951}
   m_Layer: 0
   m_Name: Spotlight
   m_TagString: Untagged
@@ -1010,7 +991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 15.000001, y: 0, z: 0}
 --- !u!114 &947589951
 MonoBehaviour:
@@ -1093,11 +1074,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!1 &1012016769 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
 --- !u!1 &1023357879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4125468718802486, guid: d1f01a01607b42f48abe67a1a1156c86, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1f01a01607b42f48abe67a1a1156c86, type: 2}
@@ -1408,12 +1384,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 106807906}
-  actualHeadset: {fileID: 52089867}
-  actualLeftController: {fileID: 524188435}
-  actualRightController: {fileID: 1188781179}
-  modelAliasLeftController: {fileID: 1012016769}
-  modelAliasRightController: {fileID: 472378653}
+  actualBoundaries: {fileID: 0}
+  actualHeadset: {fileID: 0}
+  actualLeftController: {fileID: 0}
+  actualRightController: {fileID: 0}
+  modelAliasLeftController: {fileID: 0}
+  modelAliasRightController: {fileID: 0}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -1434,11 +1410,6 @@ MonoBehaviour:
     fallbackTypeName: VRTK.SDK_FallbackController
     typeName: VRTK.SDK_SimController
     descriptionIndex: 0
---- !u!1 &1188781179 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 538475209}
 --- !u!1 &1256674806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1689,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4489382553954124, guid: 3e81f5b9e0c92c94ead9b1d0b95ec710, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 108378471661251182, guid: 3e81f5b9e0c92c94ead9b1d0b95ec710,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e81f5b9e0c92c94ead9b1d0b95ec710, type: 2}
@@ -2357,7 +2333,7 @@ RectTransform:
   - {fileID: 1513415470}
   - {fileID: 1499890136}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2437,7 +2413,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1872114611
 Prefab:

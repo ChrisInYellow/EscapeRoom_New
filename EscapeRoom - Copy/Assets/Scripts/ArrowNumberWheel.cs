@@ -42,12 +42,12 @@ public class ArrowNumberWheel : MonoBehaviour {
                 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerOne(anim.GetInteger("Numbers"));
             }
-            if (spinnerNumber == SpinnerIdentifier.Two)
+            else if (spinnerNumber == SpinnerIdentifier.Two)
             {
 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerTwo(anim.GetInteger("Numbers"));
             }
-            if (spinnerNumber == SpinnerIdentifier.Three)
+            else if (spinnerNumber == SpinnerIdentifier.Three)
             {
 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerThree(anim.GetInteger("Numbers"));
@@ -73,12 +73,12 @@ public class ArrowNumberWheel : MonoBehaviour {
 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerOne(anim.GetInteger("Numbers"));
             }
-            if (spinnerNumber == SpinnerIdentifier.Two)
+            else if (spinnerNumber == SpinnerIdentifier.Two)
             {
 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerTwo(anim.GetInteger("Numbers"));
             }
-            if (spinnerNumber == SpinnerIdentifier.Three)
+            else if (spinnerNumber == SpinnerIdentifier.Three)
             {
 
                 solutionManager.GetComponentInParent<SolutionForCombinationLock>().SpinnerThree(anim.GetInteger("Numbers"));

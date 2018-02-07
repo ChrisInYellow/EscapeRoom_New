@@ -8,12 +8,12 @@ public class LightFlicker : MonoBehaviour
     public bool hasLightShaft = true;
     private int frames = 0;
     Light thisLight;
-    //LightShafts lightShaft;
+    LightShafts lightShaft;
 
     public void Start()
     {
         thisLight = GetComponent<Light>();
-        //lightShaft = GetComponent<LightShafts>();
+        lightShaft = GetComponent<LightShafts>();
         Invoke("LightOn", 0);
     }
 
@@ -21,7 +21,7 @@ public class LightFlicker : MonoBehaviour
     {
         if (hasLightShaft)
         {
-            //lightShaft.enabled = false;
+            lightShaft.enabled = false;
         }
         thisLight.enabled = false;
         Invoke("LightOn", Random.Range(0, .5f));
@@ -31,10 +31,9 @@ public class LightFlicker : MonoBehaviour
     {
         if (hasLightShaft)
         {
-            //lightShaft.enabled = true;
+            lightShaft.enabled = true;
         }
         thisLight.enabled = true;
         Invoke("LightOff", Random.Range(0, 1f));
     }
-    //edit in runtime/copy multiple components?
 }
