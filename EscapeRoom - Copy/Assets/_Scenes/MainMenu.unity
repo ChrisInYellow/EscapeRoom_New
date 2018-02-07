@@ -158,7 +158,6 @@ MonoBehaviour:
   m_BrightnessColored: 5
   m_Extinction: 0.5
   m_MinDistFromCamera: 0
-  forceShafts: 0
   m_ShadowmapRes: 2048
   m_DepthShader: {fileID: 4800000, guid: 7e188a1e08ecfae4785bed08b1013219, type: 3}
   m_ColorFilterShader: {fileID: 4800000, guid: 78da0b5fc3a6e8a469d047d71187e7ef, type: 3}
@@ -313,7 +312,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86610803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 890674215}
@@ -572,7 +571,7 @@ MonoBehaviour:
   enableTeleport: 1
   targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 338880366}
-  activationButton: 7
+  activationButton: 3
   holdButtonToActivate: 1
   activateOnEnable: 0
   activationDelay: 0
@@ -596,7 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b26f999cbdac8478b6c2a046256169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationButton: 7
+  activationButton: 2
   activationMode: 0
   selectionButton: 3
   clickMethod: 0
@@ -1126,7 +1125,6 @@ MonoBehaviour:
   m_BrightnessColored: 5
   m_Extinction: 0.5
   m_MinDistFromCamera: 0
-  forceShafts: 1
   m_ShadowmapRes: 1024
   m_DepthShader: {fileID: 4800000, guid: 7e188a1e08ecfae4785bed08b1013219, type: 3}
   m_ColorFilterShader: {fileID: 4800000, guid: 78da0b5fc3a6e8a469d047d71187e7ef, type: 3}
@@ -1717,7 +1715,7 @@ MonoBehaviour:
   enableTeleport: 1
   targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 1256674812}
-  activationButton: 7
+  activationButton: 3
   holdButtonToActivate: 1
   activateOnEnable: 0
   activationDelay: 0
@@ -1741,7 +1739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b26f999cbdac8478b6c2a046256169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationButton: 7
+  activationButton: 2
   activationMode: 0
   selectionButton: 3
   clickMethod: 0
@@ -1800,7 +1798,6 @@ MonoBehaviour:
   m_BrightnessColored: 5
   m_Extinction: 0.5
   m_MinDistFromCamera: 0
-  forceShafts: 1
   m_ShadowmapRes: 1024
   m_DepthShader: {fileID: 4800000, guid: 7e188a1e08ecfae4785bed08b1013219, type: 3}
   m_ColorFilterShader: {fileID: 4800000, guid: 78da0b5fc3a6e8a469d047d71187e7ef, type: 3}
@@ -3476,7 +3473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11455840, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
       propertyPath: GroundAlpha
-      value: 0.023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11408734, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
       propertyPath: BorderAlpha
@@ -3489,6 +3486,10 @@ Prefab:
     - target: {fileID: 11455840, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
       propertyPath: _SampleRadius
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455840, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
+      propertyPath: _GroundMaterialSource
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
@@ -3547,7 +3548,6 @@ MonoBehaviour:
   m_BrightnessColored: 5
   m_Extinction: 0.5
   m_MinDistFromCamera: 0
-  forceShafts: 1
   m_ShadowmapRes: 1024
   m_DepthShader: {fileID: 4800000, guid: 7e188a1e08ecfae4785bed08b1013219, type: 3}
   m_ColorFilterShader: {fileID: 4800000, guid: 78da0b5fc3a6e8a469d047d71187e7ef, type: 3}
