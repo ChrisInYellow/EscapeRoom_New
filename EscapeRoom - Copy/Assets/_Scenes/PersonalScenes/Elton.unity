@@ -1129,6 +1129,21 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 20938510069535118, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.17647058
+      objectReference: {fileID: 0}
+    - target: {fileID: 20938510069535118, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.17647058
+      objectReference: {fileID: 0}
+    - target: {fileID: 20938510069535118, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.17647058
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
   m_IsPrefabParent: 0
@@ -1224,6 +1239,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4545015951413294, guid: 7a1457403372ea44cae53c88385c2e22,
     type: 2}
   m_PrefabInternal: {fileID: 726129715}
+--- !u!1 &755059296 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1414248326322258, guid: ed9b3e1a84bf18e4fb918b711e87a510,
+    type: 2}
+  m_PrefabInternal: {fileID: 1017447934}
+--- !u!114 &755059300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 755059296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc366c4ab9b63a4dad97fc1290dc00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  emissionDarken: 50
+  customMaterial: {fileID: 0}
 --- !u!4 &761580152 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1,
@@ -1420,36 +1455,6 @@ Prefab:
     - target: {fileID: 4000010002477438, guid: ded7f784bbed79d47b6a466139d3236e, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: ShapeModule.type
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: randomSeed
-      value: -985847743
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: ShapeModule.m_Scale.y
-      value: 1.8866074
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: ShapeModule.m_Scale.z
-      value: 2.6643782
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 7.3838654
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
-        type: 2}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ded7f784bbed79d47b6a466139d3236e, type: 2}
