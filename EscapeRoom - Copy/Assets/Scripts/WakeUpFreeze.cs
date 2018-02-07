@@ -6,6 +6,7 @@ public class WakeUpEffect : MonoBehaviour {
 
     public float timeLeft;
     public Camera wakeUpCam;
+    private Fader fader; 
     
 	void Awake () {
         wakeUpCam.enabled = false;
@@ -26,6 +27,7 @@ public class WakeUpEffect : MonoBehaviour {
         if(wakeUpCam.enabled == false && timeLeft < 0)
         {
             wakeUpCam.enabled = true;
+            fader.FadeIn(); 
         }
     }
 }
