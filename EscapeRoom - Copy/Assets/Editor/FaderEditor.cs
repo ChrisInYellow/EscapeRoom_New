@@ -17,5 +17,9 @@ public class FaderEditor : Editor
         {
             fader.Fade();
         }
+        if(GUILayout.Button("Fade From White"))
+        {
+            fader.FadeFromWhite(); 
+        }
     }
 }
