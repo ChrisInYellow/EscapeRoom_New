@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114918220221571756}
   - component: {fileID: 114301777859166198}
   - component: {fileID: 114091009407244404}
+  - component: {fileID: 114496449851525482}
   m_Layer: 0
   m_Name: bDrottning
   m_TagString: Pawns
@@ -174,6 +175,23 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114496449851525482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482140119141594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114918220221571756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1

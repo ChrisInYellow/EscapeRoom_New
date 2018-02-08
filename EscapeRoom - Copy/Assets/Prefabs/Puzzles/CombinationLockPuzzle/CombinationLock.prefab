@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 65619816846466224}
   - component: {fileID: 114922404001594704}
   - component: {fileID: 114082207941956568}
+  - component: {fileID: 114605594868427494}
   m_Layer: 0
   m_Name: triangle (4)
   m_TagString: Untagged
@@ -165,6 +166,7 @@ GameObject:
   - component: {fileID: 65217258023420560}
   - component: {fileID: 114129007955488024}
   - component: {fileID: 114711978881366220}
+  - component: {fileID: 114239734384562122}
   m_Layer: 0
   m_Name: triangle (2)
   m_TagString: Untagged
@@ -270,6 +272,7 @@ GameObject:
   - component: {fileID: 65393441348206018}
   - component: {fileID: 114467487474934898}
   - component: {fileID: 114089694060394548}
+  - component: {fileID: 114569764778758226}
   m_Layer: 0
   m_Name: triangle (1)
   m_TagString: Untagged
@@ -546,6 +549,7 @@ GameObject:
   - component: {fileID: 65250645601987334}
   - component: {fileID: 114810679770868872}
   - component: {fileID: 114354565979193034}
+  - component: {fileID: 114895144384768624}
   m_Layer: 0
   m_Name: triangle (3)
   m_TagString: Untagged
@@ -739,6 +743,7 @@ GameObject:
   - component: {fileID: 65746257523690440}
   - component: {fileID: 114007067390205510}
   - component: {fileID: 114213784384082422}
+  - component: {fileID: 114394848632591064}
   m_Layer: 0
   m_Name: triangle (6)
   m_TagString: Untagged
@@ -892,6 +897,7 @@ GameObject:
   - component: {fileID: 65696903537721774}
   - component: {fileID: 114131558254756646}
   - component: {fileID: 114159282615978614}
+  - component: {fileID: 114114044506668296}
   m_Layer: 0
   m_Name: triangle (5)
   m_TagString: Untagged
@@ -1066,6 +1072,7 @@ GameObject:
   - component: {fileID: 65252386314283344}
   - component: {fileID: 114816815450186696}
   - component: {fileID: 114491378476860170}
+  - component: {fileID: 114656609424876354}
   m_Layer: 0
   m_Name: triangle (7)
   m_TagString: Untagged
@@ -1343,6 +1350,7 @@ GameObject:
   - component: {fileID: 65521301940004632}
   - component: {fileID: 114815394428642468}
   - component: {fileID: 114417425681034846}
+  - component: {fileID: 114631617441838372}
   m_Layer: 0
   m_Name: triangle
   m_TagString: Untagged
@@ -10007,7 +10015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10037,7 +10045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10055,6 +10063,23 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114114044506668296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1309104084793000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114129007955488024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10097,7 +10122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10127,7 +10152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10145,6 +10170,23 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114239734384562122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059196867601788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114354565979193034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10157,7 +10199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10175,6 +10217,23 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114394848632591064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220646575597126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114417425681034846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10187,7 +10246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10232,7 +10291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10250,6 +10309,74 @@ MonoBehaviour:
   useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114569764778758226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088373348558402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
+--- !u!114 &114605594868427494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014662515531980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
+--- !u!114 &114631617441838372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1465233441709666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
+--- !u!114 &114656609424876354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1360524559385260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114711978881366220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10262,7 +10389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -10353,6 +10480,23 @@ MonoBehaviour:
   currentDirection: 1
   spinnerNumber: 4
   spinner: {fileID: 1191783933741442}
+--- !u!114 &114895144384768624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169275031160490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114922404001594704
 MonoBehaviour:
   m_ObjectHideFlags: 1

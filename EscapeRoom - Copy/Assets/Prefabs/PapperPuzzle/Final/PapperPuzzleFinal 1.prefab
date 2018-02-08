@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 114430953382907432}
   - component: {fileID: 114054898984507864}
   - component: {fileID: 114327805475527388}
+  - component: {fileID: 114970308567047590}
   m_Layer: 0
   m_Name: PapperPuzzleFinal 1
   m_TagString: Untagged
@@ -1488,7 +1489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -1702,6 +1703,23 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114337086433245670}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114970308567047590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481934940355922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114984718196613402
 MonoBehaviour:
   m_ObjectHideFlags: 1
