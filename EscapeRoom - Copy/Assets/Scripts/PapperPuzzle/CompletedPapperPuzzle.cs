@@ -16,8 +16,13 @@ public class CompletedPapperPuzzle : MonoBehaviour
         numberOfPlacedPappers += 1;
         if (numberOfPlacedPappers == 4)
         {
-            puzzleSolved.Invoke();
-            FindObjectOfType<AudioManager>().Play("SolutionSound");
+            PuzzleSolved();
         }
+    }
+
+    public void PuzzleSolved()
+    {
+        puzzleSolved.Invoke();
+        FindObjectOfType<AudioManager>().Play("SolutionSound");
     }
 }

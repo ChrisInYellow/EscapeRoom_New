@@ -1838,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1340939024093004
 GameObject:
   m_ObjectHideFlags: 1
@@ -3482,6 +3482,7 @@ GameObject:
   - component: {fileID: 33652567837805368}
   - component: {fileID: 23868865748870980}
   - component: {fileID: 95873713910505832}
+  - component: {fileID: 65449291645263104}
   m_Layer: 0
   m_Name: brade2
   m_TagString: Untagged
@@ -5614,8 +5615,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1718757544293838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.364, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.3918618, y: -0.5914778, z: 4.458359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4852959629711782}
@@ -5625,7 +5626,7 @@ Transform:
   - {fileID: 4561307233027726}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4099265663403864
 Transform:
   m_ObjectHideFlags: 1
@@ -17988,6 +17989,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7146757, y: 0.7146759, z: 1.1504447}
   m_Center: {x: 0, y: 0, z: 0.5735289}
+--- !u!65 &65449291645263104
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617533767862218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40000007, y: 0.40000015, z: 0.010000003}
+  m_Center: {x: -0.00000032782555, y: 1.4210856e-16, z: 0.0049999417}
 --- !u!65 &65459974863422708
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -21724,6 +21737,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cfadcc4f36079f419475c58967f9c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   correctSpaces:
   - {fileID: 1219362873326800}
   - {fileID: 1927653532250846}
