@@ -9,20 +9,7 @@ public class AudioManager : MonoBehaviour {
 
     public Sound[] sounds;
 
-    /// <summary>
-    /// If a audiomanager already exists in the scene, this one will be destroyed.
-    /// Instantiates all the sounds in a foreach loop.
-    /// </summary>
     void Awake() {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
 
         foreach (Sound s in sounds)
         {

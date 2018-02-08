@@ -70,5 +70,6 @@ public class ChessCorrectCombo : MonoBehaviour {
     public void PuzzleCleared()
     {
         complete.Invoke();
+        FindObjectOfType<AudioManager>().Play("Solution");
     }
 }

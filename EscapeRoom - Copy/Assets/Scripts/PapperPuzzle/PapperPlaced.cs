@@ -6,6 +6,6 @@ public class PapperPlaced : MonoBehaviour
 {
     public void PapperIsPlaced ()
     {
-        //FindObjectOfType<AudioManager>().Play("HeadAche");
+        FindObjectOfType<AudioManager>().Play("PlacingPaper");
     }
 }
