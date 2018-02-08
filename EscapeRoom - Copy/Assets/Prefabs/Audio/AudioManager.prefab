@@ -223,7 +223,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - target: {fileID: 0}
     name: PlacingPaper
-    clip: {fileID: 8300000, guid: ad0138c6e12bf084f90ea2101d3efed3, type: 3}
+    clip: {fileID: 8300000, guid: f77123db8fc1980488cf7193778e99d3, type: 3}
     volume: 0.842
     volumeVariance: 0
     pitch: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
     volume: 0.632
     volumeVariance: 0.075
     pitch: 1
-    pitchVariance: 0.11
+    pitchVariance: 0.15
     spatialBlend: 1
     minDistance: 9
     maxDistance: 10
@@ -287,6 +287,34 @@ MonoBehaviour:
     spatialBlend: 1
     minDistance: 2
     maxDistance: 3
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: ThunderTwo
+    clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    volume: 0.632
+    volumeVariance: 0.075
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 9
+    maxDistance: 10
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: ThunderThree
+    clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    volume: 0.632
+    volumeVariance: 0.075
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 9
+    maxDistance: 10
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
