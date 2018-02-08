@@ -11,7 +11,7 @@ public class TileWall : MonoBehaviour
 
     [HideInInspector]
     public bool correctPosition = false;
-    [HideInInspector]
+    //[HideInInspector]
     public int sideOfCube = 0;
     [Range(0, 3)]
     public int correctSide;
@@ -24,7 +24,7 @@ public class TileWall : MonoBehaviour
     {
         if (importantTile == true)
         {
-            Gizmos.color = new Color(0, 100, 255, 0.5f);
+            Gizmos.color = new Color(255, 0, 100, 1f);
             Gizmos.DrawCube(transform.position, new Vector3(.19f, .19f, .19f));
         }
     }

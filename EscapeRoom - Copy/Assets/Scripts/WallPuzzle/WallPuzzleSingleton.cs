@@ -11,7 +11,7 @@ public class WallPuzzleSingleton : MonoBehaviour
     }
 
     private int numberOfCorrectTiles = 0;
-    private int maxNumberOfTiles = 25;
+    private int maxNumberOfTiles = 16;
 
     public void Awake()
     {
@@ -33,6 +33,7 @@ public class WallPuzzleSingleton : MonoBehaviour
 
     public void PuzzleDone ()
     {
+        //Here is where stuff starts to happen after the puzzle has been solved! yay
         Debug.Log("Done!!");
     }
 }

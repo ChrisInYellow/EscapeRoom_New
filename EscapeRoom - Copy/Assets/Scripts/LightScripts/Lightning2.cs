@@ -19,8 +19,7 @@ public class Lightning2 : MonoBehaviour
 
     public void StartLightning()
     {
-        numberOfFlickers = Random.Range(2, 4);
-        Debug.Log(numberOfFlickers);
+        numberOfFlickers = Random.Range(1, 4);
         for (int i = 0; i < numberOfFlickers; i++)
         {
             Invoke("Lightning", i * 1f);
@@ -37,6 +36,6 @@ public class Lightning2 : MonoBehaviour
     public void LightningOff()
     {
         thisLight.enabled = false;
-        Invoke("StartLightning", Random.Range(5, 15));
+        Invoke("StartLightning", Random.Range(7, 20));
     }
 }
