@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ChessCorrectCombo : MonoBehaviour {
 
+    public UnityEvent complete = new UnityEvent(); 
     public GameObject[] correctSpaces;
     public GameObject[] correctPawns;
     private bool[] cleared;
@@ -23,17 +25,14 @@ public class ChessCorrectCombo : MonoBehaviour {
             }
         }
 
-        Debug.Log("" + numberOfCorrect);
-
         if (numberOfCorrect == correctSpaces.Length)
         {
-            Debug.Log("Win");
+            PuzzleCleared();
         }
     }
 
     public void CorrectPlacing(GameObject place, GameObject pawn)
     {
-        print("got here");
         for (int i = 0; i < cleared.Length; i++)
         {
             if(correctSpaces[i] == place)
@@ -52,7 +51,6 @@ public class ChessCorrectCombo : MonoBehaviour {
 
     public void InCorrectPlacing(GameObject place, GameObject pawn)
     {
-        print("got here");
         for (int i = 0; i < cleared.Length; i--)
         {
             if (correctSpaces[i] != place)
@@ -67,5 +65,10 @@ public class ChessCorrectCombo : MonoBehaviour {
             }
         }
         SolvedCombo();
+    }
+    
+    public void PuzzleCleared()
+    {
+        complete.Invoke();
     }
 }
