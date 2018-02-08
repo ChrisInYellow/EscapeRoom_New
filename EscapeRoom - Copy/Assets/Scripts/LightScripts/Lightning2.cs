@@ -19,14 +19,21 @@ public class Lightning2 : MonoBehaviour
 
     public void StartLightning()
     {
-        numberOfFlickers = Random.Range(1, 4);
+        numberOfFlickers = Random.Range(1, 3);
         for (int i = 0; i < numberOfFlickers; i++)
         {
-            Invoke("Lightning", i * 1f);
+            Invoke("Lightning", i * .6f);
         }
+        Debug.Log(numberOfFlickers);
+        Invoke("LightningSound", Random.Range(.3f, .5f));
         Invoke("LightningOff", lightningDuration);
     }
-    
+
+    public void LightningSound ()
+    {
+        FindObjectOfType<AudioManager>().Play("Thunder");
+    }
+
     public void Lightning()
     {
         thisLight.enabled = true;

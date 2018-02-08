@@ -54,17 +54,17 @@ public class BorderRenderer : MonoBehaviour {
 
     void Update()
     {
-        if (CachedMeshes == null || BorderMaterial == null)
-            return;
+        //if (CachedMeshes == null || BorderMaterial == null)
+            //return;
 
-        if (LastBorderAlpha != BorderAlpha && BorderMaterial != null)
+       /* if (LastBorderAlpha != BorderAlpha && BorderMaterial != null)
         {
             BorderMaterial.SetFloat("_Alpha", BorderAlpha);
             LastBorderAlpha = BorderAlpha;
         }
 
         foreach (Mesh m in CachedMeshes)
-            Graphics.DrawMesh(m, Transpose, BorderMaterial, gameObject.layer, null, 0, null, false, false);
+            Graphics.DrawMesh(m, Transpose, BorderMaterial, gameObject.layer, null, 0, null, false, false);*/
     }
 
     void OnValidate()
