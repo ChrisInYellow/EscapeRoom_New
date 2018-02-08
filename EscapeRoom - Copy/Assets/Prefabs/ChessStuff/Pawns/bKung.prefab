@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114587483650105194}
   - component: {fileID: 114183919363698996}
   - component: {fileID: 114616718013144140}
+  - component: {fileID: 114278797395732798}
   m_Layer: 0
   m_Name: bKung
   m_TagString: Pawns
@@ -144,6 +145,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59abf7d1fe67a9e47a119cac70c9c86b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114278797395732798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462792799404652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114587483650105194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
