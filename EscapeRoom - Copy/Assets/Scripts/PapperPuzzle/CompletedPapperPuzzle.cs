@@ -23,6 +23,7 @@ public class CompletedPapperPuzzle : MonoBehaviour
     public void PuzzleSolved()
     {
         puzzleSolved.Invoke();
-        FindObjectOfType<AudioManager>().Play("SolutionSound");
+        FindObjectOfType<AudioManager>().Play("Solution");
+        FindObjectOfType<AudioManager>().Play("Hint");
     }
 }

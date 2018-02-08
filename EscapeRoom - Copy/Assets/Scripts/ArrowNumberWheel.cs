@@ -32,7 +32,7 @@ public class ArrowNumberWheel : MonoBehaviour {
         
         if (currentDirection == Direction.Up)
         {
-            //FindObjectOfType<AudioManager>().Play("ButtonPress");
+            FindObjectOfType<AudioManager>().Play("CodePress");
 
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Numbers"))
                 anim.SetInteger("Numbers", (anim.GetInteger("Numbers")+1)%10);
@@ -60,7 +60,7 @@ public class ArrowNumberWheel : MonoBehaviour {
 
         else if(currentDirection == Direction.Down)
         {
-            //FindObjectOfType<AudioManager>().Play("ButtonPress");
+            FindObjectOfType<AudioManager>().Play("CodePress");
 
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Numbers"))
                 anim.SetInteger("Numbers", (anim.GetInteger("Numbers") - 1) % 10);
