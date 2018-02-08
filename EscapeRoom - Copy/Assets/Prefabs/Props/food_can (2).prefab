@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114712222174133836}
   - component: {fileID: 54598653754144352}
   - component: {fileID: 114275948604600798}
+  - component: {fileID: 114129146063549396}
   m_Layer: 0
   m_Name: food_can (2)
   m_TagString: Untagged
@@ -235,6 +236,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114129146063549396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1502253481786550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.2
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114275948604600798
 MonoBehaviour:
   m_ObjectHideFlags: 1

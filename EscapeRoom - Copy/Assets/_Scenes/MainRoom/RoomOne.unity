@@ -156,34 +156,12 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2,
     type: 2}
-  m_PrefabInternal: {fileID: 1520007506}
+  m_PrefabInternal: {fileID: 668737436}
 --- !u!4 &83396060 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4412084852451262, guid: 21c89f3b66356ef46a7b6e97d462dedf,
     type: 2}
   m_PrefabInternal: {fileID: 1010511300}
---- !u!1 &158018837 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1758386076916776, guid: 6678058fa4230a14d81380d3fb9cc924,
-    type: 2}
-  m_PrefabInternal: {fileID: 1836085507}
---- !u!114 &158018838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 158018837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
 --- !u!1 &183035604 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
@@ -1050,26 +1028,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548791389657452, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
-        type: 2}
-      propertyPath: touchHighlightColor.r
-      value: 0.9862069
-      objectReference: {fileID: 0}
-    - target: {fileID: 114548791389657452, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
-        type: 2}
-      propertyPath: touchHighlightColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114548791389657452, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
-        type: 2}
-      propertyPath: touchHighlightColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114548791389657452, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
-        type: 2}
-      propertyPath: touchHighlightColor.a
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd8aab899f4bc2a48a5d5e6ca75598af, type: 2}
   m_IsPrefabParent: 0
@@ -1174,6 +1132,59 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &668737436
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 818906849}
+    m_Modifications:
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.2864585
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.0071337223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.897595
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114465691561115330, guid: d1b888ef6c8760a4790e847642d5a6f2,
+        type: 2}
+      propertyPath: Liquid
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114465691561115330, guid: d1b888ef6c8760a4790e847642d5a6f2,
+        type: 2}
+      propertyPath: LiquidMesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114465691561115330, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &690839674
 GameObject:
@@ -1592,6 +1603,46 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000011337858710, guid: ded7f784bbed79d47b6a466139d3236e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ded7f784bbed79d47b6a466139d3236e, type: 2}
   m_IsPrefabParent: 0
@@ -1654,11 +1705,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4988678211998220, guid: 3fd0fc8f58ba0f041a594250c82b0e25, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.70710677
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4988678211998220, guid: 3fd0fc8f58ba0f041a594250c82b0e25, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.70710677
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4988678211998220, guid: 3fd0fc8f58ba0f041a594250c82b0e25, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1777,11 +1828,6 @@ Prefab:
     - target: {fileID: 4057246716460424, guid: ed9b3e1a84bf18e4fb918b711e87a510, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114967345605425110, guid: ed9b3e1a84bf18e4fb918b711e87a510,
-        type: 2}
-      propertyPath: stayGrabbedOnTeleport
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed9b3e1a84bf18e4fb918b711e87a510, type: 2}
@@ -2379,26 +2425,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114306690017339424, guid: 6ed527201d26de74c8ba7756b33e50f3,
-        type: 2}
-      propertyPath: touchHighlightColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306690017339424, guid: 6ed527201d26de74c8ba7756b33e50f3,
-        type: 2}
-      propertyPath: touchHighlightColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306690017339424, guid: 6ed527201d26de74c8ba7756b33e50f3,
-        type: 2}
-      propertyPath: touchHighlightColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306690017339424, guid: 6ed527201d26de74c8ba7756b33e50f3,
-        type: 2}
-      propertyPath: touchHighlightColor.a
-      value: 0.19607843
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ed527201d26de74c8ba7756b33e50f3, type: 2}
   m_IsPrefabParent: 0
@@ -2664,28 +2690,6 @@ Animator:
   m_PrefabParentObject: {fileID: 9510744, guid: 71ca5259ca9ec7947975936be41698a7,
     type: 2}
   m_PrefabInternal: {fileID: 1196819936}
---- !u!1 &1476716971 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1502253481786550, guid: 6ed527201d26de74c8ba7756b33e50f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1344216997}
---- !u!114 &1476716972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476716971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.2
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
 --- !u!1 &1478155173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,53 +2745,6 @@ MonoBehaviour:
   setups:
   - {fileID: 1355103185}
   - {fileID: 1213578219}
---- !u!1001 &1520007506
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 818906849}
-    m_Modifications:
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -5.2864585
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.0071337223
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.897595
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114484190982512670, guid: d1b888ef6c8760a4790e847642d5a6f2,
-        type: 2}
-      propertyPath: precisionGrab
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d1b888ef6c8760a4790e847642d5a6f2, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1533614776
 Prefab:
   m_ObjectHideFlags: 0
@@ -2994,23 +2951,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1562334602524342, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
     type: 2}
   m_PrefabInternal: {fileID: 631188566}
---- !u!114 &1690713102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1690713091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
 --- !u!1001 &1785330266
 Prefab:
   m_ObjectHideFlags: 0
@@ -3222,26 +3162,6 @@ Prefab:
       propertyPath: grabAttachMechanicScript
       value: 
       objectReference: {fileID: 1344216999}
-    - target: {fileID: 114587310879810172, guid: 6678058fa4230a14d81380d3fb9cc924,
-        type: 2}
-      propertyPath: touchHighlightColor.a
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 114587310879810172, guid: 6678058fa4230a14d81380d3fb9cc924,
-        type: 2}
-      propertyPath: touchHighlightColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114587310879810172, guid: 6678058fa4230a14d81380d3fb9cc924,
-        type: 2}
-      propertyPath: touchHighlightColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114587310879810172, guid: 6678058fa4230a14d81380d3fb9cc924,
-        type: 2}
-      propertyPath: touchHighlightColor.b
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6678058fa4230a14d81380d3fb9cc924, type: 2}
   m_IsPrefabParent: 0
@@ -3394,28 +3314,6 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 65508395372566170, guid: 3fd0fc8f58ba0f041a594250c82b0e25,
     type: 2}
   m_PrefabInternal: {fileID: 1005392381}
---- !u!1 &1921083600 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1632748642880782, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
-    type: 2}
-  m_PrefabInternal: {fileID: 2111476313}
---- !u!114 &1921083601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1921083600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.05
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
 --- !u!4 &1939763012 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4846038732658708, guid: af6efe0c70d3d694697d5df94ad4a0df,
@@ -3527,26 +3425,6 @@ Prefab:
       propertyPath: grabAttachMechanicScript
       value: 
       objectReference: {fileID: 1344216999}
-    - target: {fileID: 114981012981071692, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
-        type: 2}
-      propertyPath: touchHighlightColor.a
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 114981012981071692, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
-        type: 2}
-      propertyPath: touchHighlightColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114981012981071692, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
-        type: 2}
-      propertyPath: touchHighlightColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114981012981071692, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
-        type: 2}
-      propertyPath: touchHighlightColor.b
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca5f921cbb0eb8641bfb99ec6455e61a, type: 2}
   m_IsPrefabParent: 0
