@@ -31,7 +31,20 @@ public class Lightning2 : MonoBehaviour
 
     public void LightningSound ()
     {
-        FindObjectOfType<AudioManager>().Play("Thunder");
+        int randomThunder = Random.Range(1, 3);
+
+        if (randomThunder == 1)
+        {
+            FindObjectOfType<AudioManager>().Play("Thunder");
+        }
+        if (randomThunder == 2)
+        {
+            FindObjectOfType<AudioManager>().Play("ThunderTwo");
+        }
+        if (randomThunder == 3)
+        {
+            FindObjectOfType<AudioManager>().Play("ThunderThree");
+        }
     }
 
     public void Lightning()
