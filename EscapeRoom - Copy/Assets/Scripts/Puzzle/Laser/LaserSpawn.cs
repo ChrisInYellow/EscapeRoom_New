@@ -36,7 +36,7 @@ public class LaserSpawn : MonoBehaviour {
 
         Debug.DrawLine(transform.position, Vector3.up + transform.forward * 5f);
        if ( Physics.Raycast(transform.position, transform.forward,out hit, 5f,mirror))
-        {
+       {
             GameObject hitMirror = hit.transform.gameObject;
 
             if(hitMirror.GetComponent<LaserSpawn>().triggered == false)
@@ -44,7 +44,7 @@ public class LaserSpawn : MonoBehaviour {
                 hitMirror.GetComponent<LaserSpawn>().laser.enabled = true;
                 laser.transform.GetChild(0).transform.gameObject.SetActive(false);
             }
-        }
+       }
 
     }
 
