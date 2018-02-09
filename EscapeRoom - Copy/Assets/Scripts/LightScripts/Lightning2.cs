@@ -24,7 +24,6 @@ public class Lightning2 : MonoBehaviour
         {
             Invoke("Lightning", i * .6f);
         }
-        Debug.Log(numberOfFlickers);
         Invoke("LightningSound", Random.Range(.3f, .5f));
         Invoke("LightningOff", lightningDuration);
     }
