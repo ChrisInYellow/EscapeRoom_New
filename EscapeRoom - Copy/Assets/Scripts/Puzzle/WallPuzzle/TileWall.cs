@@ -17,7 +17,7 @@ public class TileWall : MonoBehaviour
     public int correctSide;
     //Temporary solution for checking which of the tiles that are the correct path
     public bool importantTile;
-
+    
     private WallPuzzleSingleton tileWallManager;
 
     private void OnDrawGizmos()
@@ -32,6 +32,7 @@ public class TileWall : MonoBehaviour
     public void Start()
     {
         tileWallManager = WallPuzzleSingleton.GetInstance();
+        PlayAnim();
     }
 
     public void FixedUpdate()
@@ -65,14 +66,15 @@ public class TileWall : MonoBehaviour
         spin = false;
         transform.eulerAngles = new Vector3(0, sideOfCube * 90, 0);
 
-        if (sideOfCube == correctSide)
-        {
-            CorrectSideSelected();
-        }
+        if(importantTile)
+            if (sideOfCube == correctSide)
+            {
+                CorrectSideSelected();
+            }
     }
 
     public void CorrectSideSelected ()
     {
-        tileWallManager.CheckTiles(importantTile);
+        tileWallManager.CheckTiles();
     }
 }
