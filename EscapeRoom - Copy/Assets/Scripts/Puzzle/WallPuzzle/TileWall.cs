@@ -17,9 +17,7 @@ public class TileWall : MonoBehaviour
     public int correctSide;
     //Temporary solution for checking which of the tiles that are the correct path
     public bool importantTile;
-
     
-
     private WallPuzzleSingleton tileWallManager;
 
     private void OnDrawGizmos()
