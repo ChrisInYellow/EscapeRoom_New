@@ -44,6 +44,10 @@ public class TileWall : MonoBehaviour
         {
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
         }
+        if (tileWallManager.puzzleIsCompleted)
+        {
+            gameObject.GetComponent<TileWall>().enabled = false;
+        }
     }
 
     public void PlayAnim ()
