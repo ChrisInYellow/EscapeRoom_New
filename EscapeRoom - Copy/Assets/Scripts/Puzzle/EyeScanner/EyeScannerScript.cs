@@ -12,13 +12,14 @@ public class EyeScannerScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
         if (other.tag == "EyeBall")
         {
             SolvePuzzle();
         }
 
-        if(other.tag == "MainCamera")
+        interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
+
+        if (other.tag == "MainCamera")
         {
             FindObjectOfType<AudioManager>().Play("AccessDenied");
         }
