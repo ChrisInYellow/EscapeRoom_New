@@ -56,6 +56,6 @@ public class Lightning2 : MonoBehaviour
     public void LightningOff()
     {
         thisLight.enabled = false;
-        Invoke("StartLightning", Random.Range(7, 20));
+        Invoke("StartLightning", Random.Range(30, 70));
     }
 }

@@ -14,7 +14,7 @@ public class CompletedPapperPuzzle : MonoBehaviour
     public void IncreasePlacedPappers ()
     {
         numberOfPlacedPappers += 1;
-        if (numberOfPlacedPappers == 4)
+        if (numberOfPlacedPappers == 5)
         {
             PuzzleSolved();
         }

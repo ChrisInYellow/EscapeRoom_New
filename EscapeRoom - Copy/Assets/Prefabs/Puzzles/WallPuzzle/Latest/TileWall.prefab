@@ -1314,7 +1314,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072851171386714}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.15686178, y: -0.26557955, z: 4.5333586}
+  m_LocalPosition: {x: 0.15686178, y: -0.941, z: 4.983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4790397283697840}
@@ -1678,7 +1678,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1893492528431264}
   m_LocalRotation: {x: -0, y: 0.7071053, z: -0, w: 0.7071083}
-  m_LocalPosition: {x: -0.10499999, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0974, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4907433065065656}
@@ -5050,6 +5050,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 2
   importantTile: 1
+  isRight: 0
 --- !u!114 &114014078321531052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5149,6 +5150,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114034929962825878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5344,6 +5346,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114071683860827010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5903,8 +5906,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 2
+  correctSide: 0
   importantTile: 1
+  isRight: 0
 --- !u!114 &114153680825236860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6004,6 +6008,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 1
   importantTile: 1
+  isRight: 0
 --- !u!114 &114168276182851586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6019,6 +6024,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114168875119066596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6114,6 +6120,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf66de722b093204ab7195f5d4971a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleSolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114200987801673970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6213,6 +6235,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 1
   importantTile: 1
+  isRight: 0
 --- !u!114 &114231712122833892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6342,6 +6365,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 1
   importantTile: 1
+  isRight: 0
 --- !u!114 &114246285023327758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6595,8 +6619,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 1
+  correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114334387505217646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6684,6 +6709,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 1
+  isRight: 0
 --- !u!114 &114344416306188844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6729,6 +6755,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 1
+  isRight: 0
 --- !u!114 &114381501462996830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6930,6 +6957,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114442705634934564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7047,6 +7075,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114461549639193534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7134,6 +7163,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114498590546165702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7179,6 +7209,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114510327246190618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7194,6 +7225,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 1
+  isRight: 0
 --- !u!114 &114513991598223868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7497,6 +7529,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114541929816532274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7512,6 +7545,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114546777918979044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7635,6 +7669,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114568400361548816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7650,6 +7685,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114576450712865420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7851,6 +7887,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 1
   importantTile: 1
+  isRight: 0
 --- !u!114 &114639115988407856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7908,6 +7945,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114665897780278790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7995,6 +8033,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114682941245657654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8010,6 +8049,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114693764727839312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8127,6 +8167,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114719575843290022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8430,6 +8471,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114812303325626324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8529,6 +8571,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 2
   importantTile: 1
+  isRight: 0
 --- !u!114 &114827342476785090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8586,6 +8629,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114862550161198062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8745,6 +8789,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114932766410861572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8904,6 +8949,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 0
   importantTile: 0
+  isRight: 0
 --- !u!114 &114988758040912016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9015,6 +9061,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114993786279610284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9060,6 +9107,7 @@ MonoBehaviour:
   sideOfCube: 0
   correctSide: 3
   importantTile: 1
+  isRight: 0
 --- !u!114 &114999608629922748
 MonoBehaviour:
   m_ObjectHideFlags: 1
