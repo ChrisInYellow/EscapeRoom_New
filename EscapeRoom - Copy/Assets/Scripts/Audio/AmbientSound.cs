@@ -23,9 +23,4 @@ public class AmbientSound : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("AmbientBackground");
     }
-	
-	void Update ()
-    {
-		
-	}
 }

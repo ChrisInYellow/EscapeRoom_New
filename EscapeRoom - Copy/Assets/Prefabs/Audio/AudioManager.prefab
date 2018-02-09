@@ -54,210 +54,268 @@ MonoBehaviour:
   mixerGroup: {fileID: 24300002, guid: d0a347a050090f544a34ef37b4771ef5, type: 2}
   sounds:
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: HeadAche
+    clip: {fileID: 8300000, guid: 9f911390f8c15bd4686cc6b0590959e9, type: 3}
+    volume: 0.291
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 2
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: AmbientBackground
+    clip: {fileID: 8300000, guid: 02829e43de50323499acb818f28399df, type: 3}
+    volume: 0.469
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     spatialBlend: 0
     minDistance: 0
     maxDistance: 0
-    loop: 0
-    mixerGroup: {fileID: 0}
+    loop: 1
+    mixerGroup: {fileID: 243759819551758124, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: BatteryClick
+    clip: {fileID: 8300000, guid: b1a4e54386bbad444a2529f7b916d73e, type: 3}
+    volume: 0.601
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: BreakingGlass
+    clip: {fileID: 8300000, guid: ec33033a32f82994da35f2acf3e6b819, type: 3}
+    volume: 0.54
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: CodePress
+    clip: {fileID: 8300000, guid: e62000cf266f93943b38275da0d18137, type: 3}
+    volume: 0.583
     volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    pitch: 1
+    pitchVariance: 0.039
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: WireChange
+    clip: {fileID: 8300000, guid: 53ec0910703c5bd4b83bf04a0c242565, type: 3}
+    volume: 0.522
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: FlashlightClick
+    clip: {fileID: 8300000, guid: a490f929dc6cfa74484077ebad68ea16, type: 3}
+    volume: 0.518
     volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    pitch: 1
+    pitchVariance: 0.083
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: Solution
+    clip: {fileID: 8300000, guid: 261281eede321a746ad5343e3e61572b, type: 3}
+    volume: 0.601
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: DoorCreak
+    clip: {fileID: 8300000, guid: 2251bd57ae90edf4d85eb31ba5a22442, type: 3}
+    volume: 0.583
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 3
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: DrawerOpen
+    clip: {fileID: 8300000, guid: c216c98c20907da49b406f972a688ae8, type: 3}
+    volume: 0.627
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: Buzzing
+    clip: {fileID: 8300000, guid: d7c95be76fc66f84b8096e24bfd93052, type: 3}
+    volume: 0.575
     volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
-    loop: 0
-    mixerGroup: {fileID: 0}
+    pitch: 1
+    pitchVariance: 0.048
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 3
+    loop: 1
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: ItemDrop
+    clip: {fileID: 8300000, guid: 2b180ba16e89479438678c3cdda359ea, type: 3}
+    volume: 0.592
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 3
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: PlacingPaper
+    clip: {fileID: 8300000, guid: f77123db8fc1980488cf7193778e99d3, type: 3}
+    volume: 0.842
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 3
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: Hint
+    clip: {fileID: 8300000, guid: fbcc86927b4d91a4d9853ce2cf76acdb, type: 3}
+    volume: 0.575
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
+    name: eyeSquish
+    clip: {fileID: 8300000, guid: 44c09e172f431f84dbbc86d5a9bfda5f, type: 3}
+    volume: 0.583
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 3
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
-    volume: 0
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    spatialBlend: 0
-    minDistance: 0
-    maxDistance: 0
+    name: Thunder
+    clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    volume: 0.632
+    volumeVariance: 0.075
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 9
+    maxDistance: 10
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: TryingToOpenDoor
+    clip: {fileID: 8300000, guid: c54cd5a9627874c46b996fe498a70df9, type: 3}
+    volume: 0.6
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 3
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: ThunderTwo
+    clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    volume: 0.632
+    volumeVariance: 0.075
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 9
+    maxDistance: 10
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: ThunderThree
+    clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    volume: 0.632
+    volumeVariance: 0.075
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 9
+    maxDistance: 10
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
     source: {fileID: 0}
