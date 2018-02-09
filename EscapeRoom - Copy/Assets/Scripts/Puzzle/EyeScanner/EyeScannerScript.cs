@@ -14,13 +14,13 @@ public class EyeScannerScript : MonoBehaviour {
     public void Unlock()
     {
         CombinationSolved = true;
+        lamp.GetComponent<MeshRenderer>().materials[0].color = new Color(0, 1, 0);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (CombinationSolved == true)
         {
-            lamp.GetComponent<Material>().color = new Color(0, 1, 0);
 
             if (other.tag == "EyeBall")
             {

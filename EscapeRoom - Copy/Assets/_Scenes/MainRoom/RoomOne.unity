@@ -1377,6 +1377,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &728136374 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1752293078157046, guid: 3a307e0b74735524cbb60a478ef10e52,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179852216}
 --- !u!1001 &754228413
 Prefab:
   m_ObjectHideFlags: 0
@@ -1704,11 +1709,11 @@ Prefab:
         type: 2}
       propertyPath: puzzleSolved.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1561704403}
+      objectReference: {fileID: 1561704405}
     - target: {fileID: 114779140397368986, guid: 0c6280834c30f354188d1b0614189928,
         type: 2}
       propertyPath: puzzleSolved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Unlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c6280834c30f354188d1b0614189928, type: 2}
@@ -2529,6 +2534,20 @@ Prefab:
       propertyPath: interactableLens
       value: 
       objectReference: {fileID: 21720621}
+    - target: {fileID: 1653542628140372, guid: 3a307e0b74735524cbb60a478ef10e52, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114084465153695492, guid: 3a307e0b74735524cbb60a478ef10e52,
+        type: 2}
+      propertyPath: lamp
+      value: 
+      objectReference: {fileID: 728136374}
+    - target: {fileID: 23548516521725958, guid: 3a307e0b74735524cbb60a478ef10e52,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d21f1b4463d5ce44b5286da773c6cd5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a307e0b74735524cbb60a478ef10e52, type: 2}
   m_IsPrefabParent: 0
@@ -5882,11 +5901,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1f01a01607b42f48abe67a1a1156c86, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1561704403 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1653542628140372, guid: 3a307e0b74735524cbb60a478ef10e52,
-    type: 2}
-  m_PrefabInternal: {fileID: 1179852216}
 --- !u!4 &1561704404 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4308982705334764, guid: 3a307e0b74735524cbb60a478ef10e52,
