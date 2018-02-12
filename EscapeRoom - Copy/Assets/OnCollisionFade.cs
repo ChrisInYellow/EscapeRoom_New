@@ -13,20 +13,18 @@ public class OnCollisionFade : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Niklas");
-        Debug.Log(other.tag);
         if (other.tag == "Wall")
         {
             Debug.Log("WTF");
-            headSetFade.Fade(new Color(0, 0, 0), 1f);
+            headSetFade.Fade(new Color(0, 0, 0), .5f);
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.transform.tag == "Wall")
+        if (other.tag == "Wall")
         {
-            headSetFade.Unfade(1f);
+            headSetFade.Unfade(.5f);
         }
     }
 }
