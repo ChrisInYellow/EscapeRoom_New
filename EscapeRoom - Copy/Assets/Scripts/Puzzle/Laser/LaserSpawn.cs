@@ -10,7 +10,8 @@ public class LaserSpawn : MonoBehaviour {
     public Directions mirrorDirections;
     public bool triggered;
     private RaycastHit proximitycheck;
-    public LayerMask mirror; 
+    public LayerMask mirror;
+    public LayerMask blockable; 
     private Vector3 result; 
     private Quaternion laserRotation; 
 
@@ -20,7 +21,10 @@ public class LaserSpawn : MonoBehaviour {
     void Start () {
          //mirrorDirections = Directions.None; 
          gameObject.transform.Rotate(Vector3.zero);
-
+        laser.SetPosition(0, transform.position);
+        laser.SetPosition(1, transform.position);
+        laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(false);
+        laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(false);
 
         if (triggered == false)
         {
@@ -34,10 +38,11 @@ public class LaserSpawn : MonoBehaviour {
     {
         RaycastHit hit;
 
-        Debug.DrawLine(transform.position, Vector3.up + transform.forward * 5f);
+        Debug.DrawLine(transform.position, transform.position + transform.forward * 5f, Color.red);
        if ( Physics.Raycast(transform.position, transform.forward,out hit, 5f,mirror))
        {
             GameObject hitMirror = hit.transform.gameObject;
+
 
             if(hitMirror.GetComponent<LaserSpawn>().triggered == false)
             {
@@ -45,6 +50,17 @@ public class LaserSpawn : MonoBehaviour {
                 laser.transform.GetChild(0).transform.gameObject.SetActive(false);
             }
        }
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 5f, blockable))
+        {
+            Debug.Log(hit);
+            laser.SetPosition(1, hit.transform.position);
+            laser.transform.GetChild(0).GetChild(0).transform.position = hit.transform.position;
+            laser.transform.GetChild(0).GetChild(2).transform.position = hit.transform.position;
+
+            laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(true); 
+            laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(true);
+
+        }
 
     }
 
