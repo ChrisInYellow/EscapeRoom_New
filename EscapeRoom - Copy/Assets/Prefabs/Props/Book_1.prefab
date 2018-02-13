@@ -22,12 +22,12 @@ GameObject:
   - component: {fileID: 33214104045331732}
   - component: {fileID: 23558391607503246}
   - component: {fileID: 95821705360414616}
-  - component: {fileID: 64053057404477926}
   - component: {fileID: 114466309951190824}
   - component: {fileID: 114333400741665016}
   - component: {fileID: 114971559399415460}
   - component: {fileID: 114936448423030262}
   - component: {fileID: 114177145124442396}
+  - component: {fileID: 65647619641463050}
   m_Layer: 0
   m_Name: Book_1
   m_TagString: Untagged
@@ -41,13 +41,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156210458354640}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -3.3651, y: 0.012, z: 1.813062}
   m_LocalScale: {x: 1.0686961, y: 1.203175, z: 1.203175}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!23 &23558391607503246
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -89,8 +89,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156210458354640}
   m_Mesh: {fileID: 4300000, guid: ee09880a00fec0445ace241b8085a937, type: 3}
---- !u!64 &64053057404477926
-MeshCollider:
+--- !u!65 &65647619641463050
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -98,11 +98,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: ee09880a00fec0445ace241b8085a937, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.024136495, y: 0.1606881, z: 0.12103325}
+  m_Center: {x: 9.313228e-10, y: -0.027173202, z: 0.0000000055879354}
 --- !u!95 &95821705360414616
 Animator:
   serializedVersion: 3
