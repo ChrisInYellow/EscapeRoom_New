@@ -112,9 +112,10 @@ GameObject:
   - component: {fileID: 413432}
   - component: {fileID: 2082592}
   - component: {fileID: 12409152}
-  - component: {fileID: 114361350602804226}
   - component: {fileID: 114609925833550182}
   - component: {fileID: 114751617072280034}
+  - component: {fileID: 135449561120168046}
+  - component: {fileID: 114049306955009846}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -295,7 +296,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.09558821, g: 0.09558821, b: 0.09558821, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -586,7 +587,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114361350602804226
+--- !u!114 &114049306955009846
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -635,3 +636,15 @@ MonoBehaviour:
   BorderMaterial: {fileID: 0}
   BorderAlpha: 0
   _BorderHeight: 0.2
+--- !u!135 &135449561120168046
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

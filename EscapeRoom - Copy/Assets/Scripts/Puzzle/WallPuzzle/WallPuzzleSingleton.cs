@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 public class WallPuzzleSingleton : MonoBehaviour
 {
+    [HideInInspector]
+    public bool puzzleIsCompleted = false;
+    private List<GameObject> correctTileObjects = new List<GameObject>();
+
     public UnityEvent puzzleSolved = new UnityEvent();
     private static WallPuzzleSingleton instance;
     public static WallPuzzleSingleton GetInstance()
@@ -20,10 +24,31 @@ public class WallPuzzleSingleton : MonoBehaviour
         instance = this;
     }
 
-    public void CheckTiles ()
+    public void CheckTiles (GameObject tile, bool correct)
     {
-        numberOfCorrectTiles += 1;
- 
+        bool newObject = true;
+        for (int i = 0; i < correctTileObjects.Count; i++)
+        {
+            if (correctTileObjects[i] == tile)
+            {
+                newObject = false;
+            }
+        }
+        if (newObject)
+        {
+            correctTileObjects.Add(tile);
+        }
+
+        numberOfCorrectTiles = 0;
+
+        for (int i = 0; i < correctTileObjects.Count; i++)
+        {
+            if (correctTileObjects[i].GetComponent<TileWall>().isRight)
+            {
+                numberOfCorrectTiles += 1;
+            }
+        }
+
         if (numberOfCorrectTiles == maxNumberOfTiles)
         {
             PuzzleDone();
@@ -32,6 +57,7 @@ public class WallPuzzleSingleton : MonoBehaviour
 
     public void PuzzleDone ()
     {
+        puzzleIsCompleted = true;
         print("Complete");
         puzzleSolved.Invoke();
     }

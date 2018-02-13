@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class TileWall : MonoBehaviour
     public int correctSide;
     //Temporary solution for checking which of the tiles that are the correct path
     public bool importantTile;
+    [HideInInspector]
+    public bool isRight = false;
     
     private WallPuzzleSingleton tileWallManager;
 
@@ -41,6 +44,10 @@ public class TileWall : MonoBehaviour
         {
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
         }
+        if (tileWallManager.puzzleIsCompleted)
+        {
+            gameObject.GetComponent<TileWall>().enabled = false;
+        }
     }
 
     public void PlayAnim ()
@@ -58,6 +65,15 @@ public class TileWall : MonoBehaviour
         {
             sideOfCube = 0;
         }
+
+        if (sideOfCube == correctSide)
+        {
+            isRight = true;
+        }
+        else
+        {
+            isRight = false;
+        }
     }
 
     public void StopAnim ()
@@ -67,7 +83,6 @@ public class TileWall : MonoBehaviour
         transform.eulerAngles = new Vector3(0, sideOfCube * 90, 0);
 
         if(importantTile)
-            if (sideOfCube == correctSide)
             {
                 CorrectSideSelected();
             }
@@ -75,6 +90,6 @@ public class TileWall : MonoBehaviour
 
     public void CorrectSideSelected ()
     {
-        tileWallManager.CheckTiles();
+        tileWallManager.CheckTiles(gameObject, isRight);
     }
 }

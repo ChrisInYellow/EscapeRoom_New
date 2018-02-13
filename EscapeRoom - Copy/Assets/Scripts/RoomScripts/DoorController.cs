@@ -21,6 +21,7 @@ public class DoorController : MonoBehaviour
         else
         {
             anim.SetTrigger("DoorOpens");
+            puzzleSolved.Invoke();
         }
     }
 }
