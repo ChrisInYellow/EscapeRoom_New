@@ -2,116 +2,117 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserSpawn : MonoBehaviour {
+public class LaserSpawn : MonoBehaviour
+{
 
     public LineRenderer laser;
     public Vector3 amountOfDegrees;
     public enum Directions { None, Right, Left, Up, Down };
-    public Directions mirrorDirections;
     public bool triggered;
-    private RaycastHit proximitycheck;
+    public bool master;
     public LayerMask mirror;
-    public LayerMask blockable; 
-    private Vector3 result; 
+    public GameObject particleManager; 
+    private Vector3 result;
     private Quaternion laserRotation;
-    private GameObject lastMirror; 
+    private GameObject lastMirror;
+    
 
 
 
     // Use this for initialization
-    void Start () {
-         //mirrorDirections = Directions.None; 
-         gameObject.transform.Rotate(Vector3.zero);
+    void Start()
+    {
+        //mirrorDirections = Directions.None; 
+        gameObject.transform.Rotate(Vector3.zero);
         laser.SetPosition(0, transform.position);
         laser.SetPosition(1, transform.position);
-        laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(false);
-        laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(false);
+        particleManager.transform.gameObject.SetActive(false); 
 
         if (triggered == false)
         {
             laser.enabled = false;
-            laser.transform.GetChild(0).transform.gameObject.SetActive(false); 
+
             //laser.GetComponentInChildren<ParticleSystem>().Stop(); 
         }
-	}
+    }
 
     private void Update()
     {
         RaycastHit hit;
 
         Debug.DrawLine(transform.position, transform.position + transform.forward * 5f, Color.red);
-       if ( Physics.Raycast(transform.position, transform.forward,out hit, 5f,mirror))
-       {
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 10f, mirror))
+        {
+            particleManager.transform.gameObject.SetActive(true); 
             GameObject hitMirror = hit.transform.gameObject;
-            lastMirror = hitMirror; 
-
-            if(hitMirror.GetComponent<LaserSpawn>().triggered == false)
+            
+            if(lastMirror != null)
             {
-                hitMirror.GetComponent<LaserSpawn>().laser.enabled = true;
-                hitMirror.GetComponent<LaserSpawn>().triggered = true; 
-                laser.transform.GetChild(0).transform.gameObject.SetActive(false);
-                laser.SetPosition(1, new Vector3(laser.GetPosition(1).x, laser.GetPosition(1).y, hit.transform.position.z));
-                laser.transform.GetChild(0).GetChild(0).transform.position = hit.transform.position;
-                laser.transform.GetChild(0).GetChild(2).transform.position = hit.transform.position;
-
-                laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(true);
-                laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(true);
+                if(lastMirror != hitMirror && lastMirror.GetComponent<LaserSpawn>() != null)
+                {
+                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                    lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
+                }
             }
-       }
+            laser.SetPosition(1, new Vector3(hit.point.x, hit.point.y, hit.point.z));
 
-       else
-        {
-            if (lastMirror != null)
+            particleManager.transform.GetChild(0).GetComponent<ParticleSystem>().transform.position = laser.GetPosition(1);
+            particleManager.transform.GetChild(1).GetComponent<ParticleSystem>().transform.position = laser.GetPosition(1);
+
+            var laserSpawn = hitMirror.GetComponent<LaserSpawn>();
+
+            if (laserSpawn != null && laserSpawn.triggered == false && laserSpawn.master == false)
             {
-                lastMirror.GetComponent<LaserSpawn>().triggered = false;
-                lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
+                if (hitMirror == lastMirror)
+                {
+                    laserSpawn.laser.enabled = true;
+                    laserSpawn.triggered = true;
+                    particleManager.transform.gameObject.SetActive(false);
+                }
             }
+           else if (laserSpawn != null && laserSpawn.triggered == true && laserSpawn.master == false)
+            {
+                if (lastMirror != null)
+                {
+
+                    if (hitMirror != lastMirror)
+                    {
+                        lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                        lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
+                        lastMirror = null;
+                    }
+                }
+            }
+            lastMirror = hitMirror;
         }
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 5f, blockable))
-        {
-            laser.SetPosition(1, transform.position + transform.forward * 5f); 
-            Debug.Log(hit);
-            laser.SetPosition(1, new Vector3( laser.GetPosition(1).x, laser.GetPosition(1).y, hit.transform.position.z));
-            laser.transform.GetChild(0).GetChild(0).transform.position = hit.transform.position;
-            laser.transform.GetChild(0).GetChild(2).transform.position = hit.transform.position;
-
-            laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(true); 
-            laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(true);
-
-        }
-
-
         else
         {
-            laser.SetPosition(1, transform.position + transform.forward * 5f); 
+            laser.SetPosition(1, transform.forward*10);
+            if (lastMirror != null)
+            {
+                if (lastMirror.GetComponent<LaserSpawn>() != null)
+                {
+                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                    lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
+                    lastMirror = null;
+                }
+            }
+            particleManager.transform.gameObject.SetActive(false);
         }
 
     }
 
-    public void RealignLaser()
+    public void RealignLaserLeft()
     {
-        if (mirrorDirections == Directions.Left)
-        {
-            result = Vector3.Scale(amountOfDegrees, Vector3.left); 
-            transform.Rotate(result); 
-        }
-        if(mirrorDirections == Directions.Right)
-        {
-            result = Vector3.Scale(amountOfDegrees, Vector3.right); 
-            transform.Rotate(result); 
-        }
-        if(mirrorDirections == Directions.Up)
-        {
             result = Vector3.Scale(amountOfDegrees, Vector3.up);
-            transform.Rotate(result); 
-         
+            transform.Rotate(result);
+
         }
-        if (mirrorDirections == Directions.Down)
-        {
-            result = Vector2.Scale(amountOfDegrees, Vector3.down);
-            transform.Rotate(result); 
-        }
-    }
+    public void RealignLaserRight()
+{
+    result = Vector2.Scale(amountOfDegrees, Vector3.down);
+    transform.Rotate(result);
+}
 
 
 }
