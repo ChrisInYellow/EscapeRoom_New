@@ -9,7 +9,7 @@ public class DirectionalLightController : MonoBehaviour
     [HideInInspector]
     public GameObject InspectorLight;
 
-    void Start () 
+    void Awake () 
 	{
         MainGameLight.SetActive(true);
         InspectorLight.SetActive(false);

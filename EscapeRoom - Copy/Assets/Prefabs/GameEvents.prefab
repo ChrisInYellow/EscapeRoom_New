@@ -93,5 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09431ddbf9126c47a5d6c94d1fbe2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorSlamed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   leftDoor: {fileID: 0}
   rightDoor: {fileID: 0}
