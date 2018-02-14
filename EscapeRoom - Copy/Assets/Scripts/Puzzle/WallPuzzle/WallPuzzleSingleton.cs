@@ -60,5 +60,9 @@ public class WallPuzzleSingleton : MonoBehaviour
         puzzleIsCompleted = true;
         print("Complete");
         puzzleSolved.Invoke();
+        for (int i = 0; i < correctTileObjects.Count; i++)
+        {
+            correctTileObjects[i].GetComponent<HighlightOnCompletion>().Highlight();
+        }
     }
 }
