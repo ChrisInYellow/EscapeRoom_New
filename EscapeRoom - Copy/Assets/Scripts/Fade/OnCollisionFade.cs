@@ -15,7 +15,6 @@ public class OnCollisionFade : MonoBehaviour
     {
         if (other.tag == "Wall")
         {
-            Debug.Log("WTF");
             headSetFade.Fade(new Color(0, 0, 0), .5f);
         }
     }
