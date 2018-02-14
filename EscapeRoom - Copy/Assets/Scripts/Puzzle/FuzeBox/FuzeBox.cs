@@ -15,9 +15,6 @@ public class FuzeBox : MonoBehaviour
     public void OnSnapped(GameObject fuze)
     {
         fuzeInserted.Invoke();
-
-
-
         timeUntilRemoved = Random.Range(30, 60);
         thrust = Random.Range(150, 200);
         privatefuze = fuze;

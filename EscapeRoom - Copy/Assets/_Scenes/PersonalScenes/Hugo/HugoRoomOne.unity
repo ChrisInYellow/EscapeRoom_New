@@ -1895,7 +1895,7 @@ Prefab:
     - target: {fileID: 65693841427675086, guid: f78e7189ca2d68940beebab88e469b15,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f78e7189ca2d68940beebab88e469b15, type: 2}
@@ -2154,6 +2154,118 @@ Transform:
   m_PrefabParentObject: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2,
     type: 2}
   m_PrefabInternal: {fileID: 1492317792}
+--- !u!1001 &892203103
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090419257423602, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645790292}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645790292}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeInserted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033836663171400, guid: c5833fff24152704da2d9f8569069ebe,
+        type: 2}
+      propertyPath: fuzeRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c5833fff24152704da2d9f8569069ebe, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &902785653 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4758568604434984, guid: d1b888ef6c8760a4790e847642d5a6f2,
@@ -7598,6 +7710,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18195d96a3481ac4bb1f10aa3eb1f5d7, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1896455131
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421453278107124, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d009959b59ffe41468e79fb68920a58b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1901809112
 Prefab:
