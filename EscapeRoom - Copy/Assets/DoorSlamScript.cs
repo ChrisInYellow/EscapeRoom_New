@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class DoorSlamScript : MonoBehaviour {
 
     public UnityEvent DoorSlamed = new UnityEvent();
-    public bool doorslamed;
     public GameObject leftDoor;
     public GameObject rightDoor;
 
