@@ -182,20 +182,20 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: DrawerOpen
     clip: {fileID: 8300000, guid: c216c98c20907da49b406f972a688ae8, type: 3}
-    volume: 0.627
+    volume: 0.759
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     spatialBlend: 1
     minDistance: 2
-    maxDistance: 10
+    maxDistance: 7
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
     source: {fileID: 0}
   - target: {fileID: 0}
     name: Buzzing
-    clip: {fileID: 8300000, guid: d7c95be76fc66f84b8096e24bfd93052, type: 3}
+    clip: {fileID: 8300000, guid: 9be97085f118003499a5c9014a088fb0, type: 3}
     volume: 0.575
     volumeVariance: 0
     pitch: 1
@@ -323,12 +323,68 @@ MonoBehaviour:
     name: AccessDenied
     clip: {fileID: 8300000, guid: da21d41078b79d54083df1b63f4375cb, type: 3}
     volume: 0.632
+    volumeVariance: 0.039
+    pitch: 1
+    pitchVariance: 0
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 4
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: CanDrop
+    clip: {fileID: 8300000, guid: 6fe6b6f8921c6444594b639d7d5a428c, type: 3}
+    volume: 0.632
     volumeVariance: 0.075
     pitch: 1
     pitchVariance: 0.15
     spatialBlend: 1
     minDistance: 2
-    maxDistance: 4
+    maxDistance: 5
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: CameraZoom
+    clip: {fileID: 8300000, guid: 63291982fd0a0b4489de80e5f5dd9641, type: 3}
+    volume: 0.535
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: CameraUnZoom
+    clip: {fileID: 8300000, guid: 140daf498f5c7c745aad15a5856dfd17, type: 3}
+    volume: 0.535
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: WallTileTouch
+    clip: {fileID: 8300000, guid: 4fab8b442bda1bd4cb3b1eeec6e26c4c, type: 3}
+    volume: 0.535
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
