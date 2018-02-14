@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000801012953890}
   - component: {fileID: 23516889133137058}
   - component: {fileID: 95477178232744198}
+  - component: {fileID: 64028226881501904}
   m_Layer: 0
   m_Name: BookShelf2
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854119869669228}
   m_LocalRotation: {x: 0.50000006, y: -0.50000006, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -5.056138, y: -0.75557953, z: 5.0433583}
+  m_LocalPosition: {x: -3.369, y: 0.019, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854119869669228}
+  m_Mesh: {fileID: 4300000, guid: 6376f45db8177c349b94ed39369604c8, type: 3}
+--- !u!64 &64028226881501904
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854119869669228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: -2
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6376f45db8177c349b94ed39369604c8, type: 3}
 --- !u!95 &95477178232744198
 Animator:

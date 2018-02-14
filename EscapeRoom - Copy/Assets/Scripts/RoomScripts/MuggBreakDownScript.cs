@@ -12,7 +12,7 @@ public class MuggBreakDownScript : MonoBehaviour {
         if (Math.Abs(GetComponent<Rigidbody>().velocity.y) >= 0.3 || Math.Abs(GetComponent<Rigidbody>().velocity.x) >= 0.3 
             || Math.Abs(GetComponent<Rigidbody>().velocity.z) >= 0.3)
         {
-            Instantiate(BrokenMugg, transform.position, Quaternion.identity);
+            Instantiate(BrokenMugg, transform.position, transform.rotation);
             Destroy(gameObject);
             FindObjectOfType<AudioManager>().Play("BreakingGlass");
         }   
