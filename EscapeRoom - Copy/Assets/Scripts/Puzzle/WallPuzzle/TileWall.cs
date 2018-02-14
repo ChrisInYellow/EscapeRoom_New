@@ -79,7 +79,6 @@ public class TileWall : MonoBehaviour
     {
         coolDown = false;
         spin = false;
-        transform.eulerAngles = new Vector3(0, sideOfCube * 90, 0);
 
         if(importantTile)
             {
