@@ -13,7 +13,8 @@ public class LaserSpawn : MonoBehaviour {
     public LayerMask mirror;
     public LayerMask blockable; 
     private Vector3 result; 
-    private Quaternion laserRotation; 
+    private Quaternion laserRotation;
+    private GameObject lastMirror; 
 
 
 
@@ -42,24 +43,47 @@ public class LaserSpawn : MonoBehaviour {
        if ( Physics.Raycast(transform.position, transform.forward,out hit, 5f,mirror))
        {
             GameObject hitMirror = hit.transform.gameObject;
-
+            lastMirror = hitMirror; 
 
             if(hitMirror.GetComponent<LaserSpawn>().triggered == false)
             {
                 hitMirror.GetComponent<LaserSpawn>().laser.enabled = true;
+                hitMirror.GetComponent<LaserSpawn>().triggered = true; 
                 laser.transform.GetChild(0).transform.gameObject.SetActive(false);
+                laser.SetPosition(1, new Vector3(laser.GetPosition(1).x, laser.GetPosition(1).y, hit.transform.position.z));
+                laser.transform.GetChild(0).GetChild(0).transform.position = hit.transform.position;
+                laser.transform.GetChild(0).GetChild(2).transform.position = hit.transform.position;
+
+                laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(true);
+                laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(true);
             }
        }
+
+       else
+        {
+            if (lastMirror != null)
+            {
+                lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
+            }
+        }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5f, blockable))
         {
+            laser.SetPosition(1, transform.position + transform.forward * 5f); 
             Debug.Log(hit);
-            laser.SetPosition(1, hit.transform.position);
+            laser.SetPosition(1, new Vector3( laser.GetPosition(1).x, laser.GetPosition(1).y, hit.transform.position.z));
             laser.transform.GetChild(0).GetChild(0).transform.position = hit.transform.position;
             laser.transform.GetChild(0).GetChild(2).transform.position = hit.transform.position;
 
             laser.transform.GetChild(0).GetChild(0).transform.gameObject.SetActive(true); 
             laser.transform.GetChild(0).GetChild(2).transform.gameObject.SetActive(true);
 
+        }
+
+
+        else
+        {
+            laser.SetPosition(1, transform.position + transform.forward * 5f); 
         }
 
     }
