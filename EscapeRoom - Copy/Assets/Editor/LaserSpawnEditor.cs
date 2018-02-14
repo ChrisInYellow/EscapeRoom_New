@@ -13,9 +13,13 @@ public class LaserSpawnEditor : Editor
         DrawDefaultInspector();
 
         LaserSpawn laserSpawn = (LaserSpawn)target;
-        if (GUILayout.Button("Realign Laser"))
+        if (GUILayout.Button("Realign Laser Left"))
         {
-            laserSpawn.RealignLaser();
+            laserSpawn.RealignLaserLeft();
+        }
+        if(GUILayout.Button("Realign Laser Right"))
+        {
+            laserSpawn.RealignLaserRight();
         }
 
     }

@@ -8,9 +8,8 @@ public class LaserSpawn : MonoBehaviour
     public LineRenderer laser;
     public Vector3 amountOfDegrees;
     public enum Directions { None, Right, Left, Up, Down };
-    public Directions mirrorDirections;
     public bool triggered;
-    public bool master; 
+    public bool master;
     public LayerMask mirror;
     public GameObject particleManager; 
     private Vector3 result;
@@ -59,7 +58,6 @@ public class LaserSpawn : MonoBehaviour
 
             particleManager.transform.GetChild(0).GetComponent<ParticleSystem>().transform.position = laser.GetPosition(1);
             particleManager.transform.GetChild(1).GetComponent<ParticleSystem>().transform.position = laser.GetPosition(1);
-            //particleManager.transform.GetChild(1).transform.position = laser.GetPosition(1);
 
             var laserSpawn = hitMirror.GetComponent<LaserSpawn>();
 
@@ -104,30 +102,17 @@ public class LaserSpawn : MonoBehaviour
 
     }
 
-    public void RealignLaser()
+    public void RealignLaserLeft()
     {
-        if (mirrorDirections == Directions.Left)
-        {
-            result = Vector3.Scale(amountOfDegrees, Vector3.left);
-            transform.Rotate(result);
-        }
-        if (mirrorDirections == Directions.Right)
-        {
-            result = Vector3.Scale(amountOfDegrees, Vector3.right);
-            transform.Rotate(result);
-        }
-        if (mirrorDirections == Directions.Up)
-        {
             result = Vector3.Scale(amountOfDegrees, Vector3.up);
             transform.Rotate(result);
 
         }
-        if (mirrorDirections == Directions.Down)
-        {
-            result = Vector2.Scale(amountOfDegrees, Vector3.down);
-            transform.Rotate(result);
-        }
-    }
+    public void RealignLaserRight()
+{
+    result = Vector2.Scale(amountOfDegrees, Vector3.down);
+    transform.Rotate(result);
+}
 
 
 }
