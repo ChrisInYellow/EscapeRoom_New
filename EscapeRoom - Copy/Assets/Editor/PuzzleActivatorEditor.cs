@@ -11,12 +11,17 @@ public class PuzzleActivatorEditor : Editor {
         DrawDefaultInspector();
 
         PuzzleActivator activator = (PuzzleActivator)target;
+
+        if (GUILayout.Button("Puzzle0"))
+        {
+            activator.puzzle0();
+        }
+
         if (GUILayout.Button("Puzzle1"))
         {
             activator.puzzle1();
         }
-
-
+        
         if (GUILayout.Button("Puzzle2"))
         {
             activator.puzzle2();
@@ -38,5 +43,16 @@ public class PuzzleActivatorEditor : Editor {
         {
             activator.puzzle5();
         }
+
+        if (GUILayout.Button("Puzzle6"))
+        {
+            activator.puzzle6();
+        }
+
+        if (GUILayout.Button("Puzzle7"))
+        {
+            activator.puzzle7();
+        }
+
     }
 }
