@@ -17,7 +17,7 @@ public class DoorSlamScript : MonoBehaviour {
     {
         leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
         rightDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
-        AudioManager.instance.Play("DoorSlam");
+        FindObjectOfType<AudioManager>().Play("DoorSlam");
         DoorSlamed.Invoke();
         Destroy(gameObject);
     }
