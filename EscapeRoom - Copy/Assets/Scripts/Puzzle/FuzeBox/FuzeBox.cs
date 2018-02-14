@@ -5,29 +5,35 @@ using UnityEngine.Events;
 
 public class FuzeBox : MonoBehaviour 
 {
+    public System.Action lightOn;
+    public System.Action lightOff;
+
     public UnityEvent fuzeInserted = new UnityEvent();
     public UnityEvent fuzeRemoved = new UnityEvent();
 
     private float timeUntilRemoved;
     private float thrust;
-    private GameObject privatefuze;
+    public GameObject fuze;
 
-    public void OnSnapped(GameObject fuze)
+    [HideInInspector]
+    public bool fuzeIsSnapped = false;
+
+    public void OnSnapped()
     {
+        fuzeIsSnapped = true;
+        lightOn();
         fuzeInserted.Invoke();
-
-
-
         timeUntilRemoved = Random.Range(30, 60);
         thrust = Random.Range(150, 200);
-        privatefuze = fuze;
         Invoke("ShootOutFuze", timeUntilRemoved);
     }
 
     public void ShootOutFuze ()
     {
+        fuzeIsSnapped = false;
+        lightOff();
         fuzeRemoved.Invoke();
-        Rigidbody rb = privatefuze.GetComponent<Rigidbody>();
+        Rigidbody rb = fuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
     }

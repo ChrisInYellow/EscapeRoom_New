@@ -5,11 +5,12 @@ using UnityEngine.Events;
 
 public class WallPuzzleSingleton : MonoBehaviour
 {
+    public UnityEvent puzzleSolved = new UnityEvent();
+
     [HideInInspector]
-    public bool puzzleIsCompleted = false;
+    public bool stopPuzzle = true;
     private List<GameObject> correctTileObjects = new List<GameObject>();
 
-    public UnityEvent puzzleSolved = new UnityEvent();
     private static WallPuzzleSingleton instance;
     public static WallPuzzleSingleton GetInstance()
     {
@@ -57,12 +58,23 @@ public class WallPuzzleSingleton : MonoBehaviour
 
     public void PuzzleDone ()
     {
-        puzzleIsCompleted = true;
-        print("Complete");
+        OnOff();
         puzzleSolved.Invoke();
         for (int i = 0; i < correctTileObjects.Count; i++)
         {
             correctTileObjects[i].GetComponent<HighlightOnCompletion>().Highlight();
+        }
+    }
+
+    public void OnOff ()
+    {
+        if (stopPuzzle)
+        {
+            stopPuzzle = false;
+        }
+        else
+        {
+            stopPuzzle = true;
         }
     }
 }

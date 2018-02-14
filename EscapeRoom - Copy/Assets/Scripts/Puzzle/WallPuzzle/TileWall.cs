@@ -43,15 +43,14 @@ public class TileWall : MonoBehaviour
         if (spin == true)
         {
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
-        }
-        if (tileWallManager.puzzleIsCompleted)
-        {
-            gameObject.GetComponent<TileWall>().enabled = false;
+            FindObjectOfType<AudioManager>().Play("WallTileTouch");
         }
     }
 
     public void PlayAnim ()
     {
+        if (tileWallManager.stopPuzzle)
+            return;
         if (!coolDown)
         {
             coolDown = true;
@@ -80,7 +79,6 @@ public class TileWall : MonoBehaviour
     {
         coolDown = false;
         spin = false;
-        transform.eulerAngles = new Vector3(0, sideOfCube * 90, 0);
 
         if(importantTile)
             {
