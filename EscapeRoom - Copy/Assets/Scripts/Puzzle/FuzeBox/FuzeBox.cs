@@ -5,8 +5,8 @@ using UnityEngine.Events;
 
 public class FuzeBox : MonoBehaviour 
 {
-    [SerializeField]
-    public UnityEvent fuzeBoxRemoved = new UnityEvent();
+    public UnityEvent fuzeInserted = new UnityEvent();
+    public UnityEvent fuzeRemoved = new UnityEvent();
 
     private float timeUntilRemoved;
     private float thrust;
@@ -14,6 +14,10 @@ public class FuzeBox : MonoBehaviour
 
     public void OnSnapped(GameObject fuze)
     {
+        fuzeInserted.Invoke();
+
+
+
         timeUntilRemoved = Random.Range(30, 60);
         thrust = Random.Range(150, 200);
         privatefuze = fuze;
@@ -22,7 +26,7 @@ public class FuzeBox : MonoBehaviour
 
     public void ShootOutFuze ()
     {
-        fuzeBoxRemoved.Invoke();
+        fuzeRemoved.Invoke();
         Rigidbody rb = privatefuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
