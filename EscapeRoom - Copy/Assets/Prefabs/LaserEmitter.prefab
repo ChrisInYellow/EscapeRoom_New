@@ -247,8 +247,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975035767747030}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0.00000059037353, y: -1, z: -0.0000005821222, w: 0.0000034982688}
+  m_LocalPosition: {x: 0.69, y: 1.409, z: 3.49}
+=======
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.7010045, y: 0.97, z: 1.3260015}
+>>>>>>> 55b95f5841d715c41f1df411049913b1cc382708
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4435119255161592}
@@ -489,6 +494,7 @@ MonoBehaviour:
   mirror:
     serializedVersion: 2
     m_Bits: 4294967295
+  laserManager: {fileID: 1396571587076400}
   particleManager: {fileID: 1849277154714672}
 --- !u!114 &114106321918712262
 MonoBehaviour:

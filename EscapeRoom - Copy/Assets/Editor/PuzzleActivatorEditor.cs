@@ -12,44 +12,44 @@ public class PuzzleActivatorEditor : Editor {
 
         PuzzleActivator activator = (PuzzleActivator)target;
 
-        if (GUILayout.Button("Puzzle0"))
+        if (GUILayout.Button("Paper Puzzle"))
         {
             activator.puzzle0();
         }
 
-        if (GUILayout.Button("Puzzle1"))
+        if (GUILayout.Button("Flashlight Puzzle"))
         {
             activator.puzzle1();
         }
         
-        if (GUILayout.Button("Puzzle2"))
+        if (GUILayout.Button("Combination Puzzle"))
         {
             activator.puzzle2();
         }
 
 
-        if (GUILayout.Button("Puzzle3"))
+        if (GUILayout.Button("Chess Puzzle"))
         {
             activator.puzzle3();
         }
 
 
-        if (GUILayout.Button("Puzzle4"))
+        if (GUILayout.Button("Eye Scanner puzzle"))
         {
             activator.puzzle4();
         }
 
-        if (GUILayout.Button("Puzzle5"))
+        if (GUILayout.Button("Fuse Tilewall"))
         {
             activator.puzzle5();
         }
 
-        if (GUILayout.Button("Puzzle6"))
+        if (GUILayout.Button("Fuse Laser"))
         {
             activator.puzzle6();
         }
 
-        if (GUILayout.Button("Puzzle7"))
+        if (GUILayout.Button("Fuse Chess"))
         {
             activator.puzzle7();
         }
