@@ -1109,9 +1109,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 42.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4767139873093690, guid: bf701bff4ebaef844a1d14efee4cd821, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf701bff4ebaef844a1d14efee4cd821, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &247529142 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4767139873093690, guid: bf701bff4ebaef844a1d14efee4cd821,
+    type: 2}
+  m_PrefabInternal: {fileID: 247529141}
 --- !u!1 &258322085 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1693352528392686, guid: 6678058fa4230a14d81380d3fb9cc924,
@@ -1824,6 +1833,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4173090438904986, guid: 35833397a4dcdf44fa0e3e4d48fda83b,
     type: 2}
   m_PrefabInternal: {fileID: 378467116}
+--- !u!114 &335818883 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114981079145967674, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+  m_Script: {fileID: 11500000, guid: 7cfadcc4f36079f419475c58967f9c83, type: 3}
 --- !u!1 &343553643 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1589157784651686, guid: ca5f921cbb0eb8641bfb99ec6455e61a,
@@ -2899,6 +2914,56 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4750290581406380, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
       propertyPath: m_LocalPosition.x
       value: -3.1363244
@@ -3255,9 +3320,269 @@ Prefab:
       propertyPath: m_Name
       value: ChessFinal
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemovePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867354518543054, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemovePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967871361152310, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemovePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376557199138778, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 510378213}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemovePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066721041177990, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 335818883}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectSnappedToDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 335818883}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemovePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202888207838600, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+        type: 2}
+      propertyPath: OnObjectUnsnappedFromDropZone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114223396064559892, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
+    - {fileID: 114072089785519610, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
+    - {fileID: 114328719766682952, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
+    - {fileID: 114465807407998012, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3d3afaed9ceec184cb95ff1b680d5b9c, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &510378213 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114827466532472106, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+  m_Script: {fileID: 11500000, guid: 7cfadcc4f36079f419475c58967f9c83, type: 3}
 --- !u!1001 &521276656
 Prefab:
   m_ObjectHideFlags: 0
@@ -4678,6 +5003,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1901809112}
   m_GameObject: {fileID: 703979891}
   m_Mesh: {fileID: 4300000, guid: 34f493925208459478c1aa58c2bb7856, type: 3}
+--- !u!1 &707483259 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947958971631682, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+--- !u!114 &707483260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707483259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: AddPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: RemovePiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &721084718
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,17 +6891,70 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 192944, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_PrefabInternal: {fileID: 1188469811}
---- !u!4 &1045643182 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4642451070258828, guid: bf701bff4ebaef844a1d14efee4cd821,
-    type: 2}
-  m_PrefabInternal: {fileID: 247529141}
 --- !u!114 &1067638479 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114787196318804636, guid: cd8aab899f4bc2a48a5d5e6ca75598af,
     type: 2}
   m_PrefabInternal: {fileID: 1466974823}
   m_Script: {fileID: 11500000, guid: 0f34c39b092e8f34d9f329df1c2db82f, type: 3}
+--- !u!1 &1090157533 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1575751591521562, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+--- !u!114 &1090157534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090157533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: AddPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: RemovePiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!4 &1107235672 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4911121144914014, guid: db025c8ca95e2944cb5097084935a4d4,
@@ -12118,6 +12554,64 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 4cc6058621cb11d479ffa96743d18f97, type: 3}
   m_PrefabInternal: {fileID: 1411795481}
+--- !u!1 &1411974431 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1688101536364166, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+--- !u!114 &1411974432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411974431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: AddPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: RemovePiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1421645647 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 189822, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -13070,24 +13564,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1901809112}
   m_GameObject: {fileID: 1493106947}
   m_Mesh: {fileID: 4300000, guid: 1b2262cd1cd4c024e8ff226a39b6cdc0, type: 3}
---- !u!1 &1497898419 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1423732519345068, guid: bf701bff4ebaef844a1d14efee4cd821,
-    type: 2}
-  m_PrefabInternal: {fileID: 247529141}
---- !u!114 &1497898422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1497898419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9585a5f7d96734c9743b50b89a1f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToTurnOn: 0.05
-  hasLightShaft: 0
 --- !u!4 &1512451617 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4244973068498596, guid: 707483cbf04a149439d131b3a4705614,
@@ -15605,7 +16081,7 @@ Transform:
   m_Children:
   - {fileID: 1209064272}
   - {fileID: 1029842342}
-  - {fileID: 1045643182}
+  - {fileID: 247529142}
   - {fileID: 1221883774}
   - {fileID: 1107235672}
   - {fileID: 412657717}
@@ -17740,6 +18216,64 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 30e4c19a647d8b34d9544174680ba452, type: 3}
   m_PrefabInternal: {fileID: 2066397581}
+--- !u!1 &2072949532 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1175909765989298, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 504431193}
+--- !u!114 &2072949533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2072949532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: AddPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510378213}
+        m_MethodName: RemovePiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &2083718488
 GameObject:
   m_ObjectHideFlags: 0
