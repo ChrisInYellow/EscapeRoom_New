@@ -27,19 +27,19 @@ public class LockBoxScript : MonoBehaviour {
         {
             gameObject.transform.rotation = new Quaternion (0,0.707f, 0,0.707f);
         }
-		if(codeNumber == CodeCorrect.One && gameObject.transform.rotation.x <= 252 && gameObject.transform.rotation.x >= 216 || gameObject.transform.rotation.x <= -396 && gameObject.transform.rotation.x >= -432)
+		if(codeNumber == CodeCorrect.One && gameObject.transform.rotation.eulerAngles.x <= 252 && gameObject.transform.rotation.eulerAngles.x >= 216 || gameObject.transform.rotation.eulerAngles.x <= -396 && gameObject.transform.rotation.eulerAngles.x >= -432 && codeNumber == CodeCorrect.One)
         {
             spinnerOne = true;
         }
-        if (codeNumber == CodeCorrect.Two && gameObject.transform.rotation.x <= 108 && gameObject.transform.rotation.x >= 72 || gameObject.transform.rotation.x <= -252 && gameObject.transform.rotation.x >= -288)
+        if (codeNumber == CodeCorrect.Two && gameObject.transform.rotation.eulerAngles.x <= 108 && gameObject.transform.rotation.eulerAngles.x >= 72 || gameObject.transform.rotation.eulerAngles.x <= -252 && gameObject.transform.rotation.eulerAngles.x >= -288 && codeNumber == CodeCorrect.Two)
         {
             spinnerTwo = true;
         }
-        if (codeNumber == CodeCorrect.Three && gameObject.transform.rotation.x <= -180 && gameObject.transform.rotation.x >= -216 || gameObject.transform.rotation.x <= 36 && gameObject.transform.rotation.x >= 0)
+        if (codeNumber == CodeCorrect.Three && gameObject.transform.rotation.eulerAngles.x <= -180 && gameObject.transform.rotation.eulerAngles.x >= -216 || gameObject.transform.rotation.eulerAngles.x <= 36 && gameObject.transform.rotation.eulerAngles.x >= 0 && codeNumber == CodeCorrect.Three)
         {
             spinnerThree = true;
         }
-        if (codeNumber == CodeCorrect.Four && gameObject.transform.rotation.x <= -324 && gameObject.transform.rotation.x >= -360 || gameObject.transform.rotation.x <= 180 && gameObject.transform.rotation.x >= 144)
+        if (codeNumber == CodeCorrect.Four && gameObject.transform.rotation.eulerAngles.x <= -324 && gameObject.transform.rotation.eulerAngles.x >= -360 || gameObject.transform.rotation.eulerAngles.x <= 180 && gameObject.transform.rotation.eulerAngles.x >= 144 && codeNumber == CodeCorrect.Four)
         {
             spinnerFour = true;
         }
