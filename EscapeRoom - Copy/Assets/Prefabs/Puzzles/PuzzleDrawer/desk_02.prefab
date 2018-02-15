@@ -58,6 +58,8 @@ GameObject:
   - component: {fileID: 23523876748042798}
   - component: {fileID: 95591427443430052}
   - component: {fileID: 64299424286226910}
+  - component: {fileID: 114780003780993710}
+  - component: {fileID: 114575747883384238}
   m_Layer: 0
   m_Name: drawer_02
   m_TagString: Untagged
@@ -92,19 +94,19 @@ GameObject:
   - component: {fileID: 23032387223542348}
   - component: {fileID: 95868905829305508}
   - component: {fileID: 54231209008985522}
-  - component: {fileID: 65390060515692018}
   - component: {fileID: 114307523293315284}
   - component: {fileID: 114548791389657452}
   - component: {fileID: 114083625369904026}
   - component: {fileID: 114594894534602878}
   - component: {fileID: 114566671627332212}
+  - component: {fileID: 65628313094258938}
   m_Layer: 0
   m_Name: battery
   m_TagString: Battery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4182482292958330
 Transform:
   m_ObjectHideFlags: 1
@@ -125,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1331879698754504}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -1.95, y: -0.395, z: 9.283}
+  m_LocalPosition: {x: -3.527, y: -0.395, z: 9.283}
   m_LocalScale: {x: 11.35889, y: 14.81497, z: 14.81497}
   m_Children:
   - {fileID: 4699228156011928}
@@ -188,7 +190,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9e2f4004977966e4f82aab26390cfddd, type: 3}
+  - {fileID: 2100000, guid: e8c498a2fdd95b24cab487cf3caf7010, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -296,7 +298,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562334602524342}
-  m_Mesh: {fileID: 4300000, guid: 9e2f4004977966e4f82aab26390cfddd, type: 3}
+  m_Mesh: {fileID: 4300000, guid: b0f67f8c5158cae4a97777d68cf1741e, type: 3}
 --- !u!54 &54231209008985522
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -338,7 +340,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06462913, y: 0.12728883, z: 0.04841695}
   m_Center: {x: 0, y: 0, z: 0.0000000055879354}
---- !u!65 &65390060515692018
+--- !u!65 &65628313094258938
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -348,8 +350,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.029672215, y: 0.029835666, z: 0.06325411}
-  m_Center: {x: 0, y: 0, z: 0.031627055}
+  m_Size: {x: 0.024469957, y: 0.024098199, z: 0.04637221}
+  m_Center: {x: -0.011983283, y: 0.00000035669655, z: 0.022137059}
 --- !u!95 &95591427443430052
 Animator:
   serializedVersion: 3
@@ -392,7 +394,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562334602524342}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9e2f4004977966e4f82aab26390cfddd, type: 3}
+  m_Avatar: {fileID: 9000000, guid: b0f67f8c5158cae4a97777d68cf1741e, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -478,6 +480,78 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &114575747883384238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459590448677198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f96f1837f21d4bf9a77ff61e7b81f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTouch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95591427443430052}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Locked
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUntouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrab:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUngrab:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUnuse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnEnterSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnExitSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSnapToDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUnsnapFromDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114594894534602878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,7 +628,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 65390060515692018}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -572,6 +646,36 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114780003780993710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459590448677198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 0
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 0}
+  secondaryGrabActionScript: {fileID: 0}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
 --- !u!114 &114787196318804636
 MonoBehaviour:
   m_ObjectHideFlags: 1
