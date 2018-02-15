@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LaserSpawn : MonoBehaviour
 {
+    public UnityEvent puzzleSolved = new UnityEvent();
 
     public LineRenderer laser;
     public Vector3 amountOfDegrees;
@@ -15,7 +17,7 @@ public class LaserSpawn : MonoBehaviour
     private Vector3 result;
     private Quaternion laserRotation;
     private GameObject lastMirror;
-    
+    private bool openedLock;
 
 
 
@@ -50,6 +52,13 @@ public class LaserSpawn : MonoBehaviour
             particleManager.transform.gameObject.SetActive(true); 
             GameObject hitMirror = hit.transform.gameObject;
             
+            if(!openedLock)
+            if(hitMirror.tag == "LockBoxLock")
+            {
+                openedLock = true;
+                puzzleSolved.Invoke();
+            }
+
             if(lastMirror != null)
             {
                 if(lastMirror != hitMirror && lastMirror.GetComponent<LaserSpawn>() != null)
