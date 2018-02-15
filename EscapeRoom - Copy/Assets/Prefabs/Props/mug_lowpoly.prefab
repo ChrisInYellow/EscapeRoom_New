@@ -22,13 +22,13 @@ GameObject:
   - component: {fileID: 33302477622782360}
   - component: {fileID: 23854130069657614}
   - component: {fileID: 95153707633628736}
-  - component: {fileID: 64399982795489334}
   - component: {fileID: 54730868372060524}
   - component: {fileID: 114650429612823708}
   - component: {fileID: 114484190982512670}
   - component: {fileID: 114545770602193262}
   - component: {fileID: 114466360406474822}
   - component: {fileID: 114195487060672300}
+  - component: {fileID: 64948729030563730}
   m_Layer: 0
   m_Name: mug_lowpoly
   m_TagString: Untagged
@@ -100,7 +100,7 @@ Transform:
   m_GameObject: {fileID: 1102959048664608}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.6869911, y: -0.04657948, z: 6.7563}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4032867136938798}
   - {fileID: 4644960328586634}
@@ -121,7 +121,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e2ecf38ea2da12f46a3cb6da510b50d1, type: 3}
+  - {fileID: 2100000, guid: db7f0f14bfd1bc9419eda20f02870a15, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,7 +147,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102959048664608}
-  m_Mesh: {fileID: 4300000, guid: e2ecf38ea2da12f46a3cb6da510b50d1, type: 3}
+  m_Mesh: {fileID: 4300000, guid: db7f0f14bfd1bc9419eda20f02870a15, type: 3}
 --- !u!54 &54730868372060524
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -163,7 +163,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64399982795489334
+--- !u!64 &64948729030563730
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -174,9 +174,9 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: e2ecf38ea2da12f46a3cb6da510b50d1, type: 3}
+  m_CookingOptions: -1
+  m_SkinWidth: 0.001
+  m_Mesh: {fileID: 4300000, guid: db7f0f14bfd1bc9419eda20f02870a15, type: 3}
 --- !u!95 &95153707633628736
 Animator:
   serializedVersion: 3
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b057d7a0385efc94382ea908e79ed29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BrokenMugg: {fileID: 1888982286867056, guid: da5bdcf00f9dec14f80c2ee66aff80f4, type: 2}
+  BrokenMugg: {fileID: 1970054587881178, guid: ffcc2de18b550d140ae187fa909b2054, type: 2}
 --- !u!114 &114466360406474822
 MonoBehaviour:
   m_ObjectHideFlags: 1

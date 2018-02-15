@@ -53,13 +53,13 @@ GameObject:
   - component: {fileID: 33386463364631932}
   - component: {fileID: 23806992443585526}
   - component: {fileID: 95488643929622776}
-  - component: {fileID: 64968046956661302}
   - component: {fileID: 54838424154660540}
   - component: {fileID: 114130694000507864}
   - component: {fileID: 114527550362023128}
   - component: {fileID: 114813564896590130}
   - component: {fileID: 114916736536890800}
   - component: {fileID: 114129123682858634}
+  - component: {fileID: 64813234164086954}
   m_Layer: 0
   m_Name: flashlight 1
   m_TagString: Untagged
@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135875988597042}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.0487, y: -0, z: 0.2749}
+  m_LocalPosition: {x: -0.0487, y: -0, z: 0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4352828236825894}
@@ -211,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1039456039185252}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.292}
+  m_LocalPosition: {x: 0, y: 0, z: 0.195}
   m_LocalScale: {x: 1.9398292, y: 1.9398283, z: 1.9398283}
   m_Children: []
   m_Father: {fileID: 4352828236825894}
@@ -254,7 +254,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328533277146122}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.04870012, y: 0, z: 0.27490002}
+  m_LocalPosition: {x: 0.04870012, y: -0, z: 0.16}
   m_LocalScale: {x: 1.0000023, y: 1.0000013, z: 1.0000013}
   m_Children: []
   m_Father: {fileID: 4352828236825894}
@@ -375,7 +375,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191655801805966}
-  m_Mesh: {fileID: 4300000, guid: d864d8c6f46e29b4781ce05a009a3f20, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7cbb5babe53934e448a131b18a196c92, type: 3}
 --- !u!33 &33940523427357468
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -413,7 +413,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!64 &64968046956661302
+--- !u!64 &64813234164086954
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -426,7 +426,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: d864d8c6f46e29b4781ce05a009a3f20, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7cbb5babe53934e448a131b18a196c92, type: 3}
 --- !u!95 &95488643929622776
 Animator:
   serializedVersion: 3
