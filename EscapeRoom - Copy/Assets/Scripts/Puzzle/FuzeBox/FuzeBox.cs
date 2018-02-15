@@ -21,7 +21,7 @@ public class FuzeBox : MonoBehaviour
     public void OnSnapped()
     {
         fuzeIsSnapped = true;
-        lightOn();
+        //lightOn();
         fuzeInserted.Invoke();
         timeUntilRemoved = Random.Range(30, 60);
         thrust = Random.Range(150, 200);
@@ -31,7 +31,7 @@ public class FuzeBox : MonoBehaviour
     public void ShootOutFuze ()
     {
         fuzeIsSnapped = false;
-        lightOff();
+        //lightOff();
         fuzeRemoved.Invoke();
         Rigidbody rb = fuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
