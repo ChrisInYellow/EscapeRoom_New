@@ -10,8 +10,11 @@ public class FlashLight : MonoBehaviour {
 
     public void Activate()
     {
+        if (isOn)
+            DeActivate();
         if (batteryIsIn)
         {
+            isOn = true;
             spotLight.SetActive(true);
             FindObjectOfType<AudioManager>().Play("FlashlightClick");
         }
@@ -19,6 +22,7 @@ public class FlashLight : MonoBehaviour {
 
     public void DeActivate()
     {
+        isOn = false;
         spotLight.SetActive(false);
     }
 
@@ -27,7 +31,6 @@ public class FlashLight : MonoBehaviour {
         FindObjectOfType<AudioManager>().Play("BatteryClick");
 
         batteryIsIn = true;
-        Activate();
     }
 
     public void QuickSolve()
