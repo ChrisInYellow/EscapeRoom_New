@@ -23,6 +23,7 @@ public class LockBoxTurner : MonoBehaviour
         if (isRotating)
         {
             transform.Rotate(Vector3.left, rotateAngle * Time.deltaTime * (1 / duration));
+            Correction();
         }
     }
 
@@ -38,6 +39,7 @@ public class LockBoxTurner : MonoBehaviour
             {
                 LockNumber = 0;
             }
+            print(LockNumber);
         }
     }
 
@@ -70,11 +72,6 @@ public class LockBoxTurner : MonoBehaviour
         {
             print("Four is correct");
             fourTrue = true;
-        }
-
-        if(oneTrue == true && twoTrue == true && threeTrue == true && fourTrue == true)
-        {
-            print("SolvedPuzzle");
         }
     }
 }
