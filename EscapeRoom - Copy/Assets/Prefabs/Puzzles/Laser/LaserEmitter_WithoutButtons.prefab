@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1459285325877394
 GameObject:
   m_ObjectHideFlags: 1
@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 23585015189952920}
   - component: {fileID: 114941450855501220}
   - component: {fileID: 65401469463618682}
-  - component: {fileID: 65024106711714390}
   m_Layer: 8
   m_Name: LaserEmitter_WithoutButtons
   m_TagString: Untagged
@@ -239,15 +238,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710554669397398}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.6665975, z: 0, w: 0.7454179}
+  m_LocalPosition: {x: -5.48, y: 0.86, z: 3.903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4160260882251656}
   - {fileID: 4711625622806932}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 83.61, z: 0}
 --- !u!4 &4711625622806932
 Transform:
   m_ObjectHideFlags: 1
@@ -328,18 +327,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710554669397398}
   m_Mesh: {fileID: 4300000, guid: 7d1d5626871902144945d6be5650ed77, type: 3}
---- !u!65 &65024106711714390
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710554669397398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.30885062, y: 0.19999999, z: 0.0200472}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65053695566816668
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -390,8 +377,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laser: {fileID: 120071606583153032}
   amountOfDegrees: {x: 45, y: 45, z: 0}
-  triggered: 1
-  master: 1
+  triggered: 0
+  master: 0
   mirror:
     serializedVersion: 2
     m_Bits: 4294967295
