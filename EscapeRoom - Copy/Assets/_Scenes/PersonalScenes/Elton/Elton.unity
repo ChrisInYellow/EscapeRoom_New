@@ -677,7 +677,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342647421}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.117, y: 0.039, z: 0}
+  m_LocalPosition: {x: 0.117, y: 0.0636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1942113571}
@@ -721,7 +721,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 0
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1942113553}
   grabType: 1
   detatchDistance: 0.5
   minimumValue: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   grabbedFriction: 25
   releasedFriction: 10
   maxAngle: 359
-  lockAtLimits: 0
+  lockAtLimits: 1
 --- !u!114 &342647425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8214,11 +8214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de64b5e06e4c6441ba03357c45e5a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeNumber: 0
+  codeNumber: 4
   spinnerOne: 0
   spinnerTwo: 0
   spinnerThree: 0
-  spinnerFour: 1
+  spinnerFour: 0
 --- !u!54 &1942113555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8245,10 +8245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de64b5e06e4c6441ba03357c45e5a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeNumber: 0
+  codeNumber: 3
   spinnerOne: 0
   spinnerTwo: 0
-  spinnerThree: 1
+  spinnerThree: 0
   spinnerFour: 0
 --- !u!54 &1942113557
 Rigidbody:
@@ -8276,9 +8276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de64b5e06e4c6441ba03357c45e5a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeNumber: 0
+  codeNumber: 2
   spinnerOne: 0
-  spinnerTwo: 1
+  spinnerTwo: 0
   spinnerThree: 0
   spinnerFour: 0
 --- !u!54 &1942113559
@@ -8308,7 +8308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeNumber: 1
-  spinnerOne: 1
+  spinnerOne: 0
   spinnerTwo: 0
   spinnerThree: 0
   spinnerFour: 0
@@ -8486,13 +8486,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400012, guid: 244d493aca152d4418a82b330facba85, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1942113552}
-  m_LocalRotation: {x: 0.7058104, y: 0.7058104, z: -0.04279822, w: -0.04279822}
+  m_LocalRotation: {x: -0.7071068, y: 0.7071068, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 342647422}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 186.94, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -90}
 --- !u!23 &1942113572
 MeshRenderer:
   m_ObjectHideFlags: 0
