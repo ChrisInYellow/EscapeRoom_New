@@ -10,7 +10,8 @@ public class LaserSpawn : MonoBehaviour
     public LineRenderer laser;
     public Vector3 amountOfDegrees;
     public bool triggered;
-    public bool master; 
+    public bool master;
+    public bool servant; 
     public LayerMask mirror;
     public GameObject laserManager; 
     public GameObject particleManager; 
@@ -34,13 +35,17 @@ public class LaserSpawn : MonoBehaviour
 
     private void Update()
     {
-        if (master && Time.frameCount % 2 == 0)
+        if (master && Time.frameCount % 3 == 0)
+        {
+            LaserSpawner(); 
+        }
+        else if (servant && Time.frameCount % 3 == 1)
         {
             LaserSpawner(); 
         }
         else
         {
-            LaserSpawner(); 
+            LaserSpawner();
         }
     }
 
