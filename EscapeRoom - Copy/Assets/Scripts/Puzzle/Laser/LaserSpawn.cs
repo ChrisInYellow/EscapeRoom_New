@@ -39,8 +39,9 @@ public class LaserSpawn : MonoBehaviour
         if (!triggered)
         {
             laserManager.transform.gameObject.SetActive(false);
-            if(lastMirror.GetComponent<LaserSpawn>() != null)
-                lastMirror.GetComponent<LaserSpawn>().triggered = false;
+            if (lastMirror != null)
+                if (lastMirror.GetComponent<LaserSpawn>() != null)
+                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
             return;
         }
         else
