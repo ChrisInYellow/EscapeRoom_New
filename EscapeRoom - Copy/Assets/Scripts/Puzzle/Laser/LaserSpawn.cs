@@ -35,15 +35,15 @@ public class LaserSpawn : MonoBehaviour
 
     private void Update()
     {
-        if (master && Time.frameCount % 3 == 0)
+        if (master && Time.frameCount % 6 == 0)
         {
             LaserSpawner(); 
         }
-        else if (servant && Time.frameCount % 3 == 1)
+        else if (servant && Time.frameCount % 6 == 2)
         {
             LaserSpawner(); 
         }
-        else
+        else if(Time.frameCount % 6 == 4)
         {
             LaserSpawner();
         }
