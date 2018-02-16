@@ -9,8 +9,8 @@ public class LaserSpawn : MonoBehaviour
 
     public LineRenderer laser;
     public Vector3 amountOfDegrees;
-    public enum Directions { None, Right, Left, Up, Down };
     public bool triggered;
+    public bool master; 
     public LayerMask mirror;
     public GameObject laserManager; 
     public GameObject particleManager; 
@@ -24,23 +24,24 @@ public class LaserSpawn : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //mirrorDirections = Directions.None; 
         gameObject.transform.Rotate(Vector3.zero);
         laser.SetPosition(0, transform.position);
         laser.SetPosition(1, transform.position);
         particleManager.transform.gameObject.SetActive(false); 
         laserManager.transform.gameObject.SetActive(false); 
-        //laser.GetComponentInChildren<ParticleSystem>().Stop(); 
         
     }
 
     private void Update()
     {
-        if(Time.frameCount % 4 == 0)
+        if (master && Time.frameCount % 2 == 0)
         {
             LaserSpawner(); 
         }
-
+        else
+        {
+            LaserSpawner(); 
+        }
     }
 
     public void RealignLaserLeft()
@@ -49,11 +50,13 @@ public class LaserSpawn : MonoBehaviour
             transform.Rotate(result);
 
         }
+
     public void RealignLaserRight()
-{
+    {
     result = Vector2.Scale(amountOfDegrees, Vector3.down);
     transform.Rotate(result);
-}
+        }
+
     public void Trigger()
     {
         triggered = true;
@@ -76,9 +79,8 @@ public class LaserSpawn : MonoBehaviour
         }
         else
             laserManager.transform.gameObject.SetActive(true);
-        RaycastHit hit;
+            RaycastHit hit;
 
-        //Debug.DrawLine(transform.position, transform.position + transform.forward * 5f, Color.red);
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10f, mirror))
         {
             print("activating");
@@ -97,7 +99,6 @@ public class LaserSpawn : MonoBehaviour
                 if (lastMirror != hitMirror && lastMirror.GetComponent<LaserSpawn>() != null)
                 {
                     lastMirror.GetComponent<LaserSpawn>().triggered = false;
-                    //lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
                     lastMirror.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
@@ -123,7 +124,6 @@ public class LaserSpawn : MonoBehaviour
                     {
                         lastMirror.transform.gameObject.SetActive(false);
                         lastMirror.GetComponent<LaserSpawn>().triggered = false;
-                        //lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
                         lastMirror = null;
                     }
                 }
@@ -139,7 +139,6 @@ public class LaserSpawn : MonoBehaviour
 
                     lastMirror.GetComponent<LaserSpawn>().triggered = false;
                     lastMirror.transform.GetChild(0).gameObject.SetActive(false);
-                    //lastMirror.GetComponent<LaserSpawn>().laser.enabled = false;
                     lastMirror = null;
                 }
             }
