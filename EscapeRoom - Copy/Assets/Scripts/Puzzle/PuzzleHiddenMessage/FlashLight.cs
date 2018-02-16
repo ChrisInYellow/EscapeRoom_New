@@ -12,7 +12,7 @@ public class FlashLight : MonoBehaviour {
     {
         if (isOn)
             DeActivate();
-        if (batteryIsIn)
+        else if (batteryIsIn)
         {
             isOn = true;
             spotLight.SetActive(true);

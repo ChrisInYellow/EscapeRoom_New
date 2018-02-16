@@ -6,11 +6,7 @@ using VRTK;
 public class OnCollisionFade : MonoBehaviour 
 {
     public VRTK_HeadsetFade headSetFade;
-    void Start () 
-	{
-
-	}
-
+   
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Wall")
