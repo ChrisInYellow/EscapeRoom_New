@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4493159052779334}
   - component: {fileID: 33229972575025666}
   - component: {fileID: 23515228168505056}
+  - component: {fileID: 65926100190554942}
   m_Layer: 0
   m_Name: Laser_target
-  m_TagString: Untagged
+  m_TagString: LockBoxLock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,6 +44,8 @@ GameObject:
   - component: {fileID: 65425581766971290}
   - component: {fileID: 114852543336894024}
   - component: {fileID: 114009327290956764}
+  - component: {fileID: 114356335903871554}
+  - component: {fileID: 114920289913422518}
   m_Layer: 0
   m_Name: lock4
   m_TagString: Untagged
@@ -98,9 +101,9 @@ GameObject:
   - component: {fileID: 114912201230463216}
   - component: {fileID: 65846825524316056}
   - component: {fileID: 114138783865860150}
-  - component: {fileID: 114050774737128560}
-  - component: {fileID: 114376408948937340}
   - component: {fileID: 114180405375044366}
+  - component: {fileID: 114971865548810408}
+  - component: {fileID: 114376408948937340}
   m_Layer: 0
   m_Name: lock1
   m_TagString: Untagged
@@ -118,11 +121,13 @@ GameObject:
   - component: {fileID: 4680575270778686}
   - component: {fileID: 33058015371785626}
   - component: {fileID: 23339950412943422}
-  - component: {fileID: 114431619361734820}
   - component: {fileID: 114516848174890756}
+  - component: {fileID: 114431619361734820}
   - component: {fileID: 65755298577772620}
   - component: {fileID: 114418259192207242}
   - component: {fileID: 114038185947971586}
+  - component: {fileID: 114117746280237408}
+  - component: {fileID: 114677794632631972}
   m_Layer: 0
   m_Name: lock2
   m_TagString: Untagged
@@ -162,6 +167,8 @@ GameObject:
   - component: {fileID: 65438988494575232}
   - component: {fileID: 114990366846672022}
   - component: {fileID: 114581855201365694}
+  - component: {fileID: 114087559122589838}
+  - component: {fileID: 114528530413649598}
   m_Layer: 0
   m_Name: lock3
   m_TagString: Untagged
@@ -228,7 +235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1395707439336384}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -4.581138, y: 0.6554204, z: 1.2773585}
+  m_LocalPosition: {x: -4.5701385, y: 0.7764205, z: 1.2553585}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4314963897061046}
@@ -615,6 +622,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05000002, y: 0.10122007, z: 0.09631047}
   m_Center: {x: 0, y: -0.00000011920929, z: 0.00000023841858}
+--- !u!65 &65926100190554942
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228686279267602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06480087, y: 0.06381643, z: 0.008646106}
+  m_Center: {x: 0, y: 0, z: 0.0000002386514}
 --- !u!95 &95285909418276894
 Animator:
   serializedVersion: 3
@@ -662,25 +681,18 @@ MonoBehaviour:
   controllerEvents: {fileID: 0}
   interactTouch: {fileID: 0}
   interactGrab: {fileID: 0}
---- !u!114 &114050774737128560
+--- !u!114 &114087559122589838
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1536243554899716}
+  m_GameObject: {fileID: 1816627134579496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
-  destroyImmediatelyOnThrow: 1
-  breakForce: 1500
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114088107827369890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,6 +765,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114117746280237408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631554293207198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114138783865860150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -883,13 +907,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzleSolved:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   lockBoxTurner1: {fileID: 114912201230463216}
   lockBoxTurner2: {fileID: 114431619361734820}
   lockBoxTurner3: {fileID: 114851179323769874}
   lockBoxTurner4: {fileID: 114846087184125740}
+--- !u!114 &114356335903871554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255699462730868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114376408948937340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -919,22 +966,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8627451, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 1
+  isGrabbable: 0
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
-  holdButtonToUse: 1
+  isUsable: 1
+  holdButtonToUse: 0
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 3
   allowedUseControllers: 0
   usingState: 0
 --- !u!114 &114431619361734820
@@ -1027,6 +1074,23 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114528530413649598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816627134579496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114581855201365694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1042,6 +1106,23 @@ MonoBehaviour:
   controllerEvents: {fileID: 0}
   interactTouch: {fileID: 0}
   interactGrab: {fileID: 0}
+--- !u!114 &114677794632631972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631554293207198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114846087184125740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1090,22 +1171,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8627451, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 1
+  isGrabbable: 0
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
-  holdButtonToUse: 1
+  isUsable: 1
+  holdButtonToUse: 0
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 3
   allowedUseControllers: 0
   usingState: 0
 --- !u!114 &114910063344190600
@@ -1198,6 +1279,35 @@ MonoBehaviour:
   threeTrue: 0
   fourTrue: 0
   numberOfCode: 1
+--- !u!114 &114920289913422518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255699462730868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.1
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
+--- !u!114 &114971865548810408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536243554899716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114990366846672022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1210,21 +1320,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8627451, g: 1, b: 0, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 1
+  isGrabbable: 0
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
-  holdButtonToUse: 1
+  isUsable: 1
+  holdButtonToUse: 0
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 3
   allowedUseControllers: 0
   usingState: 0

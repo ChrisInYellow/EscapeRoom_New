@@ -3,18 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FlashLight : MonoBehaviour {
-
-    public bool isOn;
+    
     public bool batteryIsIn;
     public GameObject spotLight;
 
     public void Activate()
     {
-        if (isOn)
-            DeActivate();
-        else if (batteryIsIn)
+        if (batteryIsIn)
         {
-            isOn = true;
             spotLight.SetActive(true);
             FindObjectOfType<AudioManager>().Play("FlashlightClick");
         }
@@ -22,15 +18,14 @@ public class FlashLight : MonoBehaviour {
 
     public void DeActivate()
     {
-        isOn = false;
         spotLight.SetActive(false);
     }
 
     public void batteryInput()
     {
         FindObjectOfType<AudioManager>().Play("BatteryClick");
-
         batteryIsIn = true;
+        Activate();
     }
 
     public void QuickSolve()

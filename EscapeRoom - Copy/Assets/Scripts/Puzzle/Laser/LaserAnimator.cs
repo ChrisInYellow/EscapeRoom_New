@@ -5,11 +5,13 @@ using UnityEngine;
 public class LaserAnimator : MonoBehaviour {
 
     private LineRenderer laser;
-    public int numberOfFrames;
+    //public int numberOfFrames;
     private float startingWitdth;
     private float endingWidth;
     private bool increment;
-    public float inc_value; 
+    public float inc_value;
+    public float threshold_1;
+    public float threshold_2; 
 
 
 	// Use this for initialization
@@ -21,11 +23,11 @@ public class LaserAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (laser.endWidth <= 0.02)
+        if (laser.endWidth <= threshold_1)
         {
             increment = true; 
         }
-        else if(laser.endWidth >= 0.05)
+        else if(laser.endWidth >= threshold_2)
         {
             increment = false; 
         }

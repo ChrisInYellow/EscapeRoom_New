@@ -345,7 +345,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1706081945374940}
   m_LocalRotation: {x: -0, y: 1, z: -1.8922147e-14, w: 0}
-  m_LocalPosition: {x: 0.304, y: 0.025000012, z: 7.958}
+  m_LocalPosition: {x: 0.304, y: -0.016, z: 7.958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4244879062601286}
@@ -523,8 +523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b051803a2dc06242a45b0fad64cfce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfFrames: 0
-  inc_value: 0
+  inc_value: 0.001
+  threshold_1: 0.01
+  threshold_2: 0.025
 --- !u!114 &114551798182140952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -640,10 +641,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe870bdae8007e54aa7aff0dc77374af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleSolved:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   laser: {fileID: 120071606583153032}
   amountOfDegrees: {x: 45, y: 45, z: 0}
   triggered: 1
   master: 1
+  servant: 0
   mirror:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -688,7 +695,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.05
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -736,7 +743,7 @@ LineRenderer:
     textureMode: 0
     generateLightingData: 1
   m_UseWorldSpace: 1
-  m_Loop: 1
+  m_Loop: 0
 --- !u!198 &198130570885572308
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -797,7 +804,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -716386895
+  randomSeed: 549062039
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -845,7 +852,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -949,7 +956,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.44
+      scalar: 0.67
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4165,7 +4172,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 2.09
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4206,7 +4213,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1.49
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4310,7 +4317,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.03
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4605,7 +4612,7 @@ ParticleSystem:
     angle: 25
     length: 1
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0.1
+    radiusThickness: 0.06
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -4623,7 +4630,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.22
+      value: 0.01
       mode: 0
       spread: 0
       speed:
@@ -4718,7 +4725,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 28.81
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10880,7 +10887,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 804659653
+  randomSeed: -1618698764
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10928,7 +10935,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 0.98
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -11032,7 +11039,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.26
+      scalar: 0.06
       minScalar: 1
       maxCurve:
         serializedVersion: 2
