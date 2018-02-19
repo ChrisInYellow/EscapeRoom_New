@@ -636,6 +636,7 @@ GameObject:
   - component: {fileID: 114044769631317508}
   - component: {fileID: 114081524226616802}
   - component: {fileID: 114241202714232502}
+  - component: {fileID: 114588319890451080}
   m_Layer: 0
   m_Name: rook_w
   m_TagString: Pawns
@@ -1063,6 +1064,7 @@ GameObject:
   - component: {fileID: 114614069563575976}
   - component: {fileID: 114631723012745264}
   - component: {fileID: 114371889433861622}
+  - component: {fileID: 114348204369189976}
   m_Layer: 0
   m_Name: bishop_w
   m_TagString: Pawns
@@ -1734,6 +1736,7 @@ GameObject:
   - component: {fileID: 114491719637737116}
   - component: {fileID: 114921355456216156}
   - component: {fileID: 114064044432287280}
+  - component: {fileID: 114526160439839730}
   m_Layer: 0
   m_Name: king_b
   m_TagString: Pawns
@@ -2561,6 +2564,7 @@ GameObject:
   - component: {fileID: 114982246760723630}
   - component: {fileID: 114576743125953568}
   - component: {fileID: 114087562310062916}
+  - component: {fileID: 114566130076319900}
   m_Layer: 0
   m_Name: knight_w
   m_TagString: Pawns
@@ -2924,6 +2928,7 @@ GameObject:
   - component: {fileID: 114854535746378136}
   - component: {fileID: 114407021261629546}
   - component: {fileID: 114717371022941966}
+  - component: {fileID: 114485174079309072}
   m_Layer: 0
   m_Name: pawn_w
   m_TagString: Pawns
@@ -17428,6 +17433,23 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114278257371934682}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114348204369189976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225492202158028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114358575558530246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17942,6 +17964,23 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114278257371934682}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114485174079309072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589239837774384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114485470723396412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18078,6 +18117,23 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114278257371934682}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114526160439839730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345746891262076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114532140837567762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18111,6 +18167,23 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114278257371934682}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114566130076319900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522861514291180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114572736755258880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18216,6 +18289,23 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114588319890451080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128749717340486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114595880638938000
 MonoBehaviour:
   m_ObjectHideFlags: 1
