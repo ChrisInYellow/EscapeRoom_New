@@ -45,4 +45,15 @@ public class FuzeBox : MonoBehaviour
             lightOff();
         }
     }
+
+    public void OnUnSnapped()
+    {
+        CancelInvoke();
+        fuzeIsSnapped = false;
+        fuzeRemoved.Invoke();
+        if (isWallTileRelated)
+        {
+            lightOff();
+        }
+    }
 }
