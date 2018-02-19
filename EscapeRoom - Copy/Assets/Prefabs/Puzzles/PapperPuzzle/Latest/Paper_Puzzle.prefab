@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114548481628621542}
   - component: {fileID: 114553479420754852}
   - component: {fileID: 65571095929162004}
+  - component: {fileID: 114723871824619050}
   m_Layer: 0
   m_Name: Paper_2
   m_TagString: PapperPuzzle02
@@ -50,6 +51,7 @@ GameObject:
   - component: {fileID: 114802912877089244}
   - component: {fileID: 114581224976277956}
   - component: {fileID: 65591258101593506}
+  - component: {fileID: 114807311017595538}
   m_Layer: 0
   m_Name: Paper_1
   m_TagString: PapperPuzzle01
@@ -88,6 +90,7 @@ GameObject:
   - component: {fileID: 114249184375808958}
   - component: {fileID: 114613301952445674}
   - component: {fileID: 65547163009935938}
+  - component: {fileID: 114191569906968998}
   m_Layer: 0
   m_Name: Paper_3
   m_TagString: PapperPuzzle03
@@ -111,6 +114,7 @@ GameObject:
   - component: {fileID: 114647194986403234}
   - component: {fileID: 114918904423603884}
   - component: {fileID: 65874879926584984}
+  - component: {fileID: 114176654031478920}
   m_Layer: 0
   m_Name: Paper_4
   m_TagString: PapperPuzzle04
@@ -134,6 +138,7 @@ GameObject:
   - component: {fileID: 114166939216675786}
   - component: {fileID: 114009173076317600}
   - component: {fileID: 65336834196439542}
+  - component: {fileID: 114259442334468734}
   m_Layer: 0
   m_Name: Paper_5
   m_TagString: PapperPuzzle05
@@ -147,8 +152,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341726652070620}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7250054, y: -0.035817742, z: 9.293436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.007, y: -0.035817742, z: 9.293436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4101905936018360}
@@ -238,7 +243,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 143d2b3969de2e84dbd264b815058167, type: 2}
+  - {fileID: 2100000, guid: 7d907a2afe6bb4341825d45501ca4c19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -272,7 +277,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 143d2b3969de2e84dbd264b815058167, type: 2}
+  - {fileID: 2100000, guid: 7d907a2afe6bb4341825d45501ca4c19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -306,7 +311,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 143d2b3969de2e84dbd264b815058167, type: 2}
+  - {fileID: 2100000, guid: 7d907a2afe6bb4341825d45501ca4c19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -340,7 +345,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 143d2b3969de2e84dbd264b815058167, type: 2}
+  - {fileID: 2100000, guid: 7d907a2afe6bb4341825d45501ca4c19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -374,7 +379,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 143d2b3969de2e84dbd264b815058167, type: 2}
+  - {fileID: 2100000, guid: 7d907a2afe6bb4341825d45501ca4c19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -400,35 +405,35 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1252213231334862}
-  m_Mesh: {fileID: 4300000, guid: bea535408756cf44093462f181979623, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 019cb67779e90a94c9ef618c18ae9f34, type: 3}
 --- !u!33 &33225973621897494
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1249093102237090}
-  m_Mesh: {fileID: 4300002, guid: bea535408756cf44093462f181979623, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 019cb67779e90a94c9ef618c18ae9f34, type: 3}
 --- !u!33 &33307297529440520
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1596275336382296}
-  m_Mesh: {fileID: 4300008, guid: bea535408756cf44093462f181979623, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 019cb67779e90a94c9ef618c18ae9f34, type: 3}
 --- !u!33 &33396914230238372
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1403128807679554}
-  m_Mesh: {fileID: 4300006, guid: bea535408756cf44093462f181979623, type: 3}
+  m_Mesh: {fileID: 4300006, guid: 019cb67779e90a94c9ef618c18ae9f34, type: 3}
 --- !u!33 &33590030892109642
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1369935073282468}
-  m_Mesh: {fileID: 4300004, guid: bea535408756cf44093462f181979623, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 019cb67779e90a94c9ef618c18ae9f34, type: 3}
 --- !u!54 &54117949906983538
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -512,7 +517,7 @@ BoxCollider:
   m_GameObject: {fileID: 1596275336382296}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.07983138, y: 0.0005, z: 0.15390651}
   m_Center: {x: -0.011006944, y: -0.00025, z: -0.017752804}
@@ -548,7 +553,7 @@ BoxCollider:
   m_GameObject: {fileID: 1252213231334862}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.09416895, y: 0.0005, z: 0.12530003}
   m_Center: {x: -0.0032446124, y: -0.00025, z: 0.0051723868}
@@ -622,6 +627,40 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114176654031478920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1403128807679554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
+--- !u!114 &114191569906968998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1369935073282468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114249184375808958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -652,6 +691,23 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114259442334468734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1596275336382296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114267388261008568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -674,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 4444704149140634}
   leftSnapHandle: {fileID: 4444704149140634}
   throwVelocityWithAttachDistance: 0
@@ -693,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 4804174874587768}
   leftSnapHandle: {fileID: 4804174874587768}
   throwVelocityWithAttachDistance: 0
@@ -856,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 4694905097100268}
   leftSnapHandle: {fileID: 4694905097100268}
   throwVelocityWithAttachDistance: 0
@@ -864,6 +920,23 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114723871824619050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249093102237090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114802912877089244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -894,6 +967,23 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114807311017595538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252213231334862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114811044628847530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -905,7 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 4101905936018360}
   leftSnapHandle: {fileID: 4101905936018360}
   throwVelocityWithAttachDistance: 0
@@ -924,7 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 4144177973648372}
   leftSnapHandle: {fileID: 4144177973648372}
   throwVelocityWithAttachDistance: 0
