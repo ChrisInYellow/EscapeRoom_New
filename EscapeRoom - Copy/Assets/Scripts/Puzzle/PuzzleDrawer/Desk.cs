@@ -6,12 +6,11 @@ using UnityEngine;
 public class Desk : MonoBehaviour {
 
     private Animator anim;
-    private GameObject battery;
+    public GameObject drawerItem;
 
     private void Start()
     {
         anim = transform.GetChild(0).GetComponent<Animator>();
-        battery = transform.GetChild(0).GetChild(0).gameObject;
     }
 
     public void Open()
@@ -24,6 +23,6 @@ public class Desk : MonoBehaviour {
     private IEnumerator SpawnItem(float time)
     {
         yield return new WaitForSeconds(time);
-        battery.SetActive(true);
+        drawerItem.SetActive(true);
     }
 }
