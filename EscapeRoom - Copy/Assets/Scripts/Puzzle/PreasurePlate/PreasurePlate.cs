@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PreasurePlate : MonoBehaviour
 {
     public float maxWeight;
     public float minWeight;
 
-    private float currentWeight;
+    public UnityEvent enoughWeight = new UnityEvent();
+    public UnityEvent notRightAmountOfWeight = new UnityEvent();
+
+    private float currentWeight = 0;
+    private bool hasBeenOpened = false;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -31,12 +36,12 @@ public class PreasurePlate : MonoBehaviour
     {
         if (currentWeight <= maxWeight && currentWeight >= minWeight)
         {
-            //Puzzle solved
-            Debug.Log("Enough weight");
+            enoughWeight.Invoke();
+            hasBeenOpened = true;
         }
-        if (currentWeight > maxWeight)
+        if ((currentWeight > maxWeight || currentWeight < minWeight) && hasBeenOpened == false)
         {
-            Debug.Log("Too heavy");
+            notRightAmountOfWeight.Invoke();
         }
     }
 }
