@@ -12,7 +12,8 @@ public class PuzzleActivatorEditor : Editor {
 
         PuzzleActivator activator = (PuzzleActivator)target;
 
-        if (GUILayout.Button("Paper Puzzle"))
+        GUILayout.Box("Puzzles");
+        if (GUILayout.Button("Painting Puzzle"))
         {
             activator.puzzle0();
         }
@@ -27,32 +28,31 @@ public class PuzzleActivatorEditor : Editor {
             activator.puzzle2();
         }
 
-
         if (GUILayout.Button("Chess Puzzle"))
         {
             activator.puzzle3();
         }
-
 
         if (GUILayout.Button("Eye Scanner puzzle"))
         {
             activator.puzzle4();
         }
 
-        if (GUILayout.Button("Fuse Tilewall"))
+        if (GUILayout.Button("Laser Puzzle"))
         {
             activator.puzzle5();
         }
 
-        if (GUILayout.Button("Fuse Laser"))
+        GUILayout.Box("Fuses");
+
+        if (GUILayout.Button("Fuse Tilewall"))
         {
             activator.puzzle6();
         }
 
-        if (GUILayout.Button("Fuse Chess"))
+        if (GUILayout.Button("Fuse Laser"))
         {
             activator.puzzle7();
         }
-
     }
 }
