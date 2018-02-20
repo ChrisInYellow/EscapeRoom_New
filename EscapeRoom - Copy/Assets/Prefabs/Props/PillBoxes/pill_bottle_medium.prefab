@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114358503865220600}
   - component: {fileID: 114866612312829584}
   - component: {fileID: 114442661488656340}
+  - component: {fileID: 114604393466992030}
   m_Layer: 0
   m_Name: pill_bottle_medium
   m_TagString: Untagged
@@ -180,6 +181,23 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &114604393466992030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1705087207543462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114866612312829584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +219,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114358503865220600}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 114442661488656340}
   isUsable: 0
   holdButtonToUse: 1

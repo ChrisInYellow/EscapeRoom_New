@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114751324592399480}
   - component: {fileID: 114852905486011932}
   - component: {fileID: 114909448524642402}
+  - component: {fileID: 114895801332591798}
   m_Layer: 0
   m_Name: Pillow
   m_TagString: Untagged
@@ -605,8 +606,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009540664464714}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.42, y: -0.763, z: 4.567}
+  m_LocalRotation: {x: -0, y: -0.12308191, z: -0, w: 0.99239653}
+  m_LocalPosition: {x: 1.42, y: -0.763, z: 7.689}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4250605230103086}
@@ -615,7 +616,7 @@ Transform:
   - {fileID: 4356235991854986}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -14.14, z: 0}
 --- !u!4 &4079279141524560
 Transform:
   m_ObjectHideFlags: 1
@@ -2266,6 +2267,23 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &114895801332591798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040384117519040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114909448524642402
 MonoBehaviour:
   m_ObjectHideFlags: 1

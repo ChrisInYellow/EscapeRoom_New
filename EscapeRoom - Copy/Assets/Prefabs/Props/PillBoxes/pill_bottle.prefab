@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114284847473687572}
   - component: {fileID: 114736731692976948}
   - component: {fileID: 114146858981322008}
+  - component: {fileID: 114758749895966658}
   m_Layer: 0
   m_Name: pill_bottle
   m_TagString: Untagged
@@ -201,7 +202,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114284847473687572}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 114146858981322008}
   isUsable: 0
   holdButtonToUse: 1
@@ -210,3 +211,20 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114758749895966658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380081246135774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0

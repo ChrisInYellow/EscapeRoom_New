@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114515869240291242}
   - component: {fileID: 114444037453287270}
   - component: {fileID: 114597192796817232}
+  - component: {fileID: 114230477899335578}
   m_Layer: 0
   m_Name: pill_bottle_large_w_cap
   m_TagString: Untagged
@@ -133,6 +134,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114230477899335578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243465096740094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114444037453287270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +172,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114515869240291242}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 114597192796817232}
   isUsable: 0
   holdButtonToUse: 1
