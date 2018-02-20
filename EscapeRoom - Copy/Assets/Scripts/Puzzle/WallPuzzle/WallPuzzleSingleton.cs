@@ -48,6 +48,7 @@ public class WallPuzzleSingleton : MonoBehaviour
             {
                 numberOfCorrectTiles += 1;
             }
+            print(numberOfCorrectTiles);
         }
 
         if (numberOfCorrectTiles == maxNumberOfTiles)
