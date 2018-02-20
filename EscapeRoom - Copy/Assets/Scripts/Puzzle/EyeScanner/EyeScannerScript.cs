@@ -27,23 +27,25 @@ public class EyeScannerScript : MonoBehaviour {
         if (CombinationSolved == true)
         {
 
+            interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
+            FindObjectOfType<AudioManager>().Play("CameraZoom");
             if (other.tag == "EyeBall")
             {
                 SolvePuzzle();
             }
-
-            interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
-
-            if (other.tag == "MainCamera")
+            else
             {
                 FindObjectOfType<AudioManager>().Play("AccessDenied");
             }
         }
     }
 
+
+
     private void OnTriggerExit(Collider other)
     {
         interactableLens.GetComponent<Animator>().SetTrigger("Unzoom");
+        FindObjectOfType<AudioManager>().Play("CameraUnZoom");
     }
 
     public void SolvePuzzle()
