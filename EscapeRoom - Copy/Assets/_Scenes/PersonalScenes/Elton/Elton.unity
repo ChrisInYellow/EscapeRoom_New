@@ -2332,89 +2332,12 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 1366337959825548, guid: 5272cd3ab75c36240a917dcb3e41e5c9,
     type: 2}
-  m_PrefabInternal: {fileID: 820819931}
---- !u!54 &469696038 stripped
-Rigidbody:
-  m_PrefabParentObject: {fileID: 54274907416138410, guid: 5272cd3ab75c36240a917dcb3e41e5c9,
-    type: 2}
-  m_PrefabInternal: {fileID: 820819931}
+  m_PrefabInternal: {fileID: 487366650}
 --- !u!4 &469696042 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9,
     type: 2}
-  m_PrefabInternal: {fileID: 820819931}
---- !u!114 &469696043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469696033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f96f1837f21d4bf9a77ff61e7b81f20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnTouch:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnUntouch:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnGrab:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnUngrab:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 469696038}
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnUse:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnUnuse:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnEnterSnapDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnExitSnapDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnSnapToDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnUnsnapFromDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_PrefabInternal: {fileID: 487366650}
 --- !u!1001 &474516690
 Prefab:
   m_ObjectHideFlags: 0
@@ -2621,6 +2544,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05e1c6a95f1004d4ca0159b83c6dbf01, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &487366650
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2008512882}
+    m_Modifications:
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &491610100
 Prefab:
@@ -3913,74 +3878,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4807464414840668, guid: 61e6869fb5dc3184885b29b251e20fa4,
     type: 2}
   m_PrefabInternal: {fileID: 203407064}
---- !u!1001 &820819931
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2008512882}
-    m_Modifications:
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.406
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.358
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1366337959825548, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23127662446247188, guid: 5272cd3ab75c36240a917dcb3e41e5c9,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54274907416138410, guid: 5272cd3ab75c36240a917dcb3e41e5c9,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4652977034039898, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.03
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5272cd3ab75c36240a917dcb3e41e5c9, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &836355072
 Prefab:
   m_ObjectHideFlags: 0
