@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events; 
 using VRTK;
 
 public class OnCollisionFade : MonoBehaviour 
 {
+    public UnityEvent FadeTrigger = new UnityEvent(); 
     public VRTK_HeadsetFade headSetFade;
    
     public void OnTriggerEnter(Collider other)
