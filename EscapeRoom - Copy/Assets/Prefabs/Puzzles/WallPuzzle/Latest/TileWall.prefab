@@ -44,7 +44,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4511405997302142}
   - component: {fileID: 108021123103858848}
-  - component: {fileID: 114558550723854026}
   m_Layer: 0
   m_Name: WallPuzzleLight
   m_TagString: Untagged
@@ -1492,13 +1491,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044746233377760}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.581, y: 1.548, z: 5.002}
+  m_LocalRotation: {x: 0.22750118, y: 0, z: 0, w: 0.9737779}
+  m_LocalPosition: {x: 0.581, y: 2.386, z: 3.523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4547605189782752}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.3, y: 0, z: 0}
 --- !u!4 &4512547103909974
 Transform:
   m_ObjectHideFlags: 1
@@ -1548,7 +1547,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1774539654434420}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.37586176, y: -0.79557955, z: 4.592}
+  m_LocalPosition: {x: 0.175, y: -1.028, z: 4.541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4746025009721898}
@@ -4988,11 +4987,11 @@ Light:
   m_GameObject: {fileID: 1044746233377760}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
-  m_Range: 1
-  m_SpotAngle: 30
+  m_Range: 2.54
+  m_SpotAngle: 60
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -5203,7 +5202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 1
+  correctSide: 3
   importantTile: 1
   isRight: 0
 --- !u!114 &114064147642069424
@@ -5695,7 +5694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 2
   importantTile: 1
   isRight: 0
 --- !u!114 &114149892199319566
@@ -6121,7 +6120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 1
   importantTile: 1
   isRight: 0
 --- !u!114 &114218602662703480
@@ -6223,7 +6222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 0
+  correctSide: 2
   importantTile: 1
   isRight: 0
 --- !u!114 &114283007284855346
@@ -6239,7 +6238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 0
+  correctSide: 2
   importantTile: 1
   isRight: 0
 --- !u!114 &114285960539014338
@@ -6297,7 +6296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 2
+  correctSide: 0
   importantTile: 1
   isRight: 0
 --- !u!114 &114310385500334872
@@ -6327,7 +6326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 1
   importantTile: 1
   isRight: 0
 --- !u!114 &114338803253742150
@@ -6661,7 +6660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 1
+  correctSide: 3
   importantTile: 1
   isRight: 0
 --- !u!114 &114386247215076044
@@ -6983,7 +6982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 1
+  correctSide: 3
   importantTile: 1
   isRight: 0
 --- !u!114 &114452551346604090
@@ -7071,7 +7070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 1
   importantTile: 1
   isRight: 0
 --- !u!114 &114456831133905888
@@ -7253,7 +7252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 2
+  correctSide: 0
   importantTile: 1
   isRight: 0
 --- !u!114 &114532935913284276
@@ -7416,18 +7415,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &114558550723854026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1044746233377760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06922b2ad22fd084ba9a6ae7ba088ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuzeBoxZone: {fileID: 0}
 --- !u!114 &114560306666117938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8057,7 +8044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 0
+  correctSide: 2
   importantTile: 1
   isRight: 0
 --- !u!114 &114653132171991732
@@ -8681,7 +8668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 1
   importantTile: 1
   isRight: 0
 --- !u!114 &114813854142627866
@@ -9139,7 +9126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 1
+  correctSide: 3
   importantTile: 1
   isRight: 0
 --- !u!114 &114903865573251572
@@ -9355,7 +9342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 3
+  correctSide: 1
   importantTile: 1
   isRight: 0
 --- !u!114 &114961522301095418
@@ -9407,7 +9394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctPosition: 0
   sideOfCube: 0
-  correctSide: 0
+  correctSide: 3
   importantTile: 1
   isRight: 0
 --- !u!114 &114980990613617340
