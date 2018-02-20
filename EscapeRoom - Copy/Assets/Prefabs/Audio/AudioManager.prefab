@@ -70,7 +70,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: AmbientBackground
     clip: {fileID: 8300000, guid: 02829e43de50323499acb818f28399df, type: 3}
-    volume: 0.469
+    volume: 0.378
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: Thunder
     clip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
-    volume: 0.632
+    volume: 0.701
     volumeVariance: 0.075
     pitch: 1
     pitchVariance: 0.15
@@ -294,7 +294,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: ThunderTwo
     clip: {fileID: 8300000, guid: fbbc982645fc287429a2f7f7aba503aa, type: 3}
-    volume: 0.632
+    volume: 0.701
     volumeVariance: 0.075
     pitch: 1
     pitchVariance: 0.15
@@ -308,7 +308,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: ThunderThree
     clip: {fileID: 8300000, guid: 24918bccd000b2d47b250c3021587604, type: 3}
-    volume: 0.632
+    volume: 0.701
     volumeVariance: 0.075
     pitch: 1
     pitchVariance: 0.15
@@ -378,6 +378,20 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: WallTileTouch
     clip: {fileID: 8300000, guid: 4fab8b442bda1bd4cb3b1eeec6e26c4c, type: 3}
+    volume: 0.535
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 2
+    maxDistance: 5
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: DoorSlam
+    clip: {fileID: 8300000, guid: 11d3cb5c0d58bb0459338bbe02a37e6c, type: 3}
     volume: 0.535
     volumeVariance: 0.062
     pitch: 1

@@ -35,7 +35,7 @@ public class TileWall : MonoBehaviour
     public void Start()
     {
         tileWallManager = WallPuzzleSingleton.GetInstance();
-        PlayAnim();
+        IncorrectStart();
     }
 
     public void FixedUpdate()
@@ -89,5 +89,39 @@ public class TileWall : MonoBehaviour
     public void CorrectSideSelected ()
     {
         tileWallManager.CheckTiles(gameObject, isRight);
+    }
+
+    void IncorrectStart()
+    {
+        if (sideOfCube == correctSide)
+        { 
+            if (!coolDown)
+            {
+                coolDown = true;
+                spin = true;
+                Invoke("StopAnim", duration);
+            }
+
+            sideOfCube += 1;
+
+            if (sideOfCube > 3)
+            {
+                sideOfCube = 0;
+            }
+
+            if (sideOfCube == correctSide)
+            {
+                isRight = true;
+            }
+            else
+            {
+                isRight = false;
+            }
+        }
+        else
+        {
+            PlayAnim();
+        }
+        
     }
 }
