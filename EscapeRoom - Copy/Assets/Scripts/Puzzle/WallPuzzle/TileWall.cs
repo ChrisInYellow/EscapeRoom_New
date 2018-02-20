@@ -20,7 +20,7 @@ public class TileWall : MonoBehaviour
     public bool importantTile;
     [HideInInspector]
     public bool isRight = false;
-    
+
     private WallPuzzleSingleton tileWallManager;
 
     private void OnDrawGizmos()
@@ -35,7 +35,14 @@ public class TileWall : MonoBehaviour
     public void Start()
     {
         tileWallManager = WallPuzzleSingleton.GetInstance();
-        IncorrectStart();
+        if (importantTile)
+        {
+            if (sideOfCube == correctSide)
+            {
+                isRight = true;
+            }
+            tileWallManager.CheckTiles(gameObject, isRight);
+        }
     }
 
     public void FixedUpdate()
@@ -47,16 +54,13 @@ public class TileWall : MonoBehaviour
         }
     }
 
-    public void PlayAnim ()
+    public void PlayAnim()
     {
-        if (tileWallManager.stopPuzzle)
+        if (tileWallManager.stopPuzzle || coolDown)
             return;
-        if (!coolDown)
-        {
-            coolDown = true;
-            spin = true;
-            Invoke("StopAnim", duration);
-        }
+        coolDown = true;
+        spin = true;
+        Invoke("StopAnim", duration);
 
         sideOfCube += 1;
 
@@ -75,53 +79,20 @@ public class TileWall : MonoBehaviour
         }
     }
 
-    public void StopAnim ()
+    public void StopAnim()
     {
         coolDown = false;
         spin = false;
 
-        if(importantTile)
-            {
-                CorrectSideSelected();
-            }
+        if (importantTile)
+        {
+            CorrectSideSelected();
+        }
     }
 
-    public void CorrectSideSelected ()
+    public void CorrectSideSelected()
     {
         tileWallManager.CheckTiles(gameObject, isRight);
     }
-
-    void IncorrectStart()
-    {
-        if (sideOfCube == correctSide)
-        { 
-            if (!coolDown)
-            {
-                coolDown = true;
-                spin = true;
-                Invoke("StopAnim", duration);
-            }
-
-            sideOfCube += 1;
-
-            if (sideOfCube > 3)
-            {
-                sideOfCube = 0;
-            }
-
-            if (sideOfCube == correctSide)
-            {
-                isRight = true;
-            }
-            else
-            {
-                isRight = false;
-            }
-        }
-        else
-        {
-            PlayAnim();
-        }
-        
-    }
+    
 }
