@@ -12,6 +12,7 @@ public class PreasurePlate : MonoBehaviour
     public UnityEvent notRightAmountOfWeight = new UnityEvent();
 
     private float currentWeight = 0;
+    private int numberOfItemsOn = 0;
     private bool hasBeenOpened = false;
 
     public void OnTriggerEnter(Collider other)
@@ -20,6 +21,11 @@ public class PreasurePlate : MonoBehaviour
         {
             currentWeight += other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
+        }
+        if (numberOfItemsOn < 5 && numberOfItemsOn > 0)
+        {
+            numberOfItemsOn += 1;
+            transform.position -= new Vector3(0,0.5f,0);
         }
     }
 
@@ -30,6 +36,8 @@ public class PreasurePlate : MonoBehaviour
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
         }
+        numberOfItemsOn -= 1;
+        transform.position += new Vector3(0, 0.5f, 0);
     }
 
     public void CheckWeight ()

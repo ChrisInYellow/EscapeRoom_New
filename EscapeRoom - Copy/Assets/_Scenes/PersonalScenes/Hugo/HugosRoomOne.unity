@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -3410,26 +3410,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4146509177580886, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146509177580886, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146509177580886, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181039035642616, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181039035642616, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78d5d901f0059ac4a968314674d00a51, type: 2}
   m_IsPrefabParent: 0
@@ -3793,22 +3773,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &758002646 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1408009475147584, guid: 78d5d901f0059ac4a968314674d00a51,
+--- !u!114 &758002647 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114439206290021802, guid: 78d5d901f0059ac4a968314674d00a51,
     type: 2}
   m_PrefabInternal: {fileID: 629259172}
---- !u!114 &758002647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 758002646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d97cef01aa539f4ba9470945f43e375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &761580152 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1,
