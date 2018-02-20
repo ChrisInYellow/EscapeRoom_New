@@ -28,8 +28,8 @@ GameObject:
   m_Name: medicine_cart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4059541261712682
 Transform:
@@ -37,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917973050167698}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.763, y: -0.755, z: 4.477}
+  m_LocalRotation: {x: -0.7017531, y: 0.08684829, z: 0.08684829, w: 0.7017531}
+  m_LocalPosition: {x: -0.23999977, y: -0.755, z: 6.4470005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 14.11, z: 0}
 --- !u!23 &23278645399872906
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3b8159c00631ac343bdf3f6d137d2163, type: 3}
+  - {fileID: 2100000, guid: af0b79d19ada41945876898a58dacf01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917973050167698}
-  m_Mesh: {fileID: 4300000, guid: 3b8159c00631ac343bdf3f6d137d2163, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 4ee7ee56e76093049b6b5d09bc4e1820, type: 3}
 --- !u!65 &65388695170081730
 BoxCollider:
   m_ObjectHideFlags: 1
