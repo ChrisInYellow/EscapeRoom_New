@@ -76,7 +76,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092803699583082}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.976, y: 1.303, z: -4.095}
+  m_LocalPosition: {x: -4.534138, y: 1.2094204, z: 7.5573587}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4721728698036704}
@@ -124,7 +124,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4cc6058621cb11d479ffa96743d18f97, type: 3}
+  - {fileID: 2100000, guid: 44f2639a59d753b4da65035c40795712, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -158,7 +158,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100002, guid: 1621c16288bf8fb4dacaeead45aa2dc1, type: 3}
+  - {fileID: 2100000, guid: 65dbd25efc1d18142af64d8f7ad2d043, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0.9862069, g: 1, b: 0, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7921569, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.1
+  thickness: 0.05
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0

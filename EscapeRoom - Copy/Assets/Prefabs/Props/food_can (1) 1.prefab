@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 114694488077816466}
   - component: {fileID: 54581662093049130}
   - component: {fileID: 114312881084602962}
-  - component: {fileID: 114069154710468172}
   - component: {fileID: 114205012157050660}
+  - component: {fileID: 114988808083379422}
   m_Layer: 0
   m_Name: food_can (1) 1
   m_TagString: Can
@@ -165,23 +165,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114069154710468172
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1948078087244690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
 --- !u!114 &114205012157050660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.1
+  thickness: 0.05
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
@@ -222,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7921569, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -231,8 +214,8 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 0}
-  secondaryGrabActionScript: {fileID: 0}
+  grabAttachMechanicScript: {fileID: 114694488077816466}
+  secondaryGrabActionScript: {fileID: 114988808083379422}
   isUsable: 0
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
@@ -259,3 +242,14 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114988808083379422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948078087244690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

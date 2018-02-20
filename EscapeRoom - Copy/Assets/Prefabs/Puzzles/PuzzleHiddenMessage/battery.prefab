@@ -173,7 +173,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.024469957, y: 0.024098199, z: 0.04637221}
+  m_Size: {x: 0.03446996, y: 0.0340982, z: 0.05637221}
   m_Center: {x: -0.011983283, y: 0.00000035669655, z: 0.022137059}
 --- !u!95 &95430411530946604
 Animator:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0.9862069, g: 1, b: 0, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7921569, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.1
+  thickness: 0.05
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
