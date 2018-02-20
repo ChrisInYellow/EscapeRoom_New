@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 114129123682858634}
   - component: {fileID: 64813234164086954}
   - component: {fileID: 114094792451888686}
+  - component: {fileID: 114041076987407282}
   m_Layer: 0
   m_Name: flashlight 1
   m_TagString: Untagged
@@ -390,7 +391,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d864d8c6f46e29b4781ce05a009a3f20, type: 3}
+  - {fileID: 2100000, guid: fc4073df8efef5e4599954362eb91586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -596,6 +597,23 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114041076987407282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191655801805966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 0
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 0
+  hideDelayOnUse: 0
 --- !u!114 &114094792451888686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -714,7 +732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.1
+  thickness: 0.05
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
@@ -730,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7921569, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -800,7 +818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e551b9d932a25408e7cabedcd80202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 0
   batteryIsIn: 0
   spotLight: {fileID: 1039456039185252}
 --- !u!135 &135055781932400362

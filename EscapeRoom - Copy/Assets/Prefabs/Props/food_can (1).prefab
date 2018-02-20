@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33441462420434954}
   - component: {fileID: 23663337600080198}
   - component: {fileID: 64480611212756100}
+  - component: {fileID: 64764894337554680}
   m_Layer: 0
   m_Name: can
   m_TagString: Untagged
@@ -42,8 +43,8 @@ GameObject:
   - component: {fileID: 114984834606705366}
   - component: {fileID: 54681442902028350}
   - component: {fileID: 114447628902612902}
-  - component: {fileID: 114459114527364542}
   - component: {fileID: 114704138366844028}
+  - component: {fileID: 114245578586913796}
   m_Layer: 0
   m_Name: food_can (1)
   m_TagString: Can
@@ -70,8 +71,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758386076916776}
-  m_LocalRotation: {x: -0, y: 0.6159365, z: -0, w: 0.78779584}
-  m_LocalPosition: {x: -5.2580085, y: -0.71310705, z: 5.6300564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.086, y: -0.701, z: 0.013358593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4221093059329728}
@@ -148,6 +149,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6b675fbf401ba55418767ff0e63b90aa, type: 3}
+--- !u!64 &64764894337554680
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693352528392686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 199685dc429900e40ad043ab0941d353, type: 3}
 --- !u!95 &95805759686466630
 Animator:
   serializedVersion: 3
@@ -165,6 +180,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114245578586913796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758386076916776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114447628902612902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,24 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
---- !u!114 &114459114527364542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1758386076916776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 0.1
+  thickness: 0.05
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
@@ -211,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0.9843137, g: 1, b: 0, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7921569, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -220,8 +229,8 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 0}
-  secondaryGrabActionScript: {fileID: 0}
+  grabAttachMechanicScript: {fileID: 114984834606705366}
+  secondaryGrabActionScript: {fileID: 114245578586913796}
   isUsable: 0
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
