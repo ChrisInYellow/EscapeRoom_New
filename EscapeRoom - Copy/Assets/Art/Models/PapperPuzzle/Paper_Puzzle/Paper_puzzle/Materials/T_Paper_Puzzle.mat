@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: T_Paper_Puzzle
-  m_Shader: {fileID: 47, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 8b55c544a108403459485b49dfc15bc9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 985aa053430963744bf394eddb6b91fd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -39,22 +39,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8c517f930c813934d92a3503f8d89583, type: 3}
+        m_Texture: {fileID: 2800000, guid: 35edd99805577aa4695cd9f815dc0461, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: -1}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: d1136def5d8dcf148adcf3ae23d18e7a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9deee3edbe8c9244188ed67db9ee4b41, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 381f254d06dd5c14397dd65000b1c0b9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 35edd99805577aa4695cd9f815dc0461, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -63,8 +59,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 1
+    - _GlossMapScale: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -76,5 +72,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.75735295, g: 0.75735295, b: 0.75735295, a: 1}
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
