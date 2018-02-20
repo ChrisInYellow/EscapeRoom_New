@@ -96,7 +96,7 @@ public class LaserSpawn : MonoBehaviour
                 if (hitMirror.tag == "LockBoxLock")
                 {
                     openedLock = true;
-                    puzzleSolved.Invoke();
+                    Solve();
                 }
 
             if (lastMirror != null)
@@ -151,4 +151,8 @@ public class LaserSpawn : MonoBehaviour
         }
     }
 
+    public void Solve()
+    {
+        puzzleSolved.Invoke();
+    }
 }

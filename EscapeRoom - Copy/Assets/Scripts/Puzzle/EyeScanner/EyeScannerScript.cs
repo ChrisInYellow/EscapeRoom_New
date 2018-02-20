@@ -11,6 +11,11 @@ public class EyeScannerScript : MonoBehaviour {
     public GameObject lamp;
     public bool CombinationSolved;
 
+    private void Start()
+    {
+        lamp.GetComponent<MeshRenderer>().materials[0].color = new Color(1, 0, 0);
+    }
+
     public void Unlock()
     {
         CombinationSolved = true;
