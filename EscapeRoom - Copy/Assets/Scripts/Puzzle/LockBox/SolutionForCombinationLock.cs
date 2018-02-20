@@ -33,7 +33,6 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     public void Solve()
     {
-        print("Solved");
         puzzleSolved.Invoke();
         FindObjectOfType<AudioManager>().Play("Solution");
     }

@@ -6370,7 +6370,7 @@ Prefab:
         type: 2}
       propertyPath: completedEye.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1945999969}
     - target: {fileID: 114084465153695492, guid: 3a307e0b74735524cbb60a478ef10e52,
         type: 2}
       propertyPath: completedEye.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -6572,6 +6572,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 33495337692939052, guid: 18195d96a3481ac4bb1f10aa3eb1f5d7,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 03e5121d788aacd4581d33e649032330, type: 3}
+    - target: {fileID: 23345136296494948, guid: 18195d96a3481ac4bb1f10aa3eb1f5d7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e2ccaa95bddb51748a56c5fbf6b04666, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18195d96a3481ac4bb1f10aa3eb1f5d7, type: 2}
   m_IsPrefabParent: 0
@@ -14145,6 +14155,35 @@ Mesh:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: a61d7b6c65e8665409a8b725d644b2ff, type: 3}
   m_PrefabInternal: {fileID: 1427149295}
+--- !u!114 &1945999969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945999968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe401a2614e5f143aa0486c0536856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleSolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2023347608}
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  anim: {fileID: 1945999972}
+  left: 1
 --- !u!95 &1945999972
 Animator:
   serializedVersion: 3
@@ -14823,6 +14862,24 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: a61d7b6c65e8665409a8b725d644b2ff, type: 3}
   m_PrefabInternal: {fileID: 1427149295}
+--- !u!114 &2023347608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023347607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe401a2614e5f143aa0486c0536856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleSolved:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  anim: {fileID: 2023347611}
+  left: 0
 --- !u!95 &2023347611
 Animator:
   serializedVersion: 3

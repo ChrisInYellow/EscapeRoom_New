@@ -19,13 +19,14 @@ public class FlashLight : MonoBehaviour {
     public void DeActivate()
     {
         spotLight.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("FlashlightClick");
     }
 
     public void batteryInput()
     {
         FindObjectOfType<AudioManager>().Play("BatteryClick");
         batteryIsIn = true;
-        Activate();
+        spotLight.SetActive(true);
     }
 
     public void QuickSolve()

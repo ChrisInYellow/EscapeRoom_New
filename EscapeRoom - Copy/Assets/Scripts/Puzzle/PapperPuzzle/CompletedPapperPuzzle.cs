@@ -13,6 +13,7 @@ public class CompletedPapperPuzzle : MonoBehaviour
 
     public void IncreasePlacedPappers ()
     {
+        FindObjectOfType<AudioManager>().Play("PlacingPaper");
         numberOfPlacedPappers += 1;
         if (numberOfPlacedPappers == 5)
         {
@@ -23,7 +24,6 @@ public class CompletedPapperPuzzle : MonoBehaviour
     public void PuzzleSolved()
     {
         puzzleSolved.Invoke();
-        FindObjectOfType<AudioManager>().Play("Solution");
         FindObjectOfType<AudioManager>().Play("Hint");
     }
 }

@@ -16,6 +16,11 @@ public class FuzeBox : MonoBehaviour
     [HideInInspector]
     public bool fuzeIsSnapped = false;
 
+    private void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("Buzzing");
+    }
+
     public void OnSnapped()
     {
         fuzeIsSnapped = true;
