@@ -23,12 +23,12 @@ GameObject:
   - component: {fileID: 23041535573441614}
   - component: {fileID: 95770959959421554}
   - component: {fileID: 54062390017937398}
-  - component: {fileID: 65610539230595086}
   - component: {fileID: 114787377933958950}
   - component: {fileID: 114743536460979694}
   - component: {fileID: 114498824024080502}
   - component: {fileID: 114563016510030428}
   - component: {fileID: 114882723333865336}
+  - component: {fileID: 65584259543561214}
   m_Layer: 0
   m_Name: scalpel_01
   m_TagString: Untagged
@@ -42,13 +42,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1797362916657084}
-  m_LocalRotation: {x: 0.676945, y: 0.20431727, z: -0.20431727, w: 0.676945}
-  m_LocalPosition: {x: -0.413, y: -0.004000008, z: 6.558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3561, y: -0.0343, z: 6.558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 33.59, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23041535573441614
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 90f60f39d4e29074aa76bfca1e88fbdd, type: 3}
+  - {fileID: 2100000, guid: 9a8b4b59f1bb055448c80646fcf74229, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,7 +89,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1797362916657084}
-  m_Mesh: {fileID: 4300000, guid: 90f60f39d4e29074aa76bfca1e88fbdd, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 42a9e6ab01e0163499cd54998660bda5, type: 3}
 --- !u!54 &54062390017937398
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -105,7 +105,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65610539230595086
+--- !u!65 &65584259543561214
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,8 +115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.015151722, y: 0.18237296, z: 0.0056919046}
-  m_Center: {x: -0.00029074494, y: 0.023866458, z: 0.0025000004}
+  m_Size: {x: 0.015151722, y: 0.0056919036, z: 0.18237291}
+  m_Center: {x: -0.0070006307, y: -0.0025000065, z: 0.091398366}
 --- !u!95 &95770959959421554
 Animator:
   serializedVersion: 3
