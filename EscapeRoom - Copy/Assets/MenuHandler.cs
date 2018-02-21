@@ -47,7 +47,7 @@ public class MenuHandler : MonoBehaviour
         }
         else 
         {
-            menuStarted = false;
+            menuStarted = false;                         //FIX SHIT AND STUFF
             PointerHandler();
             QuitMenu();
         }
