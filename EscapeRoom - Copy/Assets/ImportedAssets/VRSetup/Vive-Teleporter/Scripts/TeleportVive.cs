@@ -6,6 +6,7 @@ using Valve.VR;
 public class TeleportVive : MonoBehaviour {
     [Tooltip("Parabolic Pointer object to pull destination points from, and to assign to each controller.")]
     public ParabolicPointer Pointer;
+    public ParabolicPointer PointerTwo;
     /// Origin of SteamVR tracking space
     [Tooltip("Origin of the SteamVR tracking space")]
     public Transform OriginTransform;
@@ -288,6 +289,10 @@ public class TeleportVive : MonoBehaviour {
             }
         }
 	}
+    public void ChangePointer()
+    {
+        Pointer = PointerTwo;
+    }
 }
 
 /// \brief Represents the player's current use of the teleport machanic.
