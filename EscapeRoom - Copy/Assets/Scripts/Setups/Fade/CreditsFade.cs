@@ -10,6 +10,7 @@ using VRTK;
 public class CreditsFade : MonoBehaviour
 {
     //public UnityEvent CreditTriggered; 
+    public GameObject texture; 
     public VRTK_HeadsetFade fade;
     public Camera creditsCam;
     public float dur;
@@ -18,6 +19,7 @@ public class CreditsFade : MonoBehaviour
     private void Start()
     {
         video = GetComponentInChildren<VideoPlayer>();
+        
     }
     // Use this for initialization
     private void OnTriggerEnter(Collider other)
@@ -30,8 +32,9 @@ public class CreditsFade : MonoBehaviour
 
     {
         yield return new WaitForSeconds(dur);
-        fade.Unfade(dur); 
         creditsCam.transform.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f); 
+        creditsCam.GetComponent<Camera>().enabled = true; 
         StartCoroutine(MenuLoader());       
     }
     private IEnumerator MenuLoader()
