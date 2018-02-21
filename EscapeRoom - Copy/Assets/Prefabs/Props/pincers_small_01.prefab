@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 54695338571668256}
   - component: {fileID: 114775842325225076}
   - component: {fileID: 65809524688067568}
+  - component: {fileID: 114625475492736326}
   m_Layer: 0
   m_Name: pincers_small_01
   m_TagString: Untagged
@@ -224,6 +225,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114625475492736326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1186407302620238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.1
 --- !u!114 &114775842325225076
 MonoBehaviour:
   m_ObjectHideFlags: 1

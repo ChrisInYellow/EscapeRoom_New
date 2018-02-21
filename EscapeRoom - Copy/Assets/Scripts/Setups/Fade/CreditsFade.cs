@@ -33,6 +33,7 @@ public class CreditsFade : MonoBehaviour
         yield return new WaitForSeconds(dur);
         creditsCam.transform.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f); 
+        fade.gameObject.SetActive(false);
         creditsCam.GetComponent<Camera>().enabled = true; 
         StartCoroutine(MenuLoader());       
     }

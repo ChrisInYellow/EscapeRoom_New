@@ -8,7 +8,7 @@ public class WallPuzzleSingleton : MonoBehaviour
     public UnityEvent puzzleSolved = new UnityEvent();
 
     [HideInInspector]
-    public bool stopPuzzle = true;
+    public bool stopPuzzle;
     private List<GameObject> correctTileObjects = new List<GameObject>();
 
     private static WallPuzzleSingleton instance;

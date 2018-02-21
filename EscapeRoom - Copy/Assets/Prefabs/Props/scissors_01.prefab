@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114656080086670062}
   - component: {fileID: 114597608276108952}
   - component: {fileID: 65513818347185802}
+  - component: {fileID: 114549043927051158}
   m_Layer: 0
   m_Name: scissors_01
   m_TagString: Untagged
@@ -177,6 +178,18 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &114549043927051158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838137172703304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.1
 --- !u!114 &114597608276108952
 MonoBehaviour:
   m_ObjectHideFlags: 1
