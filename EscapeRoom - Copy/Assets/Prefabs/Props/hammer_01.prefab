@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 114117653881103112}
   - component: {fileID: 114315162222405152}
   - component: {fileID: 64119399707665684}
+  - component: {fileID: 114000083367808916}
   m_Layer: 0
   m_Name: hammer_01
   m_TagString: Untagged
@@ -44,13 +45,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153050010461458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4475, y: -0.0227, z: 6.6509013}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.00000028088027}
+  m_LocalPosition: {x: -0.5731373, y: -0.3934, z: 6.848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!23 &23586915077917822
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -138,6 +139,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000083367808916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1153050010461458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.3
 --- !u!114 &114117653881103112
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -29,6 +29,7 @@ GameObject:
   - component: {fileID: 114481541044275848}
   - component: {fileID: 114206361359890206}
   - component: {fileID: 114878523969060104}
+  - component: {fileID: 114463861634858906}
   m_Layer: 0
   m_Name: pill_bottle_medium_w_cap
   m_TagString: Untagged
@@ -145,6 +146,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114463861634858906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1279052810039030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.3
 --- !u!114 &114481541044275848
 MonoBehaviour:
   m_ObjectHideFlags: 1

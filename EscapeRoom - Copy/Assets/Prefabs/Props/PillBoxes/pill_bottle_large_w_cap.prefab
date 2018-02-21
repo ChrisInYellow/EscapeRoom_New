@@ -29,6 +29,7 @@ GameObject:
   - component: {fileID: 114444037453287270}
   - component: {fileID: 114597192796817232}
   - component: {fileID: 114230477899335578}
+  - component: {fileID: 114573993201441862}
   m_Layer: 0
   m_Name: pill_bottle_large_w_cap
   m_TagString: Untagged
@@ -200,6 +201,18 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114573993201441862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243465096740094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.3
 --- !u!114 &114597192796817232
 MonoBehaviour:
   m_ObjectHideFlags: 1

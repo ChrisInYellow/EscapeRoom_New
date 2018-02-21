@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114234031073339332}
   - component: {fileID: 114347873492828102}
   - component: {fileID: 114418099846435784}
+  - component: {fileID: 114985768620847040}
   m_Layer: 0
   m_Name: lobotomy_pick
   m_TagString: Untagged
@@ -178,3 +179,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114985768620847040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356033966531420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.1
