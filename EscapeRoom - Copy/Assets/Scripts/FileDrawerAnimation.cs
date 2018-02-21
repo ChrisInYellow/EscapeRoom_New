@@ -21,6 +21,7 @@ public class FileDrawerAnimation : MonoBehaviour {
         {
             anim.SetBool("Open", false); 
         }
-        
+
+        //anim.SetBool("Open", !anim.GetBool("Open"));
     }
 }
