@@ -7,6 +7,7 @@ public class PreasurePlate : MonoBehaviour
 {
     public float maxWeight;
     public float minWeight;
+    public GameObject weightMeasurment;
 
     public UnityEvent enoughWeight = new UnityEvent();
     public UnityEvent notRightAmountOfWeight = new UnityEvent();
@@ -14,6 +15,12 @@ public class PreasurePlate : MonoBehaviour
     private float currentWeight = 0;
     private int numberOfItemsOn = 0;
     private bool hasBeenOpened = false;
+    private Vector3 measurementStartPos;
+
+    private void Start()
+    {
+        measurementStartPos = weightMeasurment.transform.position;
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -21,12 +28,9 @@ public class PreasurePlate : MonoBehaviour
         {
             currentWeight += other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
+            MeasurementPosition();
         }
-        if (numberOfItemsOn < 5 && numberOfItemsOn > 0)
-        {
-            numberOfItemsOn += 1;
-            transform.position -= new Vector3(0,0.5f,0);
-        }
+        
     }
 
     public void OnTriggerExit(Collider other)
@@ -35,9 +39,8 @@ public class PreasurePlate : MonoBehaviour
         {
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
+            MeasurementPosition();
         }
-        numberOfItemsOn -= 1;
-        transform.position += new Vector3(0, 0.5f, 0);
     }
 
     public void CheckWeight ()
@@ -51,5 +54,10 @@ public class PreasurePlate : MonoBehaviour
         {
             notRightAmountOfWeight.Invoke();
         }
+    }
+
+    public void MeasurementPosition ()
+    {
+        weightMeasurment.transform.position = measurementStartPos - new Vector3(0, 0, Mathf.Clamp((0.2f / minWeight) * currentWeight, 0, .2f));
     }
 }
