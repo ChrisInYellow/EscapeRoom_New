@@ -10,7 +10,6 @@ using VRTK;
 public class CreditsFade : MonoBehaviour
 {
     //public UnityEvent CreditTriggered; 
-    public GameObject texture; 
     public VRTK_HeadsetFade fade;
     public Camera creditsCam;
     public float dur;
