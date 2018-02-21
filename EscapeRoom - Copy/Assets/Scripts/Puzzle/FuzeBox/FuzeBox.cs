@@ -37,6 +37,7 @@ public class FuzeBox : MonoBehaviour
         Rigidbody rb = fuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
+        FindObjectOfType<AudioManager>().Play("PowerDown");
     }
 
     public void OnUnSnapped()
