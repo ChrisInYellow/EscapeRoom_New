@@ -8,6 +8,7 @@ public class DoorSlamScript : MonoBehaviour {
     public UnityEvent DoorSlamed = new UnityEvent();
     public GameObject leftDoor;
     public GameObject rightDoor;
+    public Transform player;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,7 +16,8 @@ public class DoorSlamScript : MonoBehaviour {
     }
     public void DoorSlamActivate()
     {
-        leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
+        player.position = new Vector3(player.position.x, player.position.y, 6.2f);
+        leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam"); ;
         rightDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
         FindObjectOfType<AudioManager>().Play("DoorSlam");
         DoorSlamed.Invoke();
