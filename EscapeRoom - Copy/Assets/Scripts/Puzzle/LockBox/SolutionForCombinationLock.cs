@@ -12,7 +12,7 @@ public class SolutionForCombinationLock : MonoBehaviour
     public LockBoxTurner lockBoxTurner2;
     public LockBoxTurner lockBoxTurner3;
     public LockBoxTurner lockBoxTurner4;
-
+    private bool hasSolved;
 
     private void Start()
     {
@@ -21,7 +21,8 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     private void Update()
     {
-        Solution();
+        if(!hasSolved)
+            Solution();
     }
     public void Solution()
     {
@@ -33,7 +34,8 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     public void Solve()
     {
-        puzzleSolved.Invoke();
+        hasSolved = true;
         FindObjectOfType<AudioManager>().Play("Hint");
+        puzzleSolved.Invoke();
     }
 }
