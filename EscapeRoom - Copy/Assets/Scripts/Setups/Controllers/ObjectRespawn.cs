@@ -30,11 +30,11 @@ public class ObjectRespawn : MonoBehaviour
 
     }
 
-    void ChildSpawner()
-    {
-        foreach (Transform child in transform)
-        {
+    //void ChildSpawner()
+    //{
+    //    foreach (Transform child in transform)
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }
