@@ -23,10 +23,15 @@ public class CreditsFade : MonoBehaviour
     // Use this for initialization
     private void OnTriggerEnter(Collider other)
     {
-        fade.Fade(new Color(0, 0, 0), dur);
-
-        StartCoroutine(CreditSpwan()); 
+        ActivateCredits();
     }
+
+    public void ActivateCredits()
+    {
+        fade.Fade(new Color(0, 0, 0), dur);
+        StartCoroutine(CreditSpwan());
+    }
+
     private IEnumerator CreditSpwan()
 
     {

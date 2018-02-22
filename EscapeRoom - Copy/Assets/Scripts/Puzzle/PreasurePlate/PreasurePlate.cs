@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,6 +17,9 @@ public class PreasurePlate : MonoBehaviour
     private int numberOfItemsOn = 0;
     private bool hasBeenOpened = false;
     private Vector3 measurementStartPos;
+    private float pointerPosition;
+    private float pointerCurrent;
+    private float pointerAdder;
 
     private void Start()
     {
@@ -40,6 +44,7 @@ public class PreasurePlate : MonoBehaviour
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
             MeasurementPosition();
+            SmoothMeasurePosition();
         }
     }
 
@@ -59,5 +64,39 @@ public class PreasurePlate : MonoBehaviour
     public void MeasurementPosition ()
     {
         weightMeasurment.transform.position = measurementStartPos - new Vector3(0, 0, Mathf.Clamp((0.2f / minWeight) * currentWeight, 0, .2f));
+    }
+
+    void SmoothMeasurePosition()
+    {
+        pointerPosition = weightMeasurment.transform.position.x - measurementStartPos.x;
+
+        if (pointerPosition < currentWeight && pointerAdder <= 0)
+            pointerAdder = (currentWeight - pointerPosition) / 10f;
+        else if (pointerPosition > currentWeight && pointerAdder >= 0)
+            pointerAdder = (currentWeight - pointerPosition) / 10f;
+        StartCoroutine(MovePointer());
+
+        if (pointerAdder < 0.05 && pointerAdder > -0.05)
+            return;
+    }
+
+    private IEnumerator MovePointer()
+    {
+        yield return new WaitForEndOfFrame();
+        weightMeasurment.transform.position = measurementStartPos + new Vector3(pointerAdder, 0, 0);
+        if (pointerAdder > 0)
+        {
+            if (weightMeasurment.transform.position.x - measurementStartPos.x < currentWeight)
+                StartCoroutine(MovePointer());
+            else
+                SmoothMeasurePosition();
+        }
+        else
+        {
+            if (weightMeasurment.transform.position.x - measurementStartPos.x > currentWeight)
+                StartCoroutine(MovePointer());
+            else
+                SmoothMeasurePosition();
+        }
     }
 }
