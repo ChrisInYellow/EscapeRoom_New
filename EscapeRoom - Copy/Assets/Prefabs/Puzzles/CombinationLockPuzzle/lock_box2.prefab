@@ -183,8 +183,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536243554899716}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.1170001, y: 0.05353002, z: 2.980232e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.1301, y: 0.05353002, z: 2.980232e-10}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 3
@@ -196,8 +196,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1255699462730868}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.11515287, y: 0.053530015, z: 2.9802322e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.1308, y: 0.053530015, z: 2.9802322e-10}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 6
@@ -209,8 +209,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1507346914729720}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0023304129, y: 0.052932136, z: 0.15207413}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0016569, y: 0.051009, z: 0.10638}
+  m_LocalScale: {x: 0.9, y: 0.7, z: 0.9}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 2
@@ -222,8 +222,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670123736783746}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.19582847, y: 0.033971168, z: -0.15174556}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.18, y: 0.033971168, z: -0.1063}
+  m_LocalScale: {x: 0.9, y: 0.7, z: 0.9}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 0
@@ -235,8 +235,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1395707439336384}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -4.5701385, y: 0.7764205, z: 1.2553585}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.5859, y: 0.7764205, z: 1.2553585}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4314963897061046}
   - {fileID: 4493159052779334}
@@ -268,8 +268,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1631554293207198}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.037832603, y: 0.053530015, z: 2.9802322e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0409, y: 0.053530015, z: 2.9802322e-10}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 4
@@ -281,8 +281,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1816627134579496}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.03866013, y: 0.053530015, z: 2.9802322e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0462, y: 0.053530015, z: 2.9802322e-10}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4432561106704026}
   m_RootOrder: 5
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 1, b: 1, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7931037, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 1, b: 1, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7931037, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 1, b: 1, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7931037, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 1, b: 1, a: 1}
+  touchHighlightColor: {r: 0, g: 0.7931037, b: 1, a: 1}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 0
