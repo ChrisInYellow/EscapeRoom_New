@@ -29,10 +29,7 @@ GameObject:
   - component: {fileID: 114195487060672300}
   - component: {fileID: 64948729030563730}
   - component: {fileID: 114896251347406718}
-  - component: {fileID: 114547177817418880}
-  - component: {fileID: 114358263879562062}
-  - component: {fileID: 114183841540174264}
-  - component: {fileID: 114772271720612060}
+  - component: {fileID: 114308605970485650}
   m_Layer: 0
   m_Name: mug_1
   m_TagString: Untagged
@@ -102,15 +99,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102959048664608}
-  m_LocalRotation: {x: -0.6057908, y: 0.36471567, z: 0.36471567, w: 0.6057908}
-  m_LocalPosition: {x: 2.042, y: -0.04657948, z: 6.946}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.692, y: -0.04657948, z: 6.6393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4032867136938798}
   - {fileID: 4644960328586634}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 62.1, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 96.55, z: 0}
 --- !u!23 &23854130069657614
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -198,18 +195,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114183841540174264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1102959048664608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0.5
 --- !u!114 &114195487060672300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,7 +207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrokenMugg: {fileID: 1970054587881178, guid: ffcc2de18b550d140ae187fa909b2054, type: 2}
---- !u!114 &114358263879562062
+  breakSpeed: 1
+--- !u!114 &114308605970485650
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -269,17 +255,6 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
---- !u!114 &114547177817418880
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1102959048664608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114650429612823708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,7 +277,7 @@ MonoBehaviour:
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114484190982512670}
-  secondaryGrabActionScript: {fileID: 0}
+  secondaryGrabActionScript: {fileID: 114308605970485650}
   isUsable: 0
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
@@ -310,17 +285,6 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114772271720612060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1102959048664608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114896251347406718
 MonoBehaviour:
   m_ObjectHideFlags: 1
