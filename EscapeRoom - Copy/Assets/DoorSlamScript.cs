@@ -19,8 +19,12 @@ public class DoorSlamScript : MonoBehaviour {
         player.position = new Vector3(player.position.x, player.position.y, 6.2f);
         leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam"); ;
         rightDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
-        FindObjectOfType<AudioManager>().Play("DoorSlam");
+        Invoke("PlaySound", .4f);
         DoorSlamed.Invoke();
+    }
+    public void PlaySound()
+    {
+        FindObjectOfType<AudioManager>().Play("DoorSlam");
         Destroy(gameObject);
     }
 }
