@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
     {
         if (Application.isEditor)
         {
-            EditorApplication.isPlaying = false;
+           // EditorApplication.isPlaying = false;
         }
         else
         {
