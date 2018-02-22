@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
@@ -17,15 +16,8 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(allScenes[whichSceneToLoad]);
     }
 
-    public void ExitGame ()
+    public void ExitGame()
     {
-        if (Application.isEditor)
-        {
-            EditorApplication.isPlaying = false;
-        }
-        else
-        {
-            Application.Quit();
-        }
+        Application.Quit();
     }
 }
