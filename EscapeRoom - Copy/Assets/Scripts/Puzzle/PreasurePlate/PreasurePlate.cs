@@ -33,6 +33,7 @@ public class PreasurePlate : MonoBehaviour
             currentWeight += other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
             MeasurementPosition();
+            FindObjectOfType<AudioManager>().Play("Scale");
         }
         
     }
@@ -44,6 +45,7 @@ public class PreasurePlate : MonoBehaviour
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
             MeasurementPosition();
+            FindObjectOfType<AudioManager>().Play("Scale");
         }
     }
 
@@ -53,6 +55,7 @@ public class PreasurePlate : MonoBehaviour
         {
             enoughWeight.Invoke();
             hasBeenOpened = true;
+            FindObjectOfType<AudioManager>().Play("Hint");
         }
         if ((currentWeight > maxWeight || currentWeight < minWeight) && hasBeenOpened == false)
         {
