@@ -44,7 +44,6 @@ public class PreasurePlate : MonoBehaviour
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
             MeasurementPosition();
-            SmoothMeasurePosition();
         }
     }
 

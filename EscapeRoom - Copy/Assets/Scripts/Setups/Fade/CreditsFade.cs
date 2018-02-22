@@ -45,6 +45,6 @@ public class CreditsFade : MonoBehaviour
     private IEnumerator MenuLoader()
     {
         yield return new WaitForSeconds(48f);
-        SceneManager.LoadScene("RoomOne"); 
+        SceneManager.LoadScene("MainMenu"); 
     }
 }
