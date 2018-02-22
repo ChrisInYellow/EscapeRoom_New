@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 114369323096972040}
   - component: {fileID: 114639912485526404}
   - component: {fileID: 114417152372877532}
+  - component: {fileID: 114801601790786936}
   m_Layer: 0
   m_Name: clipboard
   m_TagString: Untagged
@@ -2213,6 +2214,17 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &114801601790786936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668871537629536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114861750359614252
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 114754776755012546}
   - component: {fileID: 114523644151457748}
   - component: {fileID: 114622996763669104}
+  - component: {fileID: 114854478478160378}
   m_Layer: 0
   m_Name: food_can
   m_TagString: Can
@@ -284,6 +285,17 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: Infinity
+--- !u!114 &114854478478160378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1632748642880782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114981012981071692
 MonoBehaviour:
   m_ObjectHideFlags: 1

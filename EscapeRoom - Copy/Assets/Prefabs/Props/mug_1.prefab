@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114547177817418880}
   - component: {fileID: 114358263879562062}
   - component: {fileID: 114183841540174264}
+  - component: {fileID: 114772271720612060}
   m_Layer: 0
   m_Name: mug_1
   m_TagString: Untagged
@@ -101,8 +102,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102959048664608}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.269054, y: 1.2273484, z: 5.2805834}
+  m_LocalRotation: {x: -0.6057908, y: 0.36471567, z: 0.36471567, w: 0.6057908}
+  m_LocalPosition: {x: 2.042, y: -0.04657948, z: 6.946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4032867136938798}
@@ -309,6 +310,17 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114772271720612060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1102959048664608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114896251347406718
 MonoBehaviour:
   m_ObjectHideFlags: 1

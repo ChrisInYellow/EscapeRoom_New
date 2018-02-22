@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 64813234164086954}
   - component: {fileID: 114094792451888686}
   - component: {fileID: 114041076987407282}
+  - component: {fileID: 114255347160879700}
   m_Layer: 0
   m_Name: flashlight 1
   m_TagString: Untagged
@@ -766,6 +767,17 @@ MonoBehaviour:
   useOverrideButton: 9
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114255347160879700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191655801805966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114527550362023128
 MonoBehaviour:
   m_ObjectHideFlags: 1
