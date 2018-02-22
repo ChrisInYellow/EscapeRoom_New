@@ -34,6 +34,6 @@ public class SolutionForCombinationLock : MonoBehaviour
     public void Solve()
     {
         puzzleSolved.Invoke();
-        FindObjectOfType<AudioManager>().Play("Solution");
+        FindObjectOfType<AudioManager>().Play("Hint");
     }
 }

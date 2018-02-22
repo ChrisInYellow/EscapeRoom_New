@@ -98,7 +98,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: BreakingGlass
     clip: {fileID: 8300000, guid: ec33033a32f82994da35f2acf3e6b819, type: 3}
-    volume: 0.54
+    volume: 0.657
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -158,9 +158,9 @@ MonoBehaviour:
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    spatialBlend: 1
-    minDistance: 2
-    maxDistance: 10
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
@@ -196,13 +196,13 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: Buzzing
     clip: {fileID: 8300000, guid: 9be97085f118003499a5c9014a088fb0, type: 3}
-    volume: 0.575
+    volume: 0.169
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0.048
     spatialBlend: 1
-    minDistance: 2
-    maxDistance: 3
+    minDistance: 1
+    maxDistance: 2
     loop: 1
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
@@ -242,9 +242,9 @@ MonoBehaviour:
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    spatialBlend: 1
-    minDistance: 2
-    maxDistance: 10
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}
@@ -252,12 +252,12 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: eyeSquish
     clip: {fileID: 8300000, guid: 44c09e172f431f84dbbc86d5a9bfda5f, type: 3}
-    volume: 0.583
+    volume: 0.843
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     spatialBlend: 1
-    minDistance: 2
+    minDistance: 1
     maxDistance: 3
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
@@ -350,7 +350,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: CameraZoom
     clip: {fileID: 8300000, guid: 63291982fd0a0b4489de80e5f5dd9641, type: 3}
-    volume: 0.535
+    volume: 0.405
     volumeVariance: 0.062
     pitch: 1
     pitchVariance: 0.15
@@ -364,7 +364,7 @@ MonoBehaviour:
   - target: {fileID: 0}
     name: CameraUnZoom
     clip: {fileID: 8300000, guid: 140daf498f5c7c745aad15a5856dfd17, type: 3}
-    volume: 0.535
+    volume: 0.405
     volumeVariance: 0.062
     pitch: 1
     pitchVariance: 0.15
@@ -413,6 +413,34 @@ MonoBehaviour:
     spatialBlend: 0
     minDistance: 0
     maxDistance: 0
+    loop: 0
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: Laser
+    clip: {fileID: 8300000, guid: d1be0839d86bc9b4c9412515aec87f52, type: 3}
+    volume: 0.136
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.047
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
+    loop: 1
+    mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
+      type: 2}
+    source: {fileID: 0}
+  - target: {fileID: 0}
+    name: Scale
+    clip: {fileID: 8300000, guid: daf5f9b29f3a3584388fe9dfa00d0bd0, type: 3}
+    volume: 0.535
+    volumeVariance: 0.062
+    pitch: 1
+    pitchVariance: 0.15
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 2
     loop: 0
     mixerGroup: {fileID: 243326671386348026, guid: d0a347a050090f544a34ef37b4771ef5,
       type: 2}

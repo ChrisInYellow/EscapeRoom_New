@@ -96,6 +96,7 @@ public class LaserSpawn : MonoBehaviour
                 {
                     openedLock = true;
                     Solve();
+                    FindObjectOfType<AudioManager>().Play("Hint");
                 }
 
             if (lastMirror != null)
