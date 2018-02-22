@@ -396,6 +396,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 36783162}
   m_Script: {fileID: 11500000, guid: 9d97cef01aa539f4ba9470945f43e375, type: 3}
+--- !u!1 &36783164 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1089887961117092, guid: 25cedf853d07cd340bb1c161b57b9211,
+    type: 2}
+  m_PrefabInternal: {fileID: 36783162}
 --- !u!1 &57777149 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1730137314479874, guid: 3d3afaed9ceec184cb95ff1b680d5b9c,
@@ -14224,19 +14229,9 @@ Prefab:
       objectReference: {fileID: 1945999968}
     - target: {fileID: 114680510729661362, guid: d1f01a01607b42f48abe67a1a1156c86,
         type: 2}
-      propertyPath: sounds.Array.data[10].minDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114680510729661362, guid: d1f01a01607b42f48abe67a1a1156c86,
-        type: 2}
-      propertyPath: sounds.Array.data[10].maxDistance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114680510729661362, guid: d1f01a01607b42f48abe67a1a1156c86,
-        type: 2}
-      propertyPath: sounds.Array.data[10].volume
-      value: 0.169
-      objectReference: {fileID: 0}
+      propertyPath: sounds.Array.data[27].target
+      value: 
+      objectReference: {fileID: 36783164}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1f01a01607b42f48abe67a1a1156c86, type: 2}
   m_IsPrefabParent: 0
@@ -17521,7 +17516,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101300318}
-  m_LocalRotation: {x: -0.008916006, y: 0.688754, z: -0.7249318, w: -0.0035308145}
+  m_LocalRotation: {x: -0.0089160055, y: 0.68875396, z: -0.7249317, w: -0.003530814}
   m_LocalPosition: {x: 0.8102169, y: -1.5718594, z: 8.809401}
   m_LocalScale: {x: 2.048031, y: 2.0480342, z: 2.0480294}
   m_Children:

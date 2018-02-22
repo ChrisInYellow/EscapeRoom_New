@@ -56,7 +56,7 @@ public class TileWall : MonoBehaviour
 
     public void PlayAnim()
     {
-        if (tileWallManager.stopPuzzle || coolDown)
+        if (coolDown)
             return;
         coolDown = true;
         spin = true;
