@@ -42,17 +42,22 @@ public class PuzzleActivatorEditor : Editor {
         {
             activator.puzzle5();
         }
-
-        GUILayout.Box("Fuses");
-
-        if (GUILayout.Button("Fuse Tilewall"))
+        
+        if (GUILayout.Button("Scale Puzzle"))
         {
             activator.puzzle6();
         }
 
+        GUILayout.Box("Fuse");
         if (GUILayout.Button("Fuse Laser"))
         {
             activator.puzzle7();
+        }
+
+        GUILayout.Box("Credits");
+        if (GUILayout.Button("Activate credits"))
+        {
+            activator.puzzle8();
         }
     }
 }

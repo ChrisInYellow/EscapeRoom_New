@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114493891798871738}
   - component: {fileID: 114366985612981002}
   - component: {fileID: 114815468634071972}
+  - component: {fileID: 114452069459699836}
   m_Layer: 0
   m_Name: Fuse_interactive
   m_TagString: Fuze
@@ -398,6 +399,17 @@ MonoBehaviour:
   hideDelayOnGrab: 0
   hideControllerOnUse: 0
   hideDelayOnUse: 0
+--- !u!114 &114452069459699836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144115275781038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457cdf7b5b3dafe45a095fabadc72c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114493891798871738
 MonoBehaviour:
   m_ObjectHideFlags: 1

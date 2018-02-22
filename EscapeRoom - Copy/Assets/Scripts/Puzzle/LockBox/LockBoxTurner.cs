@@ -58,20 +58,36 @@ public class LockBoxTurner : MonoBehaviour
             print("One is correct");
             oneTrue = true;
         }
+        else
+        {
+            oneTrue = false;
+        }
         if (numberOfCode == NumberOfCode.Two && LockNumber == 5)
         {
             print("Two is correct");
             twoTrue = true;
+        }
+        else
+        {
+            twoTrue = false;
         }
         if (numberOfCode == NumberOfCode.Three && LockNumber == 3)
         {
             print("Three is correct");
             threeTrue = true;
         }
+        else
+        {
+            threeTrue = false;
+        }
         if (numberOfCode == NumberOfCode.Four && LockNumber == 7)
         {
             print("Four is correct");
             fourTrue = true;
+        }
+        else
+        {
+            fourTrue = false;
         }
     }
 }
