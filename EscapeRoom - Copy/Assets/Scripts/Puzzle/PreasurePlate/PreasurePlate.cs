@@ -34,8 +34,7 @@ public class PreasurePlate : MonoBehaviour
             CheckWeight();
             MeasurementPosition();
             FindObjectOfType<AudioManager>().Play("Scale");
-        }
-        
+        }       
     }
 
     public void OnTriggerExit(Collider other)
