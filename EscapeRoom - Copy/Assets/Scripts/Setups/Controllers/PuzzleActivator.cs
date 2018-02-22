@@ -43,5 +43,9 @@ public class PuzzleActivator : MonoBehaviour {
     {
         puzzleSolved[7].Invoke();
     }
+    public void puzzle8()
+    {
+        puzzleSolved[8].Invoke();
+    }
 
 }

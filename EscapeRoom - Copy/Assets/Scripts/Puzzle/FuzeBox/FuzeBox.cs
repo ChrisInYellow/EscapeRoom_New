@@ -10,7 +10,7 @@ public class FuzeBox : MonoBehaviour
     public UnityEvent fuzeRemoved = new UnityEvent();
 
     private float timeUntilRemoved;
-    private float thrust;
+    private float thrust = 50f;
     public GameObject fuze;
 
     [HideInInspector]
@@ -26,8 +26,8 @@ public class FuzeBox : MonoBehaviour
         fuzeIsSnapped = true;
         fuzeInserted.Invoke();
         timeUntilRemoved = Random.Range(30, 60);
-        thrust = Random.Range(150, 200);
         Invoke("ShootOutFuze", timeUntilRemoved);
+        FindObjectOfType<AudioManager>().Play("Laser");
     }
 
     public void ShootOutFuze ()
@@ -37,6 +37,7 @@ public class FuzeBox : MonoBehaviour
         Rigidbody rb = fuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
+        FindObjectOfType<AudioManager>().Pause("Laser");
         FindObjectOfType<AudioManager>().Play("PowerDown");
     }
 

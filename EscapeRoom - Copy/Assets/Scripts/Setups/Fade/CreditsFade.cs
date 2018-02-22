@@ -23,16 +23,22 @@ public class CreditsFade : MonoBehaviour
     // Use this for initialization
     private void OnTriggerEnter(Collider other)
     {
-        fade.Fade(new Color(0, 0, 0), dur);
-
-        StartCoroutine(CreditSpwan()); 
+        ActivateCredits();
     }
+
+    public void ActivateCredits()
+    {
+        fade.Fade(new Color(0, 0, 0), dur);
+        StartCoroutine(CreditSpwan());
+    }
+
     private IEnumerator CreditSpwan()
 
     {
         yield return new WaitForSeconds(dur);
         creditsCam.transform.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f); 
+        fade.gameObject.SetActive(false);
         creditsCam.GetComponent<Camera>().enabled = true; 
         StartCoroutine(MenuLoader());       
     }

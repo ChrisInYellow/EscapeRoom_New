@@ -35,7 +35,7 @@ public class EyeScannerScript : MonoBehaviour {
             }
             else
             {
-                FindObjectOfType<AudioManager>().Play("AccessDenied");
+                //FindObjectOfType<AudioManager>().Play("AccessDenied");
             }
         }
     }

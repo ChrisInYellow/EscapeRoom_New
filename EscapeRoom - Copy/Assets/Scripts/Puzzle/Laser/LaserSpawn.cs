@@ -88,7 +88,6 @@ public class LaserSpawn : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10f, mirror))
         {
-            print("activating");
             particleManager.transform.gameObject.SetActive(true);
             GameObject hitMirror = hit.transform.gameObject;
 
@@ -97,6 +96,7 @@ public class LaserSpawn : MonoBehaviour
                 {
                     openedLock = true;
                     Solve();
+                    FindObjectOfType<AudioManager>().Play("Hint");
                 }
 
             if (lastMirror != null)
