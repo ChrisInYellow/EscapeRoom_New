@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PaintingRotation : MonoBehaviour 
 {
-    private bool cooldown = false;
+    //private bool cooldown = false;
     private bool isRotating = false;
     private bool correctPos = false;
     private int currentRotationPos = 0;
@@ -33,7 +33,8 @@ public class PaintingRotation : MonoBehaviour
 
     public void StartRotation ()
     {
-        if (!cooldown)
+        //if(!cooldown)
+        if (!isRotating)
         {
             currentRotationPos += 1;
             if (currentRotationPos >= 8)
@@ -48,7 +49,7 @@ public class PaintingRotation : MonoBehaviour
                 correctPos = false;
                 paintingController.CheckNumberOfCorrectPositions(correctPos, numberOfPainting);
             }
-            cooldown = true;
+            //cooldown = true;
             isRotating = true;
             Invoke("StopRotation", duration);
         }
@@ -56,7 +57,7 @@ public class PaintingRotation : MonoBehaviour
 
     public void StopRotation ()
     {
-        cooldown = false;
+        //cooldown = false;
         isRotating = false;
     }
 }

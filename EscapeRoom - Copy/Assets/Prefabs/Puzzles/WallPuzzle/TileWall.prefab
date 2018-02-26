@@ -7476,7 +7476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf66de722b093204ab7195f5d4971a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleIsCompleted: 0
   puzzleSolved:
     m_PersistentCalls:
       m_Calls:
@@ -7493,6 +7492,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  stopPuzzle: 0
 --- !u!114 &114467242827185048
 MonoBehaviour:
   m_ObjectHideFlags: 1
