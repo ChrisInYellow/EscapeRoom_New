@@ -8,59 +8,37 @@ public class LaserSpawn : MonoBehaviour
     public UnityEvent puzzleSolved = new UnityEvent();
 
     public LineRenderer laser;
-    public Vector3 amountOfDegrees;
     public bool triggered;
     public bool master;
-    public bool servant; 
+    public bool servant;
     public LayerMask mirror;
-    public GameObject laserManager; 
-    public GameObject particleManager; 
-    private Vector3 result;
-    private Quaternion laserRotation;
+    public GameObject laserManager;
+    public GameObject particleManager;
     private GameObject lastMirror;
     private bool openedLock;
 
-
-
-    // Use this for initialization
     void Start()
     {
-        gameObject.transform.Rotate(Vector3.zero);
         laser.SetPosition(0, transform.position);
         laser.SetPosition(1, transform.position);
-        particleManager.transform.gameObject.SetActive(false); 
-        laserManager.transform.gameObject.SetActive(false); 
-        
+
     }
 
     private void Update()
     {
         if (master && Time.frameCount % 6 == 0)
         {
-            LaserSpawner(); 
+            LaserSpawner();
         }
         else if (servant && Time.frameCount % 6 == 2)
         {
-            LaserSpawner(); 
+            LaserSpawner();
         }
-        else if(Time.frameCount % 6 == 4)
+        else if (Time.frameCount % 6 == 4)
         {
             LaserSpawner();
         }
     }
-
-    public void RealignLaserLeft()
-    {
-            result = Vector3.Scale(amountOfDegrees, Vector3.up);
-            transform.Rotate(result);
-
-        }
-
-    public void RealignLaserRight()
-    {
-    result = Vector2.Scale(amountOfDegrees, Vector3.down);
-    transform.Rotate(result);
-        }
 
     public void Trigger()
     {
@@ -84,7 +62,7 @@ public class LaserSpawn : MonoBehaviour
         }
         else
             laserManager.transform.gameObject.SetActive(true);
-            RaycastHit hit;
+        RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10f, mirror))
         {

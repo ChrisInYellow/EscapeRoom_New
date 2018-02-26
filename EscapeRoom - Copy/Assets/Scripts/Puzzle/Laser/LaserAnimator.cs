@@ -2,42 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserAnimator : MonoBehaviour {
+public class LaserAnimator : MonoBehaviour
+{
 
     private LineRenderer laser;
-    //public int numberOfFrames;
-    private float startingWitdth;
-    private float endingWidth;
-    private bool increment;
+    private bool pulsate;
     public float inc_value;
-    public float threshold_1;
-    public float threshold_2; 
+    public float threshold_min;
+    public float threshold_max;
 
-
-	// Use this for initialization
-	void Start () {
+    void Start()
+    {
         laser = gameObject.GetComponent<LineRenderer>();
-        startingWitdth = laser.startWidth;
-        endingWidth = laser.endWidth; 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (laser.endWidth <= threshold_1)
+    }
+
+    void Update()
+    {
+        if (Time.frameCount % 3 == 0)
         {
-            increment = true; 
+            LaserPulse();
         }
-        else if(laser.endWidth >= threshold_2)
+    }
+
+    public void LaserPulse()
+    {
+        if (laser.endWidth <= threshold_min)
         {
-            increment = false; 
+            pulsate = true;
         }
-        if(increment)
+        else if (laser.endWidth >= threshold_max)
         {
-            laser.endWidth = laser.startWidth += inc_value; 
+            pulsate = false;
+        }
+        if (pulsate)
+        {
+            laser.endWidth = laser.startWidth += inc_value;
         }
         else
         {
-            laser.endWidth = laser.startWidth -= inc_value; 
+            laser.endWidth = laser.startWidth -= inc_value;
         }
-	}
+    }
 }

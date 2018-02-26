@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
-using UnityEngine.Video; 
+using UnityEngine.Video;
 using VRTK;
 
 public class CreditsFade : MonoBehaviour
 {
-    //public UnityEvent CreditTriggered; 
     public VRTK_HeadsetFade fade;
     public Camera creditsCam;
     public float dur;
@@ -18,9 +17,8 @@ public class CreditsFade : MonoBehaviour
     private void Start()
     {
         video = GetComponentInChildren<VideoPlayer>();
-        
+
     }
-    // Use this for initialization
     private void OnTriggerEnter(Collider other)
     {
         ActivateCredits();
@@ -37,14 +35,14 @@ public class CreditsFade : MonoBehaviour
     {
         yield return new WaitForSeconds(dur);
         creditsCam.transform.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1f);
         fade.gameObject.SetActive(false);
-        creditsCam.GetComponent<Camera>().enabled = true; 
-        StartCoroutine(MenuLoader());       
+        creditsCam.GetComponent<Camera>().enabled = true;
+        StartCoroutine(MenuLoader());
     }
     private IEnumerator MenuLoader()
     {
         yield return new WaitForSeconds(48f);
-        SceneManager.LoadScene("MainMenu"); 
+        SceneManager.LoadScene("MainMenu");
     }
 }
