@@ -15,7 +15,7 @@ public class MuggBreakDownScript : MonoBehaviour {
         {
             Instantiate(BrokenMugg, transform.position, transform.rotation);
             Destroy(gameObject);
-            FindObjectOfType<AudioManager>().Play("BreakingGlass");
+            //FindObjectOfType<AudioManager>().Play("BreakingGlass");
         }   
     }
 }

@@ -12,19 +12,19 @@ public class FlashLight : MonoBehaviour {
         if (batteryIsIn)
         {
             spotLight.SetActive(true);
-            FindObjectOfType<AudioManager>().Play("FlashlightClick");
+            //FindObjectOfType<AudioManager>().Play("FlashlightClick");
         }
     }
 
     public void DeActivate()
     {
         spotLight.SetActive(false);
-        FindObjectOfType<AudioManager>().Play("FlashlightClick");
+        //FindObjectOfType<AudioManager>().Play("FlashlightClick");
     }
 
     public void batteryInput()
     {
-        FindObjectOfType<AudioManager>().Play("BatteryClick");
+        //FindObjectOfType<AudioManager>().Play("BatteryClick");
         batteryIsIn = true;
         spotLight.SetActive(true);
     }

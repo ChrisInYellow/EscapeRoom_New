@@ -17,7 +17,7 @@ public class Desk : MonoBehaviour {
     {
         anim.SetBool("Open", true);
         StartCoroutine(SpawnItem(0.5f));
-        FindObjectOfType<AudioManager>().Play("DrawerOpen");
+        //FindObjectOfType<AudioManager>().Play("DrawerOpen");
     }
 
     private IEnumerator SpawnItem(float time)
