@@ -12,11 +12,21 @@ public class PreasurePlate : MonoBehaviour
 
     public UnityEvent enoughWeight = new UnityEvent();
 
-    private float currentWeight = 0;
+    [HideInInspector]
+    public float currentWeight = 0;
     private Vector3 measurementStartPos;
-    private Vector3 pointerPosition;
-    private Vector3 pointerCurrent;
     private float pointerAdder;
+
+    private static PreasurePlate instance;
+    public static PreasurePlate GetInstance()
+    {
+        return instance;
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -28,33 +38,34 @@ public class PreasurePlate : MonoBehaviour
     public void OnCollisionEnter(Collision other)
     {
         ScaleChange(other.gameObject, true);
-        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = true;
     }
 
     public void OnCollisionExit(Collision other)
     {
         ScaleChange(other.gameObject, false);
-        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = false;
     }
 
-    private void ScaleChange(GameObject other, bool add)
+    public void ScaleChange(GameObject other, bool add)
     {
         if (other.GetComponent<ItemProperties>() == true)
         {
-            if(add)
+           GetComponent<AudioSource>().Play();
+            if (add)
                 currentWeight += other.GetComponent<ItemProperties>().weight;
             else
                 currentWeight -= other.GetComponent<ItemProperties>().weight;
             CheckWeight();
             SmoothMeasurePosition();
-            //FindObjectOfType<AudioManager>().Play("Scale");
+            
         }
     }
 
     public void CheckWeight ()
     {
-        if (currentWeight > 20)
-            currentWeight = 20;
+        if (currentWeight < 0)
+        {
+            currentWeight = 0;
+        }
         if (currentWeight >= minWeight)
         {
             enoughWeight.Invoke();
@@ -73,6 +84,9 @@ public class PreasurePlate : MonoBehaviour
     private void SmoothMeasurePosition()
     {
         pointerAdder = (weightMeasurment.transform.position.z - (measurementStartPos.z - currentWeight / 100f)) /10;
+        if (currentWeight > 20)
+            pointerAdder = (weightMeasurment.transform.position.z - (measurementStartPos.z - 20 / 100f)) / 10;
+
         if (pointerAdder > -0.0005 && pointerAdder < 0.0005)
             return;
         StartCoroutine(MovePointer());
