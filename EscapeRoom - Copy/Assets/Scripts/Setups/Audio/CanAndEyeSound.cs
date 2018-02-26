@@ -7,7 +7,7 @@ public class CanAndEyeSound : MonoBehaviour {
 
     public void Eye()
     { 
-        FindObjectOfType<AudioManager>().Play("EyeSquish");  
+        //FindObjectOfType<AudioManager>().Play("EyeSquish");  
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -16,7 +16,7 @@ public class CanAndEyeSound : MonoBehaviour {
             if (Math.Abs(GetComponent<Rigidbody>().velocity.y) >= 0.3 || Math.Abs(GetComponent<Rigidbody>().velocity.x) >= 0.3
                 || Math.Abs(GetComponent<Rigidbody>().velocity.z) >= 0.3)
             {
-                FindObjectOfType<AudioManager>().Play("CanDrop");
+                //FindObjectOfType<AudioManager>().Play("CanDrop");
             }
         }
     }

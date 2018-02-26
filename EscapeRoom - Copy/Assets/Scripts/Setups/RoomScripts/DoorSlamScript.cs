@@ -24,7 +24,7 @@ public class DoorSlamScript : MonoBehaviour {
     }
     public void PlaySound()
     {
-        FindObjectOfType<AudioManager>().Play("DoorSlam");
+        //FindObjectOfType<AudioManager>().Play("DoorSlam");
         Destroy(gameObject);
     }
 }
