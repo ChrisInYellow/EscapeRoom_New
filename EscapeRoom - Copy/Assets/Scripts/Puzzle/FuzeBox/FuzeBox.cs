@@ -13,11 +13,14 @@ public class FuzeBox : MonoBehaviour
     private float thrust = 50f;
     public GameObject fuze;
 
+    Rigidbody rb;
+
     [HideInInspector]
     public bool fuzeIsSnapped = false;
 
     private void Start()
     {
+        fuze.GetComponent<Rigidbody>();
         FindObjectOfType<AudioManager>().Play("Buzzing");
     }
 
@@ -34,7 +37,6 @@ public class FuzeBox : MonoBehaviour
     {
         fuzeIsSnapped = false;
         fuzeRemoved.Invoke();
-        Rigidbody rb = fuze.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
         FindObjectOfType<AudioManager>().Pause("Laser");
