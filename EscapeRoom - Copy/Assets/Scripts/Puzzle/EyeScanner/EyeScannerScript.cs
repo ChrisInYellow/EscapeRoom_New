@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-
 public class EyeScannerScript : MonoBehaviour {
 
     public UnityEvent completedEye = new UnityEvent();
@@ -26,7 +25,6 @@ public class EyeScannerScript : MonoBehaviour {
     {
         if (CombinationSolved == true)
         {
-
             interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
             //FindObjectOfType<AudioManager>().Play("CameraZoom");
             if (other.tag == "EyeBall")
@@ -39,8 +37,6 @@ public class EyeScannerScript : MonoBehaviour {
             }
         }
     }
-
-
 
     private void OnTriggerExit(Collider other)
     {
