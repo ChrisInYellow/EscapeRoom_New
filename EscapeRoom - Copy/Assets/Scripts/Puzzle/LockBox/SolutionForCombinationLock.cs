@@ -14,11 +14,6 @@ public class SolutionForCombinationLock : MonoBehaviour
     public LockBoxTurner lockBoxTurner4;
     private bool hasSolved;
 
-    private void Start()
-    {
-        //FindObjectOfType<AudioManager>().Play("AmbientBackground");       
-    }
-
     private void Update()
     {
         if(!hasSolved)
@@ -27,9 +22,7 @@ public class SolutionForCombinationLock : MonoBehaviour
     public void Solution()
     {
         if (lockBoxTurner1.oneTrue == true && lockBoxTurner2.twoTrue == true && lockBoxTurner3.threeTrue == true && lockBoxTurner4.fourTrue == true)
-        {
             Solve();
-        }
     }
 
     public void Solve()
