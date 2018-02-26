@@ -28,7 +28,7 @@ public class EyeScannerScript : MonoBehaviour {
         {
 
             interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
-            FindObjectOfType<AudioManager>().Play("CameraZoom");
+            //FindObjectOfType<AudioManager>().Play("CameraZoom");
             if (other.tag == "EyeBall")
             {
                 SolvePuzzle();
@@ -45,7 +45,7 @@ public class EyeScannerScript : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
         interactableLens.GetComponent<Animator>().SetTrigger("Unzoom");
-        FindObjectOfType<AudioManager>().Play("CameraUnZoom");
+        //FindObjectOfType<AudioManager>().Play("CameraUnZoom");
     }
 
     public void SolvePuzzle()

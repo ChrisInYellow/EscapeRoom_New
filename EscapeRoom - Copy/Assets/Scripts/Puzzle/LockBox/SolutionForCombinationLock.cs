@@ -16,7 +16,7 @@ public class SolutionForCombinationLock : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<AudioManager>().Play("AmbientBackground");       
+        //FindObjectOfType<AudioManager>().Play("AmbientBackground");       
     }
 
     private void Update()
@@ -35,7 +35,7 @@ public class SolutionForCombinationLock : MonoBehaviour
     public void Solve()
     {
         hasSolved = true;
-        FindObjectOfType<AudioManager>().Play("Hint");
+        //FindObjectOfType<AudioManager>().Play("Hint");
         puzzleSolved.Invoke();
     }
 }
