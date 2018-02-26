@@ -16,7 +16,7 @@ public class DoorController : MonoBehaviour
         {
             anim.SetTrigger("DoorOpens");
             puzzleSolved.Invoke();
-            FindObjectOfType<AudioManager>().Play("DoorCreak");
+            //FindObjectOfType<AudioManager>().Play("DoorCreak");
         }
         else
         {
