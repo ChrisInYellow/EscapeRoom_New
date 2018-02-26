@@ -6,17 +6,13 @@ using UnityEngine.Events;
 
 public class PreasurePlate : MonoBehaviour
 {
-    public float maxWeight;
-    public float minWeight;
+    public float minWeight = 20;
     public GameObject weightMeasurment;
     public MeshRenderer meshRenderer; 
 
     public UnityEvent enoughWeight = new UnityEvent();
-    public UnityEvent notRightAmountOfWeight = new UnityEvent();
 
     private float currentWeight = 0;
-    private int numberOfItemsOn = 0;
-    private bool hasBeenOpened = false;
     private Vector3 measurementStartPos;
     private Vector3 pointerPosition;
     private Vector3 pointerCurrent;
@@ -31,20 +27,22 @@ public class PreasurePlate : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<ItemProperties>() == true)
-        {
-            currentWeight += other.gameObject.GetComponent<ItemProperties>().weight;
-            CheckWeight();
-            SmoothMeasurePosition();
-            FindObjectOfType<AudioManager>().Play("Scale");
-        }       
+        ScaleChange(other.gameObject, true);
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<ItemProperties>() == true)
+        ScaleChange(other.gameObject, false);
+    }
+
+    private void ScaleChange(GameObject other, bool add)
+    {
+        if (other.GetComponent<ItemProperties>() == true)
         {
-            currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
+            if(add)
+                currentWeight += other.GetComponent<ItemProperties>().weight;
+            else
+                currentWeight -= other.GetComponent<ItemProperties>().weight;
             CheckWeight();
             SmoothMeasurePosition();
             FindObjectOfType<AudioManager>().Play("Scale");
@@ -53,15 +51,12 @@ public class PreasurePlate : MonoBehaviour
 
     public void CheckWeight ()
     {
-        if (currentWeight <= maxWeight && currentWeight >= minWeight)
+        if (currentWeight > 20)
+            currentWeight = 20;
+        if (currentWeight >= minWeight)
         {
             enoughWeight.Invoke();
-            hasBeenOpened = true;
             FindObjectOfType<AudioManager>().Play("Hint");
-        }
-        if ((currentWeight > maxWeight || currentWeight < minWeight) && hasBeenOpened == false)
-        {
-            notRightAmountOfWeight.Invoke();
         }
         if (currentWeight < 10)
             meshRenderer.material.SetColor("_EmissionColor", Color.red);
@@ -75,10 +70,7 @@ public class PreasurePlate : MonoBehaviour
 
     private void SmoothMeasurePosition()
     {
-        if (currentWeight > 20)
-            currentWeight = 20;
-        pointerPosition = measurementStartPos - new Vector3(0, 0, currentWeight / 100f);
-        pointerAdder = (weightMeasurment.transform.position.z - pointerPosition.z)/10;
+        pointerAdder = (weightMeasurment.transform.position.z - (measurementStartPos.z - currentWeight / 100f)) /10;
         if (pointerAdder > -0.0005 && pointerAdder < 0.0005)
             return;
         StartCoroutine(MovePointer());
