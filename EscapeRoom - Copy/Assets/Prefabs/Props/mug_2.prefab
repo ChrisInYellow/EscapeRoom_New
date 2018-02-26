@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114896251347406718}
   - component: {fileID: 114758885868067698}
   - component: {fileID: 114301818394610482}
+  - component: {fileID: 114150772560940150}
   m_Layer: 0
   m_Name: mug_2
   m_TagString: Untagged
@@ -197,6 +198,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114150772560940150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1102959048664608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114195487060672300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrokenMugg: {fileID: 1970054587881178, guid: d670e08337260fd4f9bc302bb23b41e6, type: 2}
+  breakSpeed: 1
 --- !u!114 &114301818394610482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -234,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   unhighlightOnDisable: 1
-  thickness: 0.05
+  thickness: 0.075
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0

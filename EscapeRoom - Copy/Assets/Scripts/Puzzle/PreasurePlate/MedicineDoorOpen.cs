@@ -21,6 +21,7 @@ public class MedicineDoorOpen : MonoBehaviour
 
     public void Open ()
     {
+        GetComponent<AudioSource>().Play();
         transform.Rotate(Vector3.down, rotateAngle * Time.deltaTime * (1 / duration));
         Invoke("DisableScript", duration);
     }
