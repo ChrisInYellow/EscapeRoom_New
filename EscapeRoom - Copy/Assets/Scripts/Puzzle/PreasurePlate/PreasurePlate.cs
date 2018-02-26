@@ -4,6 +4,8 @@ using UnityEngine.Events;
 
 public class PreasurePlate : MonoBehaviour
 {
+    public GameObject medicinDoor;
+
     public float minWeight = 20;
     public GameObject weightMeasurment;
     public MeshRenderer meshRenderer; 
@@ -23,14 +25,16 @@ public class PreasurePlate : MonoBehaviour
         meshRenderer.material.SetColor("_EmissionColor", Color.red);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnCollisionEnter(Collision other)
     {
         ScaleChange(other.gameObject, true);
+        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = true;
     }
 
-    public void OnTriggerExit(Collider other)
+    public void OnCollisionExit(Collision other)
     {
         ScaleChange(other.gameObject, false);
+        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = false;
     }
 
     private void ScaleChange(GameObject other, bool add)
