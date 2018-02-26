@@ -9458,6 +9458,36 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &330808672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330808670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 1336479745}
+  interactTouch: {fileID: 1336479747}
+  interactGrab: {fileID: 1336479746}
+--- !u!114 &330808673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330808670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 521794056}
+  interactTouch: {fileID: 521794058}
+  interactGrab: {fileID: 521794057}
 --- !u!4 &333772142 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4173090438904986, guid: 35833397a4dcdf44fa0e3e4d48fda83b,
@@ -11519,6 +11549,36 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &544535182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 544535180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 1336479745}
+  interactTouch: {fileID: 1336479747}
+  interactGrab: {fileID: 1336479746}
+--- !u!114 &544535183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 544535180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 521794056}
+  interactTouch: {fileID: 521794058}
+  interactGrab: {fileID: 521794057}
 --- !u!1001 &548330136
 Prefab:
   m_ObjectHideFlags: 0
@@ -17598,6 +17658,36 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &947207123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947207121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 1336479745}
+  interactTouch: {fileID: 1336479747}
+  interactGrab: {fileID: 1336479746}
+--- !u!114 &947207124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947207121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 521794056}
+  interactTouch: {fileID: 521794058}
+  interactGrab: {fileID: 521794057}
 --- !u!4 &947315157 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4818412573788584, guid: 9edd2ba4d4f8eff43aaeaef7a9599c0c,
@@ -17822,7 +17912,8 @@ Prefab:
       propertyPath: interactGrab
       value: 
       objectReference: {fileID: 521794057}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114972633802511318, guid: 0fc11dcf58f22b143a89c00b7c0a79e6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0fc11dcf58f22b143a89c00b7c0a79e6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &965128298
@@ -19780,6 +19871,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1867150220}
     m_Modifications:
+    - target: {fileID: 114944524890563946, guid: af6efe0c70d3d694697d5df94ad4a0df,
+        type: 2}
+      propertyPath: customOutlineModels.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114944524890563946, guid: af6efe0c70d3d694697d5df94ad4a0df,
+        type: 2}
+      propertyPath: customOutlineModelPaths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846038732658708, guid: af6efe0c70d3d694697d5df94ad4a0df, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.4475
@@ -19817,7 +19918,23 @@ Prefab:
       propertyPath: thickness
       value: 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114944524890563946, guid: af6efe0c70d3d694697d5df94ad4a0df,
+        type: 2}
+      propertyPath: enableSubmeshHighlight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114944524890563946, guid: af6efe0c70d3d694697d5df94ad4a0df,
+        type: 2}
+      propertyPath: customOutlineModels.Array.data[0]
+      value: 
+      objectReference: {fileID: 1952453356}
+    - target: {fileID: 114157358065501726, guid: af6efe0c70d3d694697d5df94ad4a0df,
+        type: 2}
+      propertyPath: disableWhenIdle
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114307016176402354, guid: af6efe0c70d3d694697d5df94ad4a0df, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: af6efe0c70d3d694697d5df94ad4a0df, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1192086726 stripped
@@ -30278,6 +30395,36 @@ MonoBehaviour:
   customOutlineModels: []
   customOutlineModelPaths: []
   enableSubmeshHighlight: 0
+--- !u!114 &1870691447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870691445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 1336479745}
+  interactTouch: {fileID: 1336479747}
+  interactGrab: {fileID: 1336479746}
+--- !u!114 &1870691448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870691445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 521794056}
+  interactTouch: {fileID: 521794058}
+  interactGrab: {fileID: 521794057}
 --- !u!114 &1880641465 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114971226709973646, guid: 05e1c6a95f1004d4ca0159b83c6dbf01,
@@ -34709,6 +34856,11 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 473340, guid: 71ca5259ca9ec7947975936be41698a7, type: 2}
   m_PrefabInternal: {fileID: 1196819936}
+--- !u!1 &1952453356 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1045045161482744, guid: 49a84b5ff8e9d4b43af3a8e38f0121b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 770149628}
 --- !u!4 &1952792095 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4208917597799316, guid: ec379fd8a87a09f4b92cd48398180e23,
@@ -36185,7 +36337,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101300318}
-  m_LocalRotation: {x: -0.008916006, y: 0.688754, z: -0.7249318, w: -0.0035308078}
+  m_LocalRotation: {x: -0.0089160055, y: 0.68875396, z: -0.7249317, w: -0.0035308066}
   m_LocalPosition: {x: 0.8102169, y: -1.5718594, z: 8.809401}
   m_LocalScale: {x: 2.048031, y: 2.0480342, z: 2.0480294}
   m_Children:
