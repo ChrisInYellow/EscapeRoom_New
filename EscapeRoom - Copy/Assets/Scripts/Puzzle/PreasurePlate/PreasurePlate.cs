@@ -9,6 +9,7 @@ public class PreasurePlate : MonoBehaviour
     public float maxWeight;
     public float minWeight;
     public GameObject weightMeasurment;
+    public MeshRenderer meshRenderer; 
 
     public UnityEvent enoughWeight = new UnityEvent();
     public UnityEvent notRightAmountOfWeight = new UnityEvent();
@@ -17,13 +18,15 @@ public class PreasurePlate : MonoBehaviour
     private int numberOfItemsOn = 0;
     private bool hasBeenOpened = false;
     private Vector3 measurementStartPos;
-    private float pointerPosition;
-    private float pointerCurrent;
+    private Vector3 pointerPosition;
+    private Vector3 pointerCurrent;
     private float pointerAdder;
 
     private void Start()
     {
         measurementStartPos = weightMeasurment.transform.position;
+        meshRenderer = weightMeasurment.GetComponent<MeshRenderer>();
+        meshRenderer.material.SetColor("_EmissionColor", Color.red);
     }
 
     public void OnTriggerEnter(Collider other)
@@ -32,7 +35,7 @@ public class PreasurePlate : MonoBehaviour
         {
             currentWeight += other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
-            MeasurementPosition();
+            SmoothMeasurePosition();
             FindObjectOfType<AudioManager>().Play("Scale");
         }       
     }
@@ -43,7 +46,7 @@ public class PreasurePlate : MonoBehaviour
         {
             currentWeight -= other.gameObject.GetComponent<ItemProperties>().weight;
             CheckWeight();
-            MeasurementPosition();
+            SmoothMeasurePosition();
             FindObjectOfType<AudioManager>().Play("Scale");
         }
     }
@@ -60,44 +63,31 @@ public class PreasurePlate : MonoBehaviour
         {
             notRightAmountOfWeight.Invoke();
         }
+        if (currentWeight < 10)
+            meshRenderer.material.SetColor("_EmissionColor", Color.red);
+
+        if (currentWeight >= 10)
+            meshRenderer.material.SetColor("_EmissionColor", Color.yellow);
+
+        if (currentWeight >= 20)
+            meshRenderer.material.SetColor("_EmissionColor", Color.green);
     }
 
-    public void MeasurementPosition ()
+    private void SmoothMeasurePosition()
     {
-        weightMeasurment.transform.position = measurementStartPos - new Vector3(0, 0, Mathf.Clamp((0.2f / minWeight) * currentWeight, 0, .2f));
-    }
-
-    void SmoothMeasurePosition()
-    {
-        pointerPosition = weightMeasurment.transform.position.x - measurementStartPos.x;
-
-        if (pointerPosition < currentWeight && pointerAdder <= 0)
-            pointerAdder = (currentWeight - pointerPosition) / 10f;
-        else if (pointerPosition > currentWeight && pointerAdder >= 0)
-            pointerAdder = (currentWeight - pointerPosition) / 10f;
-        StartCoroutine(MovePointer());
-
-        if (pointerAdder < 0.05 && pointerAdder > -0.05)
+        if (currentWeight > 20)
+            currentWeight = 20;
+        pointerPosition = measurementStartPos - new Vector3(0, 0, currentWeight / 100f);
+        pointerAdder = (weightMeasurment.transform.position.z - pointerPosition.z)/10;
+        if (pointerAdder > -0.0005 && pointerAdder < 0.0005)
             return;
+        StartCoroutine(MovePointer());
     }
 
     private IEnumerator MovePointer()
     {
         yield return new WaitForEndOfFrame();
-        weightMeasurment.transform.position = measurementStartPos + new Vector3(pointerAdder, 0, 0);
-        if (pointerAdder > 0)
-        {
-            if (weightMeasurment.transform.position.x - measurementStartPos.x < currentWeight)
-                StartCoroutine(MovePointer());
-            else
-                SmoothMeasurePosition();
-        }
-        else
-        {
-            if (weightMeasurment.transform.position.x - measurementStartPos.x > currentWeight)
-                StartCoroutine(MovePointer());
-            else
-                SmoothMeasurePosition();
-        }
+        weightMeasurment.transform.position -= new Vector3(0, 0, pointerAdder);
+        SmoothMeasurePosition();
     }
 }
