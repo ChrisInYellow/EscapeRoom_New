@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PaintingRotation : MonoBehaviour 
 {
@@ -42,7 +40,7 @@ public class PaintingRotation : MonoBehaviour
                 currentRotationPos = 0;
                 correctPos = true;
                 paintingController.CheckNumberOfCorrectPositions(correctPos, numberOfPainting);
-                FindObjectOfType<AudioManager>().Play("Hint");
+                //FindObjectOfType<AudioManager>().Play("Hint");
             }
             else
             {

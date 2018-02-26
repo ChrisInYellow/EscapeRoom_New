@@ -21,7 +21,7 @@ public class FuzeBox : MonoBehaviour
     private void Start()
     {
         fuze.GetComponent<Rigidbody>();
-        FindObjectOfType<AudioManager>().Play("Buzzing");
+        //FindObjectOfType<AudioManager>().Play("Buzzing");
     }
 
     public void OnSnapped()
@@ -30,7 +30,7 @@ public class FuzeBox : MonoBehaviour
         fuzeInserted.Invoke();
         timeUntilRemoved = Random.Range(30, 60);
         Invoke("ShootOutFuze", timeUntilRemoved);
-        FindObjectOfType<AudioManager>().Play("Laser");
+        //FindObjectOfType<AudioManager>().Play("Laser");
     }
 
     public void ShootOutFuze ()
@@ -39,8 +39,10 @@ public class FuzeBox : MonoBehaviour
         fuzeRemoved.Invoke();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
+        /*
         FindObjectOfType<AudioManager>().Pause("Laser");
         FindObjectOfType<AudioManager>().Play("PowerDown");
+        */
     }
 
     public void OnUnSnapped()

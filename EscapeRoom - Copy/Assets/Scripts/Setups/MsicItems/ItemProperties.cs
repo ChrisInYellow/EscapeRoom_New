@@ -1,33 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ItemProperties : MonoBehaviour
 {
     public float weight;
+    private bool onPreasurePlate = false;
 
-    private Vector3 velocity;
-    private bool grounded;
-    Rigidbody rb;
-
-    public void Start()
+    public void OnCollisionEnter(Collision other)
     {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void FixedUpdate ()
-    {
-        if (grounded == false)
+        if (other.gameObject.tag == "PreaurePlate")
         {
-            rb.AddForce(new Vector3(0, -weight, 0));
-        }
-    }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other == true)
-        {
-            grounded = true;
         }
     }
 }

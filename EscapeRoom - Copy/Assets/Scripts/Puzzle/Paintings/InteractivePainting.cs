@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InteractivePainting : MonoBehaviour 
 {
-    private int numberOfCorrectPositions = 0;
     private bool onePaintingIsCorrect = false;
     private bool twoPaintingsAreCorrect = false;
 

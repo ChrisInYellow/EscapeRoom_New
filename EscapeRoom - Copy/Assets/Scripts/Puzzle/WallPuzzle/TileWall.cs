@@ -12,14 +12,12 @@ public class TileWall : MonoBehaviour
 
     [HideInInspector]
     public bool correctPosition = false;
-    //[HideInInspector]
-    public int sideOfCube = 0;
-    [Range(0, 3)]
-    public int correctSide;
-    //Temporary solution for checking which of the tiles that are the correct path
-    public bool importantTile;
     [HideInInspector]
     public bool isRight = false;
+    [Range(0, 3)]
+    public int correctSide;
+    public int sideOfCube = 0;
+    public bool importantTile;
 
     private WallPuzzleSingleton tileWallManager;
 
@@ -49,7 +47,7 @@ public class TileWall : MonoBehaviour
     {
         if (spin == true)
         {
-            FindObjectOfType<AudioManager>().Play("WallTileTouch");
+            //FindObjectOfType<AudioManager>().Play("WallTileTouch");
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
         }
     }
@@ -94,5 +92,4 @@ public class TileWall : MonoBehaviour
     {
         tileWallManager.CheckTiles(gameObject, isRight);
     }
-    
 }

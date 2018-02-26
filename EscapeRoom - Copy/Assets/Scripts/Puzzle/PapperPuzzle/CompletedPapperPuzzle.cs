@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class CompletedPapperPuzzle : MonoBehaviour
@@ -13,7 +11,7 @@ public class CompletedPapperPuzzle : MonoBehaviour
 
     public void IncreasePlacedPappers ()
     {
-        FindObjectOfType<AudioManager>().Play("PlacingPaper");
+        //FindObjectOfType<AudioManager>().Play("PlacingPaper");
         numberOfPlacedPappers += 1;
         if (numberOfPlacedPappers == 5)
         {
@@ -24,6 +22,6 @@ public class CompletedPapperPuzzle : MonoBehaviour
     public void PuzzleSolved()
     {
         puzzleSolved.Invoke();
-        FindObjectOfType<AudioManager>().Play("Hint");
+        //FindObjectOfType<AudioManager>().Play("Hint");
     }
 }

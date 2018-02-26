@@ -1,14 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
-using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
     public string[] allScenes;
-    [Range(0, 3)]
+    [Range(0, 2)]
     public int whichSceneToLoad;
 
     public void LoadScene ()

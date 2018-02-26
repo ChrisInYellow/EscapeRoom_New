@@ -41,15 +41,15 @@ public class MenuHandler : MonoBehaviour
         if (menuStarted == false)
         {
             menuStarted = true;
-            PointerHandler();
             StartMenu();
+            PointerHandler();
             EventSystem.current.SetSelectedGameObject(resumeGame.gameObject);
         }
         else 
         {
             menuStarted = false;                         //FIX SHIT AND STUFF
-            PointerHandler();
             QuitMenu();
+            PointerHandler();
         }
     }
 
