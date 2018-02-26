@@ -8,7 +8,7 @@ public class PreasurePlate : MonoBehaviour
 
     public float minWeight = 20;
     public GameObject weightMeasurment;
-    public MeshRenderer meshRenderer; 
+    private MeshRenderer meshRenderer; 
 
     public UnityEvent enoughWeight = new UnityEvent();
 
@@ -49,7 +49,7 @@ public class PreasurePlate : MonoBehaviour
     {
         if (other.GetComponent<ItemProperties>() == true)
         {
-           GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().Play();
             if (add)
                 currentWeight += other.GetComponent<ItemProperties>().weight;
             else
@@ -69,7 +69,6 @@ public class PreasurePlate : MonoBehaviour
         if (currentWeight >= minWeight)
         {
             enoughWeight.Invoke();
-            //FindObjectOfType<AudioManager>().Play("Hint");
         }
         if (currentWeight < 10)
             meshRenderer.material.SetColor("_EmissionColor", Color.red);
