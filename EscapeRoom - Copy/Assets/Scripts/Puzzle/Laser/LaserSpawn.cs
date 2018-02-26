@@ -55,9 +55,10 @@ public class LaserSpawn : MonoBehaviour
         if (!triggered)
         {
             laserManager.transform.gameObject.SetActive(false);
-            if (lastMirror != null)
-                if (lastMirror.GetComponent<LaserSpawn>() != null)
-                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
+            if (lastMirror != null && lastMirror.GetComponent<LaserSpawn>() != null)
+            {
+                lastMirror.GetComponent<LaserSpawn>().triggered = false;
+            }
             return;
         }
         else
@@ -69,13 +70,12 @@ public class LaserSpawn : MonoBehaviour
             particleManager.transform.gameObject.SetActive(true);
             GameObject hitMirror = hit.transform.gameObject;
 
-            if (!openedLock)
-                if (hitMirror.tag == "LockBoxLock")
-                {
-                    openedLock = true;
-                    Solve();
-                    FindObjectOfType<AudioManager>().Play("Hint");
-                }
+            if (!openedLock && hitMirror.tag == "LockBoxLock")
+            {
+                openedLock = true;
+                Solve();
+                FindObjectOfType<AudioManager>().Play("Hint");
+            }
 
             if (lastMirror != null)
             {
@@ -92,38 +92,30 @@ public class LaserSpawn : MonoBehaviour
 
             var laserSpawn = hitMirror.GetComponent<LaserSpawn>();
 
-            if (laserSpawn != null && !laserSpawn.triggered)
+            if (laserSpawn != null)
             {
-                hitMirror.transform.GetChild(0).gameObject.SetActive(true);
-                laserSpawn.triggered = true;
-                particleManager.transform.gameObject.SetActive(false);
-            }
-            else if (laserSpawn != null && laserSpawn.triggered == true)
-            {
-                if (lastMirror != null)
+                if (!laserSpawn.triggered)
                 {
-
-                    if (hitMirror != lastMirror)
-                    {
-                        lastMirror.transform.gameObject.SetActive(false);
-                        lastMirror.GetComponent<LaserSpawn>().triggered = false;
-                        lastMirror = null;
-                    }
+                    hitMirror.transform.GetChild(0).gameObject.SetActive(true);
+                    laserSpawn.triggered = true;
+                    particleManager.transform.gameObject.SetActive(false);
+                }
+                else if (laserSpawn.triggered && lastMirror != null && hitMirror != lastMirror)
+                {
+                    lastMirror.transform.gameObject.SetActive(false);
+                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                    lastMirror = null;
                 }
             }
             lastMirror = hitMirror;
         }
         else
         {
-            if (lastMirror != null)
+            if (lastMirror != null && lastMirror.GetComponent<LaserSpawn>() != null)
             {
-                if (lastMirror.GetComponent<LaserSpawn>() != null)
-                {
-
-                    lastMirror.GetComponent<LaserSpawn>().triggered = false;
-                    lastMirror.transform.GetChild(0).gameObject.SetActive(false);
-                    lastMirror = null;
-                }
+                lastMirror.GetComponent<LaserSpawn>().triggered = false;
+                lastMirror.transform.GetChild(0).gameObject.SetActive(false);
+                lastMirror = null;
             }
             particleManager.transform.gameObject.SetActive(false);
         }
