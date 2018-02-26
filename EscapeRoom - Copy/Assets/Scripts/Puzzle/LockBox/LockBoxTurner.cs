@@ -39,7 +39,6 @@ public class LockBoxTurner : MonoBehaviour
             {
                 LockNumber = 0;
             }
-            print(LockNumber);
         }
     }
 
