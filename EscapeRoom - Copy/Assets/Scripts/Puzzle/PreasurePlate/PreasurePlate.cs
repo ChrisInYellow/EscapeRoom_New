@@ -47,7 +47,7 @@ public class PreasurePlate : MonoBehaviour
                 currentWeight -= other.GetComponent<ItemProperties>().weight;
             CheckWeight();
             SmoothMeasurePosition();
-            FindObjectOfType<AudioManager>().Play("Scale");
+            //FindObjectOfType<AudioManager>().Play("Scale");
         }
     }
 
@@ -58,7 +58,7 @@ public class PreasurePlate : MonoBehaviour
         if (currentWeight >= minWeight)
         {
             enoughWeight.Invoke();
-            FindObjectOfType<AudioManager>().Play("Hint");
+            //FindObjectOfType<AudioManager>().Play("Hint");
         }
         if (currentWeight < 10)
             meshRenderer.material.SetColor("_EmissionColor", Color.red);

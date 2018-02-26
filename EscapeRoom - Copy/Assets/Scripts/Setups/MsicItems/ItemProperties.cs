@@ -7,6 +7,10 @@ public class ItemProperties : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.GetComponent<ItemProperties>())
+        {
+
+        }
         if (other.gameObject.tag == "PreaurePlate")
         {
 
