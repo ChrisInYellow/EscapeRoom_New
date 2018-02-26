@@ -46,7 +46,6 @@ public class PreasurePlate : MonoBehaviour
             other.gameObject.GetComponent<ItemProperties>().onPreasurePlate = true;
         }
         ScaleChange(other.gameObject, true);
-        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = true;
     }
 
     public void OnCollisionExit(Collision other)
@@ -65,6 +64,7 @@ public class PreasurePlate : MonoBehaviour
     */
     public void ScaleChange(GameObject other, bool add)
     {
+        medicinDoor.GetComponent<MedicineDoorOpen>().enabled = true;
         if (other.GetComponent<ItemProperties>() == true)
         {
             if(add)
