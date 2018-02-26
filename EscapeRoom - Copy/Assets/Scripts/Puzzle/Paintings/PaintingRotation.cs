@@ -12,6 +12,7 @@ public class PaintingRotation : MonoBehaviour
     public float duration = .5f;
     public int numberOfPainting;
 
+
     private InteractivePainting paintingController;
 
     public void Start()
@@ -40,7 +41,7 @@ public class PaintingRotation : MonoBehaviour
                 currentRotationPos = 0;
                 correctPos = true;
                 paintingController.CheckNumberOfCorrectPositions(correctPos, numberOfPainting);
-                //FindObjectOfType<AudioManager>().Play("Hint");
+                GetComponent<AudioSource>().Play();
             }
             else
             {
