@@ -47,7 +47,7 @@ public class TileWall : MonoBehaviour
     {
         if (spin == true)
         {
-            //FindObjectOfType<AudioManager>().Play("WallTileTouch");
+            GetComponent<AudioSource>().Play();
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
         }
     }
