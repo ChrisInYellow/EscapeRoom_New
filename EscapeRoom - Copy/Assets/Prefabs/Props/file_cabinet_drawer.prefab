@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114591664313224420}
   - component: {fileID: 114129247256664142}
   - component: {fileID: 64707434697424418}
+  - component: {fileID: 114254792468203884}
   m_Layer: 0
   m_Name: drawer_1
   m_TagString: Untagged
@@ -82,6 +83,7 @@ GameObject:
   - component: {fileID: 114938332115378336}
   - component: {fileID: 114922651578876154}
   - component: {fileID: 64556792658054266}
+  - component: {fileID: 114270976134360376}
   m_Layer: 0
   m_Name: drawer_1
   m_TagString: Untagged
@@ -104,6 +106,7 @@ GameObject:
   - component: {fileID: 114441140066585570}
   - component: {fileID: 114305963331605220}
   - component: {fileID: 64763441122362974}
+  - component: {fileID: 114426538301162892}
   m_Layer: 0
   m_Name: drawer_1
   m_TagString: Untagged
@@ -126,6 +129,7 @@ GameObject:
   - component: {fileID: 114602707304436120}
   - component: {fileID: 114294349242497858}
   - component: {fileID: 64907785466031310}
+  - component: {fileID: 114685795610928468}
   m_Layer: 0
   m_Name: drawer_1
   m_TagString: Untagged
@@ -776,6 +780,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95842046426826556}
+--- !u!114 &114254792468203884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217058568543956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.075
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
+--- !u!114 &114270976134360376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1295860128587158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.075
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114294349242497858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -920,6 +958,23 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114426538301162892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314781339188506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.075
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114441140066585570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1022,6 +1077,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95207029638279392}
+--- !u!114 &114685795610928468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463628569192082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.075
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114698359843972594
 MonoBehaviour:
   m_ObjectHideFlags: 1
