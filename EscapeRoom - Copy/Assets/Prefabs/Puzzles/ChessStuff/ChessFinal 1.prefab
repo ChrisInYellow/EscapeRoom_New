@@ -274,7 +274,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4621520480977426}
-  - component: {fileID: 114827466532472106}
   m_Layer: 0
   m_Name: ChessDropZones
   m_TagString: Untagged
@@ -19295,22 +19294,6 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 114278257371934682}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
---- !u!114 &114827466532472106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1063808494866894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfadcc4f36079f419475c58967f9c83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  complete:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114835017212132584
 MonoBehaviour:
   m_ObjectHideFlags: 1

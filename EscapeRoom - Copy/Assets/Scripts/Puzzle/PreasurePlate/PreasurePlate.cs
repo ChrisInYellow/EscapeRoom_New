@@ -35,12 +35,12 @@ public class PreasurePlate : MonoBehaviour
         meshRenderer.material.SetColor("_EmissionColor", Color.red);
     }
 
-    public void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
         ScaleChange(other.gameObject, true);
     }
 
-    public void OnCollisionExit(Collision other)
+    public void OnTriggerExit(Collider other)
     {
         ScaleChange(other.gameObject, false);
     }

@@ -4,7 +4,7 @@ public class HighlightOnCompletion : MonoBehaviour
 {
     public int endOrder;
     private Color startColor;
-    public GameObject light;
+    public GameObject lights;
 
     public float timeBetween = 0.15f;
     MeshRenderer meshRenderer;
@@ -21,8 +21,7 @@ public class HighlightOnCompletion : MonoBehaviour
 
     public void HighlightEffect ()
     {
-        GameObject lighting;
-        lighting = Instantiate(light, transform.position, transform.rotation);
+        GameObject lighting = Instantiate(lights, transform.position, transform.rotation);
         Destroy(lighting, 1f);
         meshRenderer.material.color = new Color(255,255,255);
         Invoke("StopHighlight", 1f);

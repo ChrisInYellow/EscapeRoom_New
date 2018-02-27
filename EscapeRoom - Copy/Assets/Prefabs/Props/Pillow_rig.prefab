@@ -102,6 +102,8 @@ GameObject:
   - component: {fileID: 114516654125791618}
   - component: {fileID: 114274080896791996}
   - component: {fileID: 114815683809582414}
+  - component: {fileID: 114679202021774612}
+  - component: {fileID: 114547359647629676}
   m_Layer: 0
   m_Name: Pillow_rig
   m_TagString: Untagged
@@ -143,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1719297800247904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6991035, y: -0.045579553, z: 7.994301}
+  m_LocalPosition: {x: 1.5398618, y: -0.58257955, z: 1.8120022}
   m_LocalScale: {x: 0.96649945, y: 1, z: 1}
   m_Children:
   - {fileID: 4928643821228300}
@@ -266,6 +268,18 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114547359647629676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1719297800247904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d76a0b8eb6b94fb179edfa9e008a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
 --- !u!114 &114649400028424550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,6 +310,23 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114679202021774612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1719297800247904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  thickness: 0.075
+  customOutlineModels: []
+  customOutlineModelPaths: []
+  enableSubmeshHighlight: 0
 --- !u!114 &114815683809582414
 MonoBehaviour:
   m_ObjectHideFlags: 1
