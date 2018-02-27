@@ -9,6 +9,8 @@ public class EyeScannerScript : MonoBehaviour {
     public GameObject interactableLens;
     public GameObject lamp;
     public bool CombinationSolved;
+    public AudioClip zoom;
+    public AudioClip unZoom;
     private MeshRenderer meshRenderer;
 
     private void Start()
@@ -29,7 +31,10 @@ public class EyeScannerScript : MonoBehaviour {
         {
             interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
             if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().clip = zoom;
                 GetComponent<AudioSource>().Play();
+            }
             if (other.tag == "EyeBall")
             {
                 SolvePuzzle();
@@ -41,6 +46,7 @@ public class EyeScannerScript : MonoBehaviour {
     {
         interactableLens.GetComponent<Animator>().SetTrigger("Unzoom");
         if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().clip = unZoom;
             GetComponent<AudioSource>().Play();
     }
 

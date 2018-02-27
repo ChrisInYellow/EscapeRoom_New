@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 114539972353483358}
   - component: {fileID: 65346617091552016}
   - component: {fileID: 114062898556640494}
-  - component: {fileID: 82093628606517006}
+  - component: {fileID: 82035620551158102}
   m_Layer: 0
   m_Name: mug_1
   m_TagString: Untagged
@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102959048664608}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.692, y: -0.04657948, z: 6.6393}
+  m_LocalPosition: {x: 1.9325, y: -0.04657948, z: 6.6393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4032867136938798}
@@ -178,7 +178,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0913318, y: 0.09114871, z: 0.12492338}
   m_Center: {x: -0.0098188, y: 0.00000012107193, z: 0.06246163}
---- !u!82 &82093628606517006
+--- !u!82 &82035620551158102
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrokenMugg: {fileID: 1970054587881178, guid: ffcc2de18b550d140ae187fa909b2054, type: 2}
-  breakSpeed: 1
+  breakSpeed: 0.5
 --- !u!114 &114466360406474822
 MonoBehaviour:
   m_ObjectHideFlags: 1
