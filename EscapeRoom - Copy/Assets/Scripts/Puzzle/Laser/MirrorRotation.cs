@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
 public class MirrorRotation : MonoBehaviour
 {
     public Vector3 amountOfDegrees;
@@ -13,7 +12,6 @@ public class MirrorRotation : MonoBehaviour
     {
         result = Vector3.Scale(amountOfDegrees, Vector3.up);
         transform.Rotate(result);
-
     }
 
     public void RealignLaserRight()
@@ -21,6 +19,4 @@ public class MirrorRotation : MonoBehaviour
         result = Vector2.Scale(amountOfDegrees, Vector3.down);
         transform.Rotate(result);
     }
-
-
 }

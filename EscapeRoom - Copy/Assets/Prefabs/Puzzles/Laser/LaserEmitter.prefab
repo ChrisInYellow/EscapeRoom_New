@@ -334,7 +334,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710554669397398}
   m_LocalRotation: {x: -0.038292956, y: -0.68525916, z: -0.044099312, w: 0.72595376}
-  m_LocalPosition: {x: 2.114, y: -0.004, z: 4.902}
+  m_LocalPosition: {x: -1.6090364, y: 1.798, z: 2.147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4160260882251656}
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434c8b0087af6c0488213cbf4edef5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfDegrees: {x: 15, y: 15, z: 0}
+  amountOfDegrees: {x: 45, y: 45, z: 0}
 --- !u!114 &114229837540751744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc_value: 0.001
-  threshold_min: 0.002
-  threshold_max: 0.05
+  threshold_min: 0
+  threshold_max: 0
 --- !u!114 &114543948508718252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -800,12 +800,12 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  triggered: 0
-  master: 0
+  triggered: 1
+  master: 1
   servant: 0
-  mirror:
+  mirrorLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   laser: {fileID: 120071606583153032}
   laserManager: {fileID: 1032379895179162}
   particleManager: {fileID: 1759276842763214}
