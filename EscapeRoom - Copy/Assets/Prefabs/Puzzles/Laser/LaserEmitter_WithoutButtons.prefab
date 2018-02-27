@@ -363,8 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc_value: 0.001
-  threshold_1: 0.01
-  threshold_2: 0.025
+  threshold_min: 0.002
+  threshold_max: 0.05
 --- !u!114 &114941450855501220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -381,14 +381,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  laser: {fileID: 120071606583153032}
-  amountOfDegrees: {x: 45, y: 45, z: 0}
   triggered: 0
   master: 0
   servant: 1
   mirror:
     serializedVersion: 2
     m_Bits: 4294967295
+  laser: {fileID: 120071606583153032}
   laserManager: {fileID: 1032379895179162}
   particleManager: {fileID: 1759276842763214}
 --- !u!120 &120071606583153032
