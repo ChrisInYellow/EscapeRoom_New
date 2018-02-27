@@ -5,8 +5,8 @@ using UnityEngine;
 public class PawnReturnToOrgin : MonoBehaviour
 {
     //Keeps track of initial values in chess pieces.
-    Quaternion startRotation;
-    Vector3 startPosition;
+    private Quaternion startRotation;
+    private Vector3 startPosition;
 
     //Sets initial values in chess pieces.
     void Start()
