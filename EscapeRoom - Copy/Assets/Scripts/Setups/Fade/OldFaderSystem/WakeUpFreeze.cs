@@ -27,7 +27,7 @@ public class WakeUpEffect : MonoBehaviour {
         if(wakeUpCam.enabled == false && timeLeft < 0)
         {
             wakeUpCam.enabled = true;
-            fader.FadeIn(); 
+            //fader.FadeIn(); 
         }
     }
 }
