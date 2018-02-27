@@ -41,7 +41,8 @@ public class PaintingRotation : MonoBehaviour
                 currentRotationPos = 0;
                 correctPos = true;
                 paintingController.CheckNumberOfCorrectPositions(correctPos, numberOfPainting);
-                GetComponent<AudioSource>().Play();
+                if (GetComponent<AudioSource>() != null)
+                    GetComponent<AudioSource>().Play();
             }
             else
             {

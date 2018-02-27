@@ -20,7 +20,7 @@
 		{
 			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * fixed4(1,1,1,1);
 			o.Albedo = c.rgb;
-			o.Alpha = c.a * (1 - _LightColor0.a);
+			o.Alpha = (c.a * (1 - _LightColor0.a));
 		}
 		ENDCG
 	}

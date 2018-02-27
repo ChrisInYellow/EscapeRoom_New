@@ -9,16 +9,18 @@ public class EyeScannerScript : MonoBehaviour {
     public GameObject interactableLens;
     public GameObject lamp;
     public bool CombinationSolved;
+    private MeshRenderer meshRenderer;
 
     private void Start()
     {
-        lamp.GetComponent<MeshRenderer>().materials[0].color = new Color(1, 0, 0);
+        meshRenderer = lamp.GetComponent<MeshRenderer>();
+        meshRenderer.material.SetColor("_EmissionColor", Color.red);
     }
 
     public void Unlock()
     {
         CombinationSolved = true;
-        lamp.GetComponent<MeshRenderer>().materials[0].color = new Color(0, 1, 0);
+        meshRenderer.material.SetColor("_EmissionColor", Color.green);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,14 +28,11 @@ public class EyeScannerScript : MonoBehaviour {
         if (CombinationSolved == true)
         {
             interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
-            //FindObjectOfType<AudioManager>().Play("CameraZoom");
+            if (GetComponent<AudioSource>() != null)
+                GetComponent<AudioSource>().Play();
             if (other.tag == "EyeBall")
             {
                 SolvePuzzle();
-            }
-            else
-            {
-                //FindObjectOfType<AudioManager>().Play("AccessDenied");
             }
         }
     }
@@ -41,7 +40,8 @@ public class EyeScannerScript : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
         interactableLens.GetComponent<Animator>().SetTrigger("Unzoom");
-        //FindObjectOfType<AudioManager>().Play("CameraUnZoom");
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 
     public void SolvePuzzle()

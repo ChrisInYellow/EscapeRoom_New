@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,15 +17,19 @@ public class DoorSlamScript : MonoBehaviour {
     }
     public void DoorSlamActivate()
     {
-        player.position = new Vector3(player.position.x, player.position.y, 6.2f);
+        player.position = new Vector3(player.position.x, player.position.y+1, 6.2f);
         leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam"); ;
         rightDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
-        Invoke("PlaySound", .4f);
+        StartCoroutine(PlaySound());
         DoorSlamed.Invoke();
     }
-    public void PlaySound()
+    
+    private IEnumerator PlaySound()
     {
-        //FindObjectOfType<AudioManager>().Play("DoorSlam");
+        yield return new WaitForSeconds(.4f);
+        if(GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(.4f);
         Destroy(gameObject);
     }
 }

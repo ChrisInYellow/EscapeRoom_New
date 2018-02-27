@@ -30,6 +30,7 @@ public class ChessCorrectCombo : MonoBehaviour {
     public void PuzzleCleared()
     {
         complete.Invoke();
-        //FindObjectOfType<AudioManager>().Play("Solution");
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 }

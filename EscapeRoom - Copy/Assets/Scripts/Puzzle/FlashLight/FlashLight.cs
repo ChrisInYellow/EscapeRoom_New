@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class FlashLight : MonoBehaviour {
@@ -12,26 +11,26 @@ public class FlashLight : MonoBehaviour {
         if (batteryIsIn)
         {
             spotLight.SetActive(true);
-            //FindObjectOfType<AudioManager>().Play("FlashlightClick");
+            PlayClickSound();
         }
     }
 
     public void DeActivate()
     {
         spotLight.SetActive(false);
-        //FindObjectOfType<AudioManager>().Play("FlashlightClick");
+        PlayClickSound();
     }
 
     public void batteryInput()
     {
-        //FindObjectOfType<AudioManager>().Play("BatteryClick");
         batteryIsIn = true;
         spotLight.SetActive(true);
+        PlayClickSound();
     }
 
-    public void QuickSolve()
+    void PlayClickSound()
     {
-        batteryIsIn = true;
-        Activate();
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 }

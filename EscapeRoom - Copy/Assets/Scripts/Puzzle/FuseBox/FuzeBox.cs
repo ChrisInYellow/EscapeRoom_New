@@ -32,8 +32,11 @@ public class FuzeBox : MonoBehaviour
         fuzeInserted.Invoke();
         timeUntilRemoved = Random.Range(30, 60);
         Invoke("ShootOutFuze", timeUntilRemoved);
-        GetComponent<AudioSource>().clip = laser;
-        GetComponent<AudioSource>().Play();
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().clip = laser;
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     public void ShootOutFuze ()
@@ -42,8 +45,11 @@ public class FuzeBox : MonoBehaviour
         fuzeRemoved.Invoke();
         rb.isKinematic = false;
         rb.AddForce((-transform.right) * thrust);
-        GetComponent<AudioSource>().clip = powerDown;
-        GetComponent<AudioSource>().Play();
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().clip = powerDown;
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     public void OnUnSnapped()

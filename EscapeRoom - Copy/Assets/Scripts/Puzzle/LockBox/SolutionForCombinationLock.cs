@@ -28,7 +28,8 @@ public class SolutionForCombinationLock : MonoBehaviour
     public void Solve()
     {
         hasSolved = true;
-        //FindObjectOfType<AudioManager>().Play("Hint");
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
         puzzleSolved.Invoke();
     }
 }

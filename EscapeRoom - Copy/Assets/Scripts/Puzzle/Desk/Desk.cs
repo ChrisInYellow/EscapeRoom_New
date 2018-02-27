@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Desk : MonoBehaviour {
@@ -16,13 +14,13 @@ public class Desk : MonoBehaviour {
     public void Open()
     {
         anim.SetBool("Open", true);
-        StartCoroutine(SpawnItem(0.5f));
-        //FindObjectOfType<AudioManager>().Play("DrawerOpen");
+        Invoke("ActivateItem",0.5f);
+        if(GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 
-    private IEnumerator SpawnItem(float time)
+    private void ActivateItem()
     {
-        yield return new WaitForSeconds(time);
         drawerItem.SetActive(true);
     }
 }

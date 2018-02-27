@@ -47,7 +47,6 @@ public class TileWall : MonoBehaviour
     {
         if (spin == true)
         {
-            GetComponent<AudioSource>().Play();
             transform.Rotate(Vector3.up, rotateAngle * Time.deltaTime * (1 / duration));
         }
     }
@@ -75,6 +74,9 @@ public class TileWall : MonoBehaviour
         {
             isRight = false;
         }
+
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 
     public void StopAnim()

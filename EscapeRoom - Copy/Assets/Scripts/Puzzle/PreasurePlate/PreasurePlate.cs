@@ -49,7 +49,8 @@ public class PreasurePlate : MonoBehaviour
     {
         if (other.GetComponent<ItemProperties>() == true)
         {
-            GetComponent<AudioSource>().Play();
+            if (GetComponent<AudioSource>() != null)
+                GetComponent<AudioSource>().Play();
             if (add)
                 currentWeight += other.GetComponent<ItemProperties>().weight;
             else
