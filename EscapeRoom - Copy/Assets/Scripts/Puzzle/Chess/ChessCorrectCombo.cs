@@ -5,12 +5,12 @@ using UnityEngine.Events;
 
 public class ChessCorrectCombo : MonoBehaviour {
 
-    //An event that will be called when the puzzle is complete.
+    //An event that will be called when the puzzle is solved.
     public UnityEvent complete = new UnityEvent(); 
 
     //Pieces placed and pieces needed to complete the puzzle.
     private int correctlyPlacedPieces = 0;
-    private int clearAmount = 4;
+    private int solvedAmount = 4;
 
     //Adds to placedPieces when called.
     public void AddPiece()
@@ -28,11 +28,11 @@ public class ChessCorrectCombo : MonoBehaviour {
     //Solves the puzzle when all pieces are placed correctly.
     private void Solution()
     {
-        if (correctlyPlacedPieces == clearAmount)
+        if (correctlyPlacedPieces == solvedAmount)
             PuzzleCleared();
     }
 
-    //Plays a sound when the puzzle is complete.
+    //Calls upon complete event and plays a sound when the puzzle is solved.
     public void PuzzleCleared()
     {
         complete.Invoke();
