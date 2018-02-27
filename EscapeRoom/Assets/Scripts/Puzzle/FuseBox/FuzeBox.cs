@@ -23,7 +23,7 @@ public class FuzeBox : MonoBehaviour
 
     private void Start()
     {
-        rb = fuze.GetComponent<Rigidbody>();
+        fuze.GetComponent<Rigidbody>();
     }
 
     public void OnSnapped()

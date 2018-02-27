@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4706300929348088}
   - component: {fileID: 33350041834695672}
   - component: {fileID: 65479391295743856}
-  - component: {fileID: 114081684790393170}
-  - component: {fileID: 114392510368381552}
+  - component: {fileID: 23787282012081072}
+  - component: {fileID: 114971226709973646}
   m_Layer: 0
   m_Name: CreditSpawner
   m_TagString: CreditsSpawner
@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 4199418072341788}
   - component: {fileID: 65525907097339130}
   - component: {fileID: 114212442173227374}
-  - component: {fileID: 82760414798918500}
   m_Layer: 2
   m_Name: DoorSlam
   m_TagString: Untagged
@@ -185,7 +184,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1980213481149928}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071067, w: 0.70710695}
+<<<<<<< HEAD:EscapeRoom/Assets/Prefabs/Other/GameEvents.prefab
   m_LocalPosition: {x: -1.698, y: -1.77, z: 5.076856}
+=======
+  m_LocalPosition: {x: -1.698, y: -1.319, z: 5.076856}
+>>>>>>> parent of 40fe124... Merge branch 'master' of https://github.com/ChrisInYellow/EscapeRoom_New:EscapeRoom - Copy/Assets/Prefabs/Other/GameEvents.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4186740286878290}
@@ -253,12 +256,46 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1842947367607938}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071067, w: 0.70710695}
-  m_LocalPosition: {x: -9.72, y: -1.517, z: 4.454}
+  m_LocalPosition: {x: -9.72, y: -1.323, z: 5.076856}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 4186740286878290}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
+--- !u!23 &23787282012081072
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058025590267708}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!33 &33350041834695672
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -276,8 +313,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 2.8970885, z: 8}
-  m_Center: {x: 0, y: -0.44854426, z: 0}
+  m_Size: {x: 3.5, y: 2, z: 8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65525907097339130
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -312,8 +349,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7, z: 10.080414}
-  m_Center: {x: 3.4670302e-14, y: 5.4, z: -0.04020691}
+  m_Size: {x: 1, y: 6.08039, z: 10.080414}
+  m_Center: {x: 3.4670302e-14, y: 3.0401952, z: -0.04020691}
 --- !u!65 &65718912246605596
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -338,86 +375,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
---- !u!82 &82760414798918500
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467846011731106}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 11d3cb5c0d58bb0459338bbe02a37e6c, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.602
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 4
-  MaxDistance: 10
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!114 &114043742156832786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -429,18 +386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1e620a383bc064c9767fd47e601e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114081684790393170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058025590267708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff3faebd1e3e74d4eb98c3842993a1f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whichSceneToLoad: Credits
 --- !u!114 &114212442173227374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -548,18 +493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1e620a383bc064c9767fd47e601e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114392510368381552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058025590267708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff3faebd1e3e74d4eb98c3842993a1f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whichSceneToLoad: Credits
 --- !u!114 &114662491945431686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -622,3 +555,17 @@ MonoBehaviour:
   customRightControllerOrigin: {fileID: 0}
   customLeftControllerOrigin: {fileID: 0}
   customRaycast: {fileID: 0}
+--- !u!114 &114971226709973646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058025590267708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0164372f66d31b4d8fb11f86e21fe3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade: {fileID: 0}
+  creditsCam: {fileID: 0}
+  dur: 1.5

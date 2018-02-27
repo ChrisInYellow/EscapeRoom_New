@@ -52,24 +52,41 @@ public class LockBoxTurner : MonoBehaviour
     //passCode == 9 5 3 7
     public void Correction()
     {
-        if (numberOfCode == NumberOfCode.One && LockNumber == 9)
+        if(numberOfCode == NumberOfCode.One && LockNumber == 9)
+        {
+            print("One is correct");
             oneTrue = true;
+        }
         else
+        {
             oneTrue = false;
-
+        }
         if (numberOfCode == NumberOfCode.Two && LockNumber == 5)
+        {
+            print("Two is correct");
             twoTrue = true;
+        }
         else
+        {
             twoTrue = false;
-
+        }
         if (numberOfCode == NumberOfCode.Three && LockNumber == 3)
-            threeTrue = true;    
+        {
+            print("Three is correct");
+            threeTrue = true;
+        }
         else
+        {
             threeTrue = false;
-
+        }
         if (numberOfCode == NumberOfCode.Four && LockNumber == 7)
+        {
+            print("Four is correct");
             fourTrue = true;
+        }
         else
+        {
             fourTrue = false;
+        }
     }
 }

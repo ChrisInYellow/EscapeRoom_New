@@ -8,28 +8,32 @@ using UnityEngine.EventSystems;
 public class MenuHandler : MonoBehaviour 
 {
     public GameObject hand01, hand02;
+
     public GameObject gameRoom;
     public GameObject menuRoom;
+
     public Button resumeGame;
 
     private bool menuStarted = false;
 
-    VRTK_UIPointer uiPointer01;
-    VRTK_UIPointer uiPointer02;
-    VRTK_Pointer pointer01;
+    VRTK_UIPointer pointer01;
+    VRTK_UIPointer pointer11;
+
     VRTK_Pointer pointer02;
-    VRTK_StraightPointerRenderer pointerRenderer01;
-    VRTK_StraightPointerRenderer pointerRenderer02;
+    VRTK_Pointer pointer22;
+
+    VRTK_StraightPointerRenderer pointer03;
+    VRTK_StraightPointerRenderer pointer33;
 
     private void Start()
     {
-        uiPointer01 = hand01.GetComponent<VRTK_UIPointer>();
-        pointer01 = hand01.GetComponent<VRTK_Pointer>();
-        pointerRenderer01 = hand01.GetComponent<VRTK_StraightPointerRenderer>();
+        pointer01 = hand01.GetComponent<VRTK_UIPointer>();
+        pointer02 = hand01.GetComponent<VRTK_Pointer>();
+        pointer03 = hand01.GetComponent<VRTK_StraightPointerRenderer>();
 
-        uiPointer02 = hand02.GetComponent<VRTK_UIPointer>();
-        pointer02 = hand02.GetComponent<VRTK_Pointer>();
-        pointerRenderer02 = hand02.GetComponent<VRTK_StraightPointerRenderer>();
+        pointer11 = hand02.GetComponent<VRTK_UIPointer>();
+        pointer22 = hand02.GetComponent<VRTK_Pointer>();
+        pointer33 = hand02.GetComponent<VRTK_StraightPointerRenderer>();
     }
 
     public void MenuStart ()
@@ -65,21 +69,21 @@ public class MenuHandler : MonoBehaviour
     {
         if (menuStarted == false)
         {
-            uiPointer01.enabled = false;
             pointer01.enabled = false;
-            pointerRenderer01.enabled = false;
-            uiPointer02.enabled = false;
             pointer02.enabled = false;
-            pointerRenderer02.enabled = false;
+            pointer03.enabled = false;
+            pointer11.enabled = false;
+            pointer22.enabled = false;
+            pointer33.enabled = false;
         }
         else
         {
-            uiPointer01.enabled = true;
             pointer01.enabled = true;
-            pointerRenderer01.enabled = true;
-            uiPointer02.enabled = true;
             pointer02.enabled = true;
-            pointerRenderer02.enabled = true;
+            pointer03.enabled = true;
+            pointer11.enabled = true;
+            pointer22.enabled = true;
+            pointer33.enabled = true;
         }
     }
 }

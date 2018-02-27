@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class EyeScannerScript : MonoBehaviour {
@@ -6,8 +8,7 @@ public class EyeScannerScript : MonoBehaviour {
     public UnityEvent completedEye = new UnityEvent();
     public GameObject interactableLens;
     public GameObject lamp;
-    private bool CombinationSolved;
-    private bool eyeShowed;
+    public bool CombinationSolved;
     public AudioClip zoom;
     public AudioClip unZoom;
     private MeshRenderer meshRenderer;
@@ -26,7 +27,7 @@ public class EyeScannerScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (CombinationSolved)
+        if (CombinationSolved == true)
         {
             interactableLens.GetComponent<Animator>().SetTrigger("Zoom");
             if (GetComponent<AudioSource>() != null)
@@ -34,9 +35,8 @@ public class EyeScannerScript : MonoBehaviour {
                 GetComponent<AudioSource>().clip = zoom;
                 GetComponent<AudioSource>().Play();
             }
-            if (other.tag == "EyeBall" && !eyeShowed)
+            if (other.tag == "EyeBall")
             {
-                eyeShowed = true;
                 SolvePuzzle();
             }
         }
@@ -46,11 +46,8 @@ public class EyeScannerScript : MonoBehaviour {
     {
         interactableLens.GetComponent<Animator>().SetTrigger("Unzoom");
         if (GetComponent<AudioSource>() != null)
-        {
             GetComponent<AudioSource>().clip = unZoom;
             GetComponent<AudioSource>().Play();
-        }
-
     }
 
     public void SolvePuzzle()

@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class FileDrawerAnimation : MonoBehaviour {
 
-    //Keeps track of the drawers animator.
-    public Animator drawerAnimation;
 
-    //Sets the initial values of the animator.
+    public Animator anim;
+
 	void Start () {
-        drawerAnimation = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
 	}
 
-    //Plays animation when called.
-    public void FileAnimation()
+    public void FileAnimOpen()
     {
-        if (!drawerAnimation.GetBool("Open"))
+        if (!anim.GetBool("Open"))
         {
-            drawerAnimation.SetBool("Open", true);
+            anim.SetBool("Open", true);
         }
         else
         {
-            drawerAnimation.SetBool("Open", false); 
+            anim.SetBool("Open", false); 
         }
+
+        //anim.SetBool("Open", !anim.GetBool("Open"));
     }
 }

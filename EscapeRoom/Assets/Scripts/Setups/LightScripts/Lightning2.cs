@@ -1,13 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Lightning2 : MonoBehaviour
 {
     public AudioClip thunder01;
     public AudioClip thunder02;
     public AudioClip thunder03;
+
     public float lightningStartTimer = 10f;
     public float lightningDuration = 0.05f;
-    
     private int numberOfFlickers = 0;
     Light thisLight;
     Animator anim;
