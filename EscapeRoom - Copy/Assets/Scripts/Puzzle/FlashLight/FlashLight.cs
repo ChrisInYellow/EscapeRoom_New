@@ -1,16 +1,27 @@
 ﻿using System;
 using UnityEngine;
 
-public class FlashLight : MonoBehaviour {
-    
+public class FlashLight : MonoBehaviour
+{
+    public AudioClip batteryIn;
+    public AudioClip click;
+
     public bool batteryIsIn;
     public GameObject spotLight;
+
+    AudioSource source;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     public void Activate()
     {
         if (batteryIsIn)
         {
             spotLight.SetActive(true);
+            source.clip = click;
             PlayClickSound();
         }
     }
@@ -25,12 +36,13 @@ public class FlashLight : MonoBehaviour {
     {
         batteryIsIn = true;
         spotLight.SetActive(true);
+        source.clip = batteryIn;
         PlayClickSound();
     }
 
     void PlayClickSound()
     {
-        if (GetComponent<AudioSource>() != null)
-            GetComponent<AudioSource>().Play();
+        if (source != null)
+            source.Play();
     }
 }
