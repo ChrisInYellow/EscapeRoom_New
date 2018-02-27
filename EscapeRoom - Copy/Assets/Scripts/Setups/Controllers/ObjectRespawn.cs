@@ -12,7 +12,6 @@ public class ObjectRespawn : MonoBehaviour
         startPosition = transform.position;
         startRotation = transform.rotation; 
     }
-
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Respawner")
