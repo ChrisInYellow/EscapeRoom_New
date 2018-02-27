@@ -29,7 +29,7 @@ public class DoorSlamScript : MonoBehaviour {
         yield return new WaitForSeconds(.4f);
         if(GetComponent<AudioSource>() != null)
             GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.8f);
         Destroy(gameObject);
     }
 }
