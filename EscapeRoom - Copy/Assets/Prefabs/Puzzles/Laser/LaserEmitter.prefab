@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1459285325877394
 GameObject:
   m_ObjectHideFlags: 1
@@ -264,7 +264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1759276842763214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.00000023189932, z: 7.3198223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4761192618217422}
@@ -334,7 +334,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710554669397398}
   m_LocalRotation: {x: -0.038292956, y: -0.68525916, z: -0.044099312, w: 0.72595376}
-  m_LocalPosition: {x: -1.6090364, y: 1.798, z: 2.147}
+  m_LocalPosition: {x: 2.114, y: -0.004, z: 4.902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4160260882251656}
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1849123633601908}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1861512478855216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc_value: 0.001
-  threshold_min: 0
-  threshold_max: 0
+  threshold_min: 0.002
+  threshold_max: 0.05
 --- !u!114 &114543948508718252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -800,12 +800,12 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  triggered: 1
-  master: 1
+  triggered: 0
+  master: 0
   servant: 0
   mirrorLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4294967295
   laser: {fileID: 120071606583153032}
   laserManager: {fileID: 1032379895179162}
   particleManager: {fileID: 1759276842763214}
@@ -844,8 +844,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 3.6981382, y: 0.75057954, z: 0.2366414}
+  - {x: -3.5598707, y: 1.5999476, z: 0.66051084}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.01
@@ -854,7 +854,13 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 3.6
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 3.6
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -957,7 +963,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 549062039
+  randomSeed: 1711090261
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4318,7 +4324,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2127828074
+  randomSeed: 63456971
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7679,7 +7685,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1783168358
+  randomSeed: -1635274712
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -11040,7 +11046,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1618698764
+  randomSeed: -308488065
   InitialModule:
     serializedVersion: 3
     enabled: 1
