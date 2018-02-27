@@ -18,10 +18,8 @@ public class LaserAnimator : MonoBehaviour
 
     void Update()
     {
-        if (Time.frameCount % 3 == 0)
-        {
+
             LaserPulse();
-        }
     }
 
     public void LaserPulse()

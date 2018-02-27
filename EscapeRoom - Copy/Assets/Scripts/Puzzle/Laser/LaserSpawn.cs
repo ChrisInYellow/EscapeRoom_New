@@ -7,11 +7,11 @@ public class LaserSpawn : MonoBehaviour
 {
     public UnityEvent puzzleSolved = new UnityEvent();
 
-    public LineRenderer laser;
     public bool triggered;
     public bool master;
     public bool servant;
     public LayerMask mirror;
+    public LineRenderer laser;
     public GameObject laserManager;
     public GameObject particleManager;
     private GameObject lastMirror;
@@ -26,6 +26,11 @@ public class LaserSpawn : MonoBehaviour
 
     private void Update()
     {
+        SpawningOrder();
+    }
+
+    public void SpawningOrder()
+    {
         if (master && Time.frameCount % 6 == 0)
         {
             LaserSpawner();
@@ -38,16 +43,6 @@ public class LaserSpawn : MonoBehaviour
         {
             LaserSpawner();
         }
-    }
-
-    public void Trigger()
-    {
-        triggered = true;
-    }
-
-    public void Untrigger()
-    {
-        triggered = false;
     }
 
     public void LaserSpawner()
@@ -72,9 +67,7 @@ public class LaserSpawn : MonoBehaviour
 
             if (!openedLock && hitMirror.tag == "LockBoxLock")
             {
-                openedLock = true;
                 Solve();
-                FindObjectOfType<AudioManager>().Play("Hint");
             }
 
             if (lastMirror != null)
@@ -121,8 +114,19 @@ public class LaserSpawn : MonoBehaviour
         }
     }
 
+    public void Trigger()
+    {
+        triggered = true;
+    }
+
+    public void Untrigger()
+    {
+        triggered = false;
+    }
+
     public void Solve()
     {
+        openedLock = true;
         puzzleSolved.Invoke();
     }
 }

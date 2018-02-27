@@ -1,60 +1,59 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
-public class Fader : MonoBehaviour {
+public class Fader : MonoBehaviour
+{
 
     public Image fadeoutTexture;
     public float fadeSpeed;
-    public LevelManager lvlmanager; 
+    public LevelManager lvlmanager;
     public float alpha = 1.0f;
 
-
-    // Use this for initialization
-   public void Fade()
+    public void FadeToBlack()
     {
         fadeoutTexture.color = new Color(0, 0, 0, 1f);
 
-        StartCoroutine(FadeIn());
+        StartCoroutine(FadeInBlack());
+    }
+
+    public IEnumerator FadeInBlack()
+    {
+        while (fadeoutTexture.color.a >= 0)
+        {
+            alpha -= Time.deltaTime * fadeSpeed;
+            fadeoutTexture.color = new Color(0, 0, 0, alpha);
+
+            yield return null;
+        }
+        FadeToNewScene();
     }
 
     public void FadeToWhite()
     {
         fadeoutTexture.color = new Color(255, 255, 255, 1f);
 
-            StartCoroutine(FadeFromWhite());
+        StartCoroutine(FadeInWhite());
     }
 
-    public IEnumerator FadeIn()
-    { 
-        while(fadeoutTexture.color.a >= 0)
-        {
-            alpha -= Time.deltaTime * fadeSpeed;
-            fadeoutTexture.color = new Color(0, 0, 0, alpha);
-
-            yield return null; 
-        }
-        if(fadeoutTexture.color.a <= 0)
-        {
-            lvlmanager.LoadNewScene(); 
-        }
-    }
-	// Update is called once per frame
-
-     public IEnumerator FadeFromWhite()
+    public IEnumerator FadeInWhite()
     {
-        while (fadeoutTexture.color.a >=0)
+        while (fadeoutTexture.color.a >= 0)
         {
             alpha -= Time.deltaTime * fadeSpeed;
             fadeoutTexture.color = new Color(255, 255, 255, alpha);
 
             yield return null;
         }
-        if(fadeoutTexture.color.a <= 0)
+        FadeToNewScene();
+    }
+
+    public void FadeToNewScene()
+    {
+        if (fadeoutTexture.color.a <= 0)
         {
-            lvlmanager.LoadNewScene(); 
+            lvlmanager.LoadNewScene();
         }
-        
     }
 }
