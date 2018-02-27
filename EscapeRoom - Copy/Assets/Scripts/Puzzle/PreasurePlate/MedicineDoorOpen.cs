@@ -17,12 +17,12 @@ public class MedicineDoorOpen : MonoBehaviour
     public void ActivateBool ()
     {
         open = true;
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Play();
     }
 
     public void Open ()
     {
-        if (GetComponent<AudioSource>() != null)
-            GetComponent<AudioSource>().Play();
         transform.Rotate(Vector3.down, rotateAngle * Time.deltaTime * (1 / duration));
         Invoke("DisableScript", duration);
     }
