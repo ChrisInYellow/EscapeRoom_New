@@ -17,7 +17,7 @@ public class DoorSlamScript : MonoBehaviour {
     }
     public void DoorSlamActivate()
     {
-        player.position = new Vector3(player.position.x, player.position.y+1, 6.2f);
+        player.position = new Vector3(player.position.x, player.position.y, 6.2f);
         leftDoor.GetComponent<Animator>().SetTrigger("DoorSlam"); ;
         rightDoor.GetComponent<Animator>().SetTrigger("DoorSlam");
         StartCoroutine(PlaySound());
