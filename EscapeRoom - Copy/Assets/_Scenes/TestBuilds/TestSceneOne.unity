@@ -4302,6 +4302,21 @@ Prefab:
       propertyPath: m_CullingMask.m_Bits
       value: 4294966783
       objectReference: {fileID: 0}
+    - target: {fileID: 114366653417395516, guid: 78d39b004251f8546a12c2b583bbde00,
+        type: 2}
+      propertyPath: thunder01
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+    - target: {fileID: 114366653417395516, guid: 78d39b004251f8546a12c2b583bbde00,
+        type: 2}
+      propertyPath: thunder02
+      value: 
+      objectReference: {fileID: 8300000, guid: fbbc982645fc287429a2f7f7aba503aa, type: 3}
+    - target: {fileID: 114366653417395516, guid: 78d39b004251f8546a12c2b583bbde00,
+        type: 2}
+      propertyPath: thunder03
+      value: 
+      objectReference: {fileID: 8300000, guid: 24918bccd000b2d47b250c3021587604, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78d39b004251f8546a12c2b583bbde00, type: 2}
   m_IsPrefabParent: 0
@@ -4310,6 +4325,91 @@ Transform:
   m_PrefabParentObject: {fileID: 4727238483901066, guid: 78d39b004251f8546a12c2b583bbde00,
     type: 2}
   m_PrefabInternal: {fileID: 79694980}
+--- !u!1 &79694982 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1218752792286966, guid: 78d39b004251f8546a12c2b583bbde00,
+    type: 2}
+  m_PrefabInternal: {fileID: 79694980}
+--- !u!82 &79694983
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79694982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a38e9f3e9b2afe479469457e58e693a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &80459319 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1102959048664608, guid: d1b888ef6c8760a4790e847642d5a6f2,
@@ -26429,7 +26529,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   laser: {fileID: 2123946214}
-  amountOfDegrees: {x: 45, y: 45, z: 0}
   triggered: 0
   master: 1
   servant: 0
@@ -37635,7 +37734,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101300318}
-  m_LocalRotation: {x: -0.008916006, y: 0.688754, z: -0.7249318, w: -0.0035308052}
+  m_LocalRotation: {x: -0.0089160055, y: 0.68875396, z: -0.7249317, w: -0.0035308048}
   m_LocalPosition: {x: 0.8102169, y: -1.5718594, z: 8.809401}
   m_LocalScale: {x: 2.048031, y: 2.0480342, z: 2.0480294}
   m_Children:
@@ -37986,8 +38085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc_value: 0.001
-  threshold_1: 0.01
-  threshold_2: 0.025
+  threshold_min: 0
+  threshold_max: 0
 --- !u!120 &2123946214
 LineRenderer:
   m_ObjectHideFlags: 0
