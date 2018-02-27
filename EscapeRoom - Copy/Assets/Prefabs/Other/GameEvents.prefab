@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33350041834695672}
   - component: {fileID: 65479391295743856}
   - component: {fileID: 114081684790393170}
+  - component: {fileID: 114392510368381552}
   m_Layer: 0
   m_Name: CreditSpawner
   m_TagString: CreditsSpawner
@@ -88,7 +89,7 @@ GameObject:
   - component: {fileID: 4199418072341788}
   - component: {fileID: 65525907097339130}
   - component: {fileID: 114212442173227374}
-  - component: {fileID: 82787382304538674}
+  - component: {fileID: 82760414798918500}
   m_Layer: 2
   m_Name: DoorSlam
   m_TagString: Untagged
@@ -337,7 +338,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
---- !u!82 &82787382304538674
+--- !u!82 &82760414798918500
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -348,7 +349,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 11d3cb5c0d58bb0459338bbe02a37e6c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.602
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -356,8 +357,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 99.0099
-  MaxDistance: 100
+  MinDistance: 4
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -547,6 +548,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1e620a383bc064c9767fd47e601e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114392510368381552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058025590267708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3faebd1e3e74d4eb98c3842993a1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSceneToLoad: Credits
 --- !u!114 &114662491945431686
 MonoBehaviour:
   m_ObjectHideFlags: 1
