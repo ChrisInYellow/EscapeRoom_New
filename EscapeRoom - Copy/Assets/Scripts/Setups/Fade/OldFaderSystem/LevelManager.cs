@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour {
 
 public void SceneTransition()
     {
-        fader.Fade();
+        //fader.Fade();
 
     }
 public void LoadNewScene()
