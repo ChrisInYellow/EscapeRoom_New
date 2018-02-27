@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 114941450855501220}
   - component: {fileID: 65401469463618682}
   - component: {fileID: 65024106711714390}
+  - component: {fileID: 114158779809796822}
   m_Layer: 8
   m_Name: LaserEmitter
   m_TagString: Untagged
@@ -542,6 +543,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114158779809796822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710554669397398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434c8b0087af6c0488213cbf4edef5a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfDegrees: {x: 45, y: 45, z: 0}
 --- !u!114 &114229837540751744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -614,8 +627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc_value: 0.001
-  threshold_1: 0.01
-  threshold_2: 0.025
+  threshold_min: 0
+  threshold_max: 0
 --- !u!114 &114543948508718252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -788,7 +801,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   laser: {fileID: 120071606583153032}
-  amountOfDegrees: {x: 15, y: 15, z: 0}
   triggered: 0
   master: 0
   servant: 0

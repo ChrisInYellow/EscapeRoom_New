@@ -4,22 +4,22 @@ using UnityEngine;
 using UnityEditor;
 
 
-[CustomEditor(typeof(LaserSpawn))]
-public class LaserSpawnEditor : Editor
+[CustomEditor(typeof(MirrorRotation))]
+public class MirrorRotationEditor : Editor
 {
 
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
 
-        LaserSpawn laserSpawn = (LaserSpawn)target;
+        MirrorRotation mirrorRotation = (MirrorRotation)target;
         if (GUILayout.Button("Realign Laser Left"))
         {
-            laserSpawn.RealignLaserLeft();
+            mirrorRotation.RealignLaserLeft();
         }
         if(GUILayout.Button("Realign Laser Right"))
         {
-            laserSpawn.RealignLaserRight();
+            mirrorRotation.RealignLaserRight();
         }
 
     }

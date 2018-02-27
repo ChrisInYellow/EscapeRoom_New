@@ -6,7 +6,7 @@ public class ObjectRespawn : MonoBehaviour
 {
     private Vector3 startPosition;
     private Quaternion startRotation; 
-    // Use this for initialization
+
     void Start()
     {
         startPosition = transform.position;
@@ -23,18 +23,5 @@ public class ObjectRespawn : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (other.gameObject.name == "WallColliders")
-        {
-            
-        }
-
     }
-
-    //void ChildSpawner()
-    //{
-    //    foreach (Transform child in transform)
-    //    {
-
-    //    }
-    //}
 }
