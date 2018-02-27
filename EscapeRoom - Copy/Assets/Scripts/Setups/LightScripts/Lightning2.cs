@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Lightning2 : MonoBehaviour
 {
+    public AudioClip thunder01;
+    public AudioClip thunder02;
+    public AudioClip thunder03;
+
     public float lightningStartTimer = 10f;
     public float lightningDuration = 0.05f;
     private int numberOfFlickers = 0;
     Light thisLight;
     Animator anim;
+    AudioSource source;
 
     void Start()
     {
+        source = GetComponent<AudioSource>();
         thisLight = GetComponent<Light>();
         anim = GetComponent<Animator>();
         Invoke("StartLightning", lightningStartTimer);
@@ -34,16 +40,17 @@ public class Lightning2 : MonoBehaviour
 
         if (randomThunder == 1)
         {
-            //FindObjectOfType<AudioManager>().Play("Thunder");
+            source.clip = thunder01;
         }
         if (randomThunder == 2)
         {
-            //FindObjectOfType<AudioManager>().Play("ThunderTwo");
+            source.clip = thunder02;
         }
         if (randomThunder == 3)
         {
-            //FindObjectOfType<AudioManager>().Play("ThunderThree");
+            source.clip = thunder03;
         }
+        source.Play();
     }
 
     public void Lightning()
